@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trợ Lý AI - Toán THCS Nguyễn An Khương</title>
+    <style>
+        :root {
+            --primary-yellow: #FBBF24; /* Vàng trẻ trung, năng động */
+            --light-yellow: #FEF3C7;
+            --white: #FFFFFF;
+            --text-main: #374151;
+            --bg-gray: #F3F4F6;
+            --accent-blue: #0068FF; /* Màu Zalo */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        body { background-color: var(--bg-gray); color: var(--text-main); display: flex; flex-direction: column; height: 100vh; }
+
+        /* HEADER - Khu vực chọn đề thiết kế lại */
+        header {
+            background-color: var(--primary-yellow);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+        .logo { font-size: 1.2rem; font-weight: bold; color: #1F2937; display: flex; align-items: center; gap: 8px;}
+        
+        /* Cụm chọn đề thiết kế mới */
+        .test-selector-group {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        .test-selector-group select {
+            padding: 8px 16px; 
+            font-size: 0.95rem; 
+            border: 2px solid #F59E0B; 
+            border-radius: 8px; 
+            outline: none;
+            cursor: pointer; 
+            background: var(--white); 
+            font-weight: 600;
+            color: #1F2937;
+            transition: all 0.2s ease;
+        }
+        .test-selector-group select:hover {
+            border-color: #D97706;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* BỐ CỤC CHÍNH */
+        .main-container { display: flex; flex: 1; overflow: hidden; }
+
+        /* SIDEBAR - Góc trái chọn câu hỏi */
+        .sidebar {
+            width: 220px; background-color: var(--white); padding: 20px;
+            border-right: 1px solid #E5E7EB; overflow-y: auto;
+        }
+        .question-btn {
+            display: block; width: 100%; padding: 12px 15px; margin-bottom: 10px;
+            background-color: var(--bg-gray); border: none; border-radius: 8px;
+            font-size: 1rem; cursor: pointer; transition: all 0.3s ease; text-align: left; font-weight: 500;
+            color: #4B5563;
+        }
+        .question-btn:hover { background-color: var(--light-yellow); color: #B45309; transform: translateX(5px); }
+        .question-btn.active { background-color: var(--primary-yellow); color: #1F2937; font-weight: bold; box-shadow: 0 2px 4px rgba(251, 191, 36, 0.3); }
+
+        /* CONTENT AREA */
+        .content-area {
+            flex: 1; display: flex; flex-direction: column; padding: 20px 30px;
+            overflow-y: auto;
+        }
+        .question-display {
+            background: var(--white); padding: 25px 30px; border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px; min-height: 250px;
+            border-top: 4px solid var(--primary-yellow);
+        }
+        .question-display h2 { color: #B45309; margin-bottom: 15px; font-size: 1.4rem; border-bottom: 1px solid #E5E7EB; padding-bottom: 10px;}
+
+        /* MỤC TRAO ĐỔI & ZALO */
+        .chat-section {
+            background: var(--white); padding: 20px 30px; border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; flex: 1;
+        }
+        .chat-history { flex: 1; border: 1px solid #E5E7EB; border-radius: 8px; padding: 15px; margin-bottom: 15px; overflow-y: auto; background: #FAFAFA; font-size: 0.95rem; line-height: 1.5;}
+        .chat-input-area { display: flex; gap: 10px; }
+        .chat-input-area input { flex: 1; padding: 12px 15px; border: 1px solid #D1D5DB; border-radius: 8px; outline: none; font-size: 0.95rem;}
+        .chat-input-area input:focus { border-color: var(--primary-yellow); box-shadow: 0 0 0 2px var(--light-yellow);}
+        .btn-send { padding: 10px 25px; background: var(--primary-yellow); color: #1F2937; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        .btn-send:hover { background: #F59E0B; }
+        
+        .btn-zalo { background: var(--accent-blue); color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 8px; text-decoration: none; transition: 0.2s;}
+        .btn-zalo:hover { background: #0054CC; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span>👨‍🏫</span> Thầy Duy Anh - THCS Nguyễn An Khương
+        </div>
+        <div class="test-selector-group">
+            <select id="cumSelect">
+                </select>
+            <select id="deSelect">
+                </select>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar" id="sidebar">
+            <button class="question-btn active" onclick="selectQuestion(1)">Câu 1</button>
+            <button class="question-btn" onclick="selectQuestion(2)">Câu 2</button>
+            <button class="question-btn" onclick="selectQuestion(3)">Câu 3</button>
+            <button class="question-btn" onclick="selectQuestion(4)">Câu 4</button>
+            <button class="question-btn" onclick="selectQuestion(5)">Câu 5</button>
+            <button class="question-btn" onclick="selectQuestion(6)">Câu 6</button>
+            <button class="question-btn" onclick="selectQuestion(7)">Câu 7</button>
+        </aside>
+
+        <main class="content-area">
+            <div class="question-display" id="questionDisplay">
+                <h2>Cụm 1 - Đề TK 1 - Câu 1</h2>
+                <p>Nội dung câu hỏi và bài giải chi tiết sẽ hiển thị tại đây.</p>
+            </div>
+
+            <div class="chat-section">
+                <h3 style="margin-bottom: 12px; color: #1F2937; font-size: 1.1rem;">💬 Thảo luận cùng Trợ lý AI</h3>
+                <div class="chat-history" id="chatHistory">
+                    <p><strong>Trợ lý AI:</strong> Chào em! Em đang xem <strong>Cụm 1 - Đề TK 1 - Câu 1</strong>. Nếu có bước biến đổi nào chưa rõ, hãy nhắn ngay cho thầy nhé!</p>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" placeholder="Ví dụ: Thầy ơi, tại sao chỗ này lại dùng hệ thức Viète ạ?" id="chatInput">
+                    <button class="btn-send">Gửi AI</button>
+                    <a href="https://zalo.me/09xxxxxxx" target="_blank" class="btn-zalo">
+                        Gửi Zalo cho Thầy
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // 1. Khởi tạo dữ liệu cho 16 Cụm và 3 Đề
+        const cumSelect = document.getElementById('cumSelect');
+        const deSelect = document.getElementById('deSelect');
+
+        // Tạo 16 Cụm
+        for(let i = 1; i <= 16; i++) {
+            let option = document.createElement('option');
+            option.value = i;
+            option.text = `Cụm ${i}`;
+            cumSelect.appendChild(option);
+        }
+
+        // Tạo 3 Đề cho Cụm hiện tại
+        function renderDeOptions() {
+            deSelect.innerHTML = ''; // Xóa danh sách cũ
+            for(let i = 1; i <= 3; i++) {
+                let option = document.createElement('option');
+                option.value = i;
+                option.text = `Đề TK ${i}`;
+                deSelect.appendChild(option);
+            }
+        }
+        
+        // Khởi tạo lần đầu
+        renderDeOptions();
+
+        // 2. Logic xử lý sự kiện
+        let currentCum = 1;
+        let currentDe = 1;
+        let currentCau = 1;
+
+        cumSelect.addEventListener('change', function() {
+            currentCum = this.value;
+            // Khi đổi Cụm, có thể reset Đề về 1 (tùy chọn)
+            deSelect.value = 1; 
+            currentDe = 1;
+            updateDisplay();
+        });
+
+        deSelect.addEventListener('change', function() {
+            currentDe = this.value;
+            updateDisplay();
+        });
+
+        function selectQuestion(cau) {
+            currentCau = cau;
+            // Cập nhật hiệu ứng UI cho nút bấm bên trái
+            document.querySelectorAll('.question-btn').forEach((btn, index) => {
+                if(index + 1 === cau) btn.classList.add('active');
+                else btn.classList.remove('active');
+            });
+            updateDisplay();
+        }
+
+        // 3. Hàm cập nhật giao diện hiển thị
+        function updateDisplay() {
+            const display = document.getElementById('questionDisplay');
+            
+            // Render Tiêu đề động
+            display.innerHTML = `
+                <h2>Cụm ${currentCum} - Đề TK ${currentDe} - Câu ${currentCau}</h2>
+                <p><em>(Hệ thống đang tải nội dung bài giải từ dữ liệu giáo án...)</em></p>
+            `;
+            
+            // Xoá và cập nhật lại câu chào của AI trong khung chat
+            document.getElementById('chatHistory').innerHTML = `
+                <p><strong>Trợ lý AI:</strong> Em đang xem <strong>Cụm ${currentCum} - Đề TK ${currentDe} - Câu ${currentCau}</strong>. Em cần thầy hỗ trợ giải thích đoạn nào không?</p>
+            `;
+        }
+    </script>
+</body>
+</html>
