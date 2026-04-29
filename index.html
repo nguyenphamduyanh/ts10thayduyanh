@@ -16,48 +16,134 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
     <style>
-        :root { --primary: #FBBF24; --secondary: #0068FF; --bg: #F3F4F6; }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
-        body { display: flex; flex-direction: column; height: 100vh; background: var(--bg); }
+        :root { 
+            --primary: #FBBF24; /* Vàng */
+            --primary-dark: #f59e0b;
+            --secondary: #2563eb; /* Xanh dương */
+            --bg: #f8fafc; /* Nền xám rất nhạt, dịu mắt */
+            --text-main: #1e293b; 
+        }
         
-        header { background: var(--primary); padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; font-weight: bold; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Nunito', sans-serif; }
+        body { display: flex; flex-direction: column; height: 100vh; background: var(--bg); color: var(--text-main); }
+        
+        /* Header mượt mà hơn */
+        header { 
+            background: var(--primary); 
+            padding: 15px 30px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            font-weight: 800;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            z-index: 50;
+        }
         
         .main-container { display: flex; flex: 1; overflow: hidden; }
         
-        nav { width: 260px; background: white; border-right: 1px solid #ddd; padding: 20px; overflow-y: auto; }
-        .select-box { margin-bottom: 15px; }
-        select { width: 100%; padding: 8px; border-radius: 5px; margin-top: 5px; border: 1px solid #ccc; }
-        .grid-questions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 15px; }
-        .q-btn { padding: 10px; background: #eee; text-align: center; cursor: pointer; border-radius: 5px; font-size: 14px; transition: background 0.2s; }
-        .q-btn:hover { background: #e0e0e0; }
-        .q-btn.active { background: var(--primary); font-weight: bold; }
+        /* Menu bên trái */
+        nav { 
+            width: 280px; 
+            background: white; 
+            border-right: 1px solid #e2e8f0; 
+            padding: 25px 20px; 
+            overflow-y: auto; 
+            box-shadow: 2px 0 10px rgba(0,0,0,0.03);
+            z-index: 10;
+        }
+        .select-box { margin-bottom: 20px; }
+        .select-box label { font-weight: 600; font-size: 14px; color: #475569; }
+        select { 
+            width: 100%; padding: 10px; border-radius: 8px; margin-top: 8px; 
+            border: 1px solid #cbd5e1; outline: none; transition: border 0.3s;
+            font-family: 'Nunito', sans-serif; font-size: 15px;
+        }
+        select:focus { border-color: var(--secondary); }
+        
+        .grid-questions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+        .q-btn { 
+            padding: 12px; background: #f1f5f9; text-align: center; cursor: pointer; 
+            border-radius: 10px; font-size: 15px; font-weight: 600; color: #475569;
+            transition: all 0.2s ease; border: 2px solid transparent;
+        }
+        .q-btn:hover { background: #e2e8f0; transform: translateY(-2px); }
+        .q-btn.active { 
+            background: var(--primary); color: #78350f; /* Chữ nâu đậm trên nền vàng cho dễ đọc */
+            border-color: var(--primary-dark);
+            box-shadow: 0 4px 10px rgba(251, 191, 36, 0.4); 
+        }
 
-        article { flex: 1; background: white; padding: 40px; overflow-y: auto; font-size: 16px; }
-        .sol-card { background: #fffdf5; border-left: 5px solid var(--primary); padding: 25px; border-radius: 8px; margin-top: 25px; line-height: 1.8; }
-        img { max-width: 100%; border-radius: 10px; margin: 15px 0; display: block; }
+        /* Khu vực hiển thị nội dung */
+        article { flex: 1; padding: 40px; overflow-y: auto; font-size: 16.5px; }
+        
+        /* Khung lời giải bo góc mềm mại, đổ bóng nhẹ */
+        .sol-card { 
+            background: #ffffff; 
+            border-left: 6px solid #10b981; /* Đổi viền sang màu xanh ngọc cho chuyên nghiệp */
+            padding: 30px; 
+            border-radius: 12px; 
+            margin-top: 30px; 
+            line-height: 1.8; 
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.01);
+            text-align: left; /* Canh trái toàn bộ lời giải */
+        }
+        img { max-width: 100%; border-radius: 12px; margin: 20px 0; display: block; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
 
-        /* Nút Liên hệ */
-        .contact-wrapper { position: fixed; bottom: 30px; right: 30px; z-index: 9999; display: flex; flex-direction: column; align-items: flex-end; }
-        .contact-options { display: none; flex-direction: column; gap: 12px; margin-bottom: 15px; animation: slideUp 0.3s ease-out; }
-        .btn-contact { width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.3s ease; position: relative; }
-        .btn-messenger { background: #0084ff; font-size: 24px; }
-        .btn-zalo { background: #0068ff; font-size: 22px; }
-        .btn-main { background: #d32f2f; color: white; border: none; padding: 12px 25px; border-radius: 35px; cursor: pointer; display: flex; align-items: center; font-weight: bold; box-shadow: 0 6px 20px rgba(211, 47, 47, 0.3); transition: all 0.3s; }
-        .btn-main i { font-size: 20px; margin-right: 10px; }
+        /* Nút Liên hệ Thầy (Đã được làm TO hơn) */
+        .contact-wrapper { position: fixed; bottom: 40px; right: 40px; z-index: 9999; display: flex; flex-direction: column; align-items: flex-end; }
+        .contact-options { display: none; flex-direction: column; gap: 15px; margin-bottom: 20px; animation: slideUp 0.3s ease-out; }
+        
+        /* Tăng kích thước nút Zalo/FB */
+        .btn-contact { 
+            width: 65px; height: 65px; border-radius: 50%; display: flex; justify-content: center; align-items: center; 
+            color: white; text-decoration: none; box-shadow: 0 6px 15px rgba(0,0,0,0.2); transition: all 0.3s ease; position: relative; 
+        }
+        .btn-messenger { background: #0084ff; font-size: 32px; }
+        .btn-zalo { background: #0068ff; font-size: 30px; }
+        
+        /* Tăng kích thước nút đỏ chính */
+        .btn-main { 
+            background: #e63946; color: white; border: none; padding: 15px 35px; border-radius: 40px; 
+            cursor: pointer; display: flex; align-items: center; font-weight: 800; font-size: 18px;
+            box-shadow: 0 8px 25px rgba(230, 57, 70, 0.4); transition: all 0.3s; font-family: 'Nunito', sans-serif;
+        }
+        .btn-main i { font-size: 24px; margin-right: 12px; }
+        
         .btn-contact:hover { transform: scale(1.15); }
-        .btn-main:hover { background: #b71c1c; transform: translateY(-3px); }
-        .tooltip-text { position: absolute; right: 65px; background: rgba(0,0,0,0.7); color: white; padding: 5px 12px; border-radius: 5px; font-size: 13px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+        .btn-main:hover { background: #d32f2f; transform: translateY(-4px); box-shadow: 0 12px 30px rgba(230, 57, 70, 0.5); }
+        
+        .tooltip-text { position: absolute; right: 80px; background: rgba(0,0,0,0.8); color: white; padding: 6px 14px; border-radius: 6px; font-size: 15px; font-weight: 600; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
         .btn-contact:hover .tooltip-text { opacity: 1; }
         
         @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* --- TỐI ƯU CHO GIAO DIỆN ĐIỆN THOẠI --- */
+        @media (max-width: 768px) {
+            .main-container { flex-direction: column; overflow-y: auto; }
+            nav { width: 100%; border-right: none; border-bottom: 1px solid #e2e8f0; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+            article { padding: 20px 15px; overflow-y: visible; }
+            .grid-questions { grid-template-columns: repeat(4, 1fr); }
+            .contact-wrapper { bottom: 20px; right: 20px; }
+            header { flex-direction: column; text-align: center; gap: 5px; padding: 15px; }
+            /* Cân chỉnh lại font trên điện thoại */
+            .btn-main { padding: 12px 25px; font-size: 16px; }
+            .btn-contact { width: 55px; height: 55px; }
+            .btn-messenger { font-size: 28px; }
+            .btn-zalo { font-size: 26px; }
+        }
+        @media (max-width: 480px) {
+            .grid-questions { grid-template-columns: repeat(3, 1fr); }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <div>🎓 TOÁN THẦY DUY ANH</div>
-    <div style="font-size: 14px; font-weight: normal;">Hệ thống tra cứu lời giải chi tiết</div>
+    <div style="font-size: 22px; text-transform: uppercase; letter-spacing: 1px;">🎓 Toán Thầy Duy Anh</div>
+    <div style="font-size: 15px; font-weight: 600; opacity: 0.9;">Hệ thống hỗ trợ ôn tập Tuyển sinh 10</div>
 </header>
 
 <div class="main-container">
@@ -78,9 +164,9 @@
     </nav>
 
     <article id="content">
-        <div id="resultArea" style="text-align: center; color: #666; margin-top: 50px;">
-            <i class="fas fa-book-open" style="font-size: 40px; margin-bottom: 15px; color: #ccc;"></i><br>
-            Hãy chọn một câu bên trái để xem lời giải chi tiết nhé!
+        <div id="resultArea" style="text-align: center; color: #94a3b8; margin-top: 80px;">
+            <i class="fas fa-book-reader" style="font-size: 60px; margin-bottom: 20px; color: #cbd5e1;"></i><br>
+            <span style="font-size: 18px; font-weight: 600;">Hãy chọn một câu bên trái để xem lời giải chi tiết nhé!</span>
         </div>
     </article>
 </div>
@@ -103,7 +189,8 @@
     let currentQ = { cum: 1, de: 1, cau: "Bài 1", db: "", lg: "" };
 
     const qList = document.getElementById('qList');
-    for(let i=1; i<=8; i++){
+    // Đổi vòng lặp từ 8 xuống 7 bài
+    for(let i=1; i<=7; i++){
         let div = document.createElement('div');
         div.className = 'q-btn'; div.innerText = 'Bài ' + i;
         div.onclick = function() { 
@@ -120,10 +207,9 @@
         currentQ.cau = cau;
         
         const area = document.getElementById('resultArea');
-        area.innerHTML = '<div style="text-align:center; margin-top:50px;"><i class="fas fa-spinner fa-spin" style="font-size:30px; color:var(--secondary);"></i><br><br>Đang tìm lời giải...</div>';
+        area.innerHTML = '<div style="text-align:center; margin-top:80px;"><i class="fas fa-circle-notch fa-spin" style="font-size:40px; color:var(--secondary);"></i><br><br><span style="font-weight:600; color:#475569;">Đang tìm lời giải...</span></div>';
 
-        // Đọc trực tiếp file data.csv siêu tốc độ
-        Papa.parse("/data.csv", {
+        Papa.parse("data.csv", {
             download: true,
             header: true,
             skipEmptyLines: true,
@@ -141,22 +227,36 @@
                 if (found) {
                     let imgTag = found.Link_Anh ? `<img src="${found.Link_Anh}">` : "";
                     
+                    // Xử lý cắt bỏ phần ". (1, 0điểm) . " bằng Regex
+                    let cleanDeBai = found.De_Bai;
+                    cleanDeBai = cleanDeBai.replace(/^\s*[\.\-\+]*\s*/, ''); // Xóa dấu chấm/gạch ngang đầu tiên
+                    cleanDeBai = cleanDeBai.replace(/^\(\s*[\d\,\.]+\s*điểm\s*\)\s*[\.\-\+]*\s*/i, ''); // Xóa phần điểm
+                    cleanDeBai = cleanDeBai.replace(/^\s*[\.\-\+]*\s*/, ''); // Xóa thêm dấu chấm/gạch ngang nếu còn sót
+
                     area.innerHTML = `
-                        <h2 style="color:var(--secondary); border-bottom: 2px solid #eee; padding-bottom: 10px;">${cau}</h2>
-                        <div style="margin:20px 0; font-size: 1.1em;">${found.De_Bai}</div>
-                        ${imgTag}
-                        <div class="sol-card">
-                            <strong style="color: #d32f2f; font-size: 1.1em;"><i class="fas fa-check-circle"></i> Lời giải chi tiết:</strong><br><br>
-                            ${found.Loi_Giai.replace(/\n/g, '<br>')}
+                        <div style="text-align: left; max-width: 900px; margin: 0 auto;">
+                            <h2 style="color:var(--secondary); border-bottom: 2px solid #e2e8f0; padding-bottom: 15px; font-size: 26px; font-weight: 800;">${cau}</h2>
+                            <div style="margin:25px 0; font-size: 1.15em; font-weight: 700; color: #334155; line-height: 1.7;">
+                                ${cleanDeBai}
+                            </div>
+                            ${imgTag}
+                            <div class="sol-card">
+                                <strong style="color: #10b981; font-size: 1.2em; display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                                    <i class="fas fa-check-circle" style="font-size: 1.3em;"></i> Lời giải chi tiết:
+                                </strong>
+                                <div style="font-size: 1.1em; color: #334155;">
+                                    ${found.Loi_Giai.replace(/\n/g, '<br>')}
+                                </div>
+                            </div>
                         </div>
                     `;
                     MathJax.typesetPromise();
                 } else {
-                    area.innerHTML = `<div style="color:red; text-align:center; margin-top: 50px;"><i class="fas fa-exclamation-triangle" style="font-size:40px; margin-bottom:15px; color:#ff9800;"></i><br>Thầy Duy Anh chưa cập nhật dữ liệu cho <b>${cau}</b> của <b>Cụm ${currentQ.cum} - Đề ${currentQ.de}</b>.</div>`;
+                    area.innerHTML = `<div style="color:#e63946; text-align:center; margin-top: 80px;"><i class="fas fa-exclamation-triangle" style="font-size:50px; margin-bottom:20px; color:#fbbf24;"></i><br><span style="font-size:18px; font-weight:600;">Thầy Duy Anh chưa cập nhật dữ liệu cho <br><b>${cau}</b> của <b>Cụm ${currentQ.cum} - Đề ${currentQ.de}</b>.</span></div>`;
                 }
             },
             error: function(err) {
-                area.innerHTML = `<div style="color:red; text-align:center; margin-top: 50px;">Lỗi: Không tìm thấy file <b>data.csv</b>.<br>Thầy Duy Anh hãy kiểm tra lại xem đã up file này lên chưa nhé!</div>`;
+                area.innerHTML = `<div style="color:#e63946; text-align:center; margin-top: 80px;"><i class="fas fa-times-circle" style="font-size:50px; margin-bottom:20px;"></i><br><b>Lỗi kết nối dữ liệu!</b><br>Không tìm thấy file data.csv.</div>`;
             }
         });
     }
