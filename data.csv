@@ -126,3 +126,114 @@ Cum,De,Cau,De_Bai,Loi_Giai,Link_Anh
  Vì M là trung điểm của AB nên $S_{AMO}=\frac{1}{2}S_{ABO}=\frac{1}{2}\cdot \frac{R^{2}\sqrt{3}}{2}=\frac{R^{2}\sqrt{3}}{4}.$
  Diện tích tứ giác AMOC là: $S_{AMOC}=S_{AMO}+S_{ACO}=\frac{R^{2}\sqrt{3}}{4}+\frac{R^{2}\sqrt{3}}{2}=\frac{3R^{2}\sqrt{3}}{4}.$
  <br><br>Vậy diện tích tứ giác AMOC là $\frac{3R^{2}\sqrt{3}}{4}$",
+1,2,Bài 1,"Cho parabol $(P):y=-\frac{1}{2}x^{2}.$
+
+a. Vẽ đồ thị (P).
+
+b. Tìm tọa độ điểm M thuộc (P) (khác gốc tọa độ) có hoành độ bằng 2 lần tung độ.","a. Bảng giá trị:
+
+X: -4; -2; 0; 2; 4
+
+Y: -8; -2; 0; -2; -8
+
+b. Vì điểm M có hoành độ bằng 2 lần tung độ nên $x=2y\Rightarrow y=\frac{x}{2}.$
+
+Ta có $\frac{x}{2}=-\frac{1}{2}x^{2} \Leftrightarrow \frac{1}{2}x^{2}+\frac{1}{2}x=0$
+
+$\Leftrightarrow x_{1}=0$ (loại); $x_{2}=-1$ (nhận).
+
+Với $x_{2}=-1\Rightarrow y_{2}=-\frac{1}{2}.$
+
+Vậy toạ độ điểm cần tìm là $M(-1;-\frac{1}{2}).$",
+1,2,Bài 2,"Cho phương trình $x^{2}-5x+1=0$.
+
+a. Chứng minh phương trình trên có hai nghiệm phân biệt $x_{1}$, $x_{2}$.
+
+b. Không giải phương trình, tính giá trị của biểu thức $A=\frac{x_{1}^{2}-5}{x_{2}}+\frac{x_{2}^{2}-5}{x_{1}}.$","a. Ta có $x^{2}-5x+1=0 (a=1;b=-5;c=1)$.
+
+$\Delta=b^{2}-4ac=(-5)^{2}-4\cdot1\cdot1=25-4=21>0$.
+
+Vì $\Delta>0$ nên phương trình có hai nghiệm phân biệt $x_{1}, x_{2}$.
+
+b. Theo định lý Viète: $x_{1}+x_{2}=5; x_{1}x_{2}=1$.
+
+Ta có $x_{1}^{2}+x_{2}^{2}=(x_{1}+x_{2})^{2}-2x_{1}x_{2}=5^{2}-2\cdot1=23$.
+
+Biến đổi A: $A=\frac{x_{1}(x_{1}^{2}-5)+x_{2}(x_{2}^{2}-5)}{x_{1}x_{2}} = \frac{x_{1}^{3}-5x_{1}+x_{2}^{3}-5x_{2}}{x_{1}x_{2}} = \frac{(x_{1}^{3}+x_{2}^{3})-5(x_{1}+x_{2})}{x_{1}x_{2}}$
+
+Tính $x_{1}^{3}+x_{2}^{3}=(x_{1}+x_{2})(x_{1}^{2}-x_{1}x_{2}+x_{2}^{2})=5\cdot(23-1)=110$.
+
+Thế vào A: $A=\frac{110-5\cdot5}{1}=85$.",
+1,2,Bài 3,"Biểu đồ cột kép biểu diễn số học sinh khối 6 của trường THCS A tham gia các câu lạc bộ (mỗi bạn chỉ tham gia đúng một câu lạc bộ).
+
+a. Câu lạc bộ nào có sự chênh lệch nhiều nhất giữa số nam sinh và nữ sinh?
+
+b. Chọn ngẫu nhiên một học sinh. Tính xác suất biến cố A: ""Học sinh là nữ"" và B: ""Học sinh không tham gia CLB bơi lội và khiêu vũ"".","a. Chênh lệch học sinh:
+
+Cờ vua: $",28-15
+1,2,Bài 4,"Một khu vườn hình chữ nhật có chiều rộng x (m), chiều dài y (m). Xây hồ hình tròn tiếp xúc với các cạnh khu vườn.
+
+a. Viết biểu thức tính diện tích phần còn lại của khu vườn theo x và y.
+
+b. Chiều dài gấp 3 lần chiều rộng, diện tích còn lại là 141,76 $m^{2}$. Tìm kích thước khu vườn (lấy $\pi=3,14$).","a. Diện tích hình chữ nhật: $xy$.
+
+Đường kính hồ = chiều rộng $x \Rightarrow R = \frac{x}{2}$.
+
+Diện tích hồ: $S_{h} = \frac{\pi x^{2}}{4}$.
+
+Diện tích còn lại: $S_{cl} = xy - \frac{\pi x^{2}}{4} (m^{2})$.
+
+b. Thay $y=3x$ và $\pi=3,14$: $S_{cl} = 3x^{2} - \frac{3,14x^{2}}{4} = 2,215x^{2}$.
+
+$2,215x^{2} = 141,76 \Rightarrow x^{2} = 64 \Rightarrow x=8$ (nhận).
+
+Chiều rộng 8m, chiều dài $y=3\cdot8=24m$.",
+1,2,Bài 5,"Một ống hình trụ đường kính đáy 4cm, cao 12cm. Viên sô-cô-la hình cầu bán kính 0,5cm.
+
+a. Tính thể tích ống và thể tích một viên sô-cô-la.
+
+b. Lớp không khí chiếm 10% thể tích ống. Tính số viên sô-cô-la tối đa trong ống.","a. Bán kính ống $R=2cm$. $V_{tru} = \pi \cdot 2^{2} \cdot 12 = 48\pi \approx 150,80 cm^{3}$.
+
+Bán kính viên $r=0,5cm$. $V_{cau} = \frac{4}{3}\pi(0,5)^{3} = \frac{\pi}{6} \approx 0,52 cm^{3}$.
+
+b. Thể tích dành cho sô-cô-la: $90\%V_{tru} = 0,9 \cdot 48\pi = 43,2\pi$.
+
+Số viên tối đa: $n = \frac{43,2\pi}{\pi/6} = 259,2$.
+
+Vậy tối đa chứa được 259 viên.",
+1,2,Bài 6,"Hùng và Dũng đạp xe đến sân vận động. Vận tốc đạp Hùng gấp 2 lần Dũng. Sau 30 phút, xe Hùng hỏng, Hùng đi bộ. Hai bạn đến cùng lúc. Vận tốc đạp Dũng gấp 4 lần vận tốc đi bộ Hùng. Tính thời gian đi.","Đổi 30 phút = 1/2 giờ.
+
+Gọi $x$ là vận tốc đạp của Dũng, $y$ là thời gian đi tiếp sau khi xe hỏng.
+
+Vận tốc đạp Hùng: $2x$. Vận tốc đi bộ Hùng: $x/4$.
+
+Quãng đường: $x(\frac{1}{2}+y) = 2x \cdot \frac{1}{2} + \frac{x}{4}y$
+
+$\Leftrightarrow \frac{1}{2}x + xy = x + \frac{1}{4}xy \Leftrightarrow \frac{3}{4}xy = \frac{1}{2}x$.
+
+Vì $x>0 \Rightarrow y = \frac{2}{3}$ giờ.
+
+Tổng thời gian: $t = \frac{1}{2} + \frac{2}{3} = \frac{7}{6}$ giờ = 70 phút.",
+1,2,Bài 7,"Từ M ngoài (O;R) kẻ tiếp tuyến MA, MB. Kẻ đường kính AC, MC cắt (O) tại D. H là giao AB và MO.
+
+a. Chứng minh tứ giác MDHA nội tiếp.
+
+b. Chứng minh $MD\cdot MC=MH\cdot MO$ và $MHD=DBA$.
+
+c. Chứng minh $HDB=90^{\circ}$ và tính diện tích $\triangle ABD$ khi $MA=2R$.","a. $MO \perp AB$ tại H $\Rightarrow MHA=90^{\circ}$. $ADC=90^{\circ}$ (góc nội tiếp chắn nửa đường tròn) $\Rightarrow MDA=90^{\circ}$.
+
+H và D cùng nhìn MA dưới góc $90^{\circ} \Rightarrow$ MDHA nội tiếp.
+
+b. Hệ thức lượng: $MA^{2}=MH\cdot MO$ và $MA^{2}=MD\cdot MC \Rightarrow MD\cdot MC=MH\cdot MO$.
+
+$\triangle MHD \sim \triangle MCO (c-g-c) \Rightarrow MHD=ACD$. Mà $ACD=ABD$ (cùng chắn cung AD) $\Rightarrow MHD=ABD$.
+
+c. $MHD+BHD=90^{\circ} \Rightarrow ABD+BHD=90^{\circ} \Rightarrow HDB=90^{\circ}$.
+
+Khi $MA=2R$, $\triangle MAC$ vuông cân $\Rightarrow ACD=45^{\circ} \Rightarrow HBD=45^{\circ}$.
+
+$\triangle HBD$ vuông cân tại D $\Rightarrow DQ=\frac{1}{2}HB$.
+
+Tính được $MO=R\sqrt{5}, AH=\frac{2R}{\sqrt{5}} \Rightarrow AB=\frac{4R}{\sqrt{5}}, DQ=\frac{R}{\sqrt{5}}$.
+
+$S_{ABD}=\frac{1}{2} \cdot \frac{R}{\sqrt{5}} \cdot \frac{4R}{\sqrt{5}} = \frac{2R^{2}}{5}$.",
