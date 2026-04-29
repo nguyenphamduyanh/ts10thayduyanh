@@ -11,10 +11,10 @@
                 inlineMath: [['$', '$'], ['\\(', '\\)']],
                 displayMath: [['$$', '$$']],
                 processEscapes: true,
-                packages: {'[+]': ['ams', 'physics']}
+                packages: {'[+]': ['ams']}
             },
             options: { renderActions: { addMenu: [] } },
-            loader: { load: ['[tex]/ams', '[tex]/physics'] },
+            loader: { load: ['[tex]/ams'] },
             svg: { fontCache: 'global' }
         };
     </script>
@@ -39,7 +39,6 @@
             height: 100vh; display: flex; flex-direction: column; 
         }
 
-        /* Header sang trọng */
         header { 
             background: var(--primary-gradient);
             padding: 25px;
@@ -70,11 +69,7 @@
             animation: pulse 2s infinite;
         }
 
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
 
         .main-container { display: flex; flex: 1; overflow: hidden; padding: 20px; gap: 20px; }
 
@@ -111,20 +106,15 @@
 
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-        .problem-text { 
-            font-size: 1.2rem; font-weight: 700; line-height: 1.8; color: #1e293b;
-            margin-bottom: 30px; text-align: left;
-        }
+        .problem-text { font-size: 1.2rem; font-weight: 700; line-height: 1.8; color: #1e293b; margin-bottom: 30px; text-align: left; }
 
         .solution-card { 
             background: white; border-radius: 15px; padding: 35px;
-            border-left: 8px solid #10b981; box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-            text-align: left;
+            border-left: 8px solid #10b981; box-shadow: 0 4px 6px rgba(0,0,0,0.02); text-align: left;
         }
 
         .sol-header { color: #10b981; font-weight: 800; font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
 
-        /* Nút liên hệ TO hơn */
         .contact-fixed { position: fixed; bottom: 40px; right: 40px; display: flex; flex-direction: column; align-items: flex-end; gap: 15px; z-index: 1000; }
         
         .btn-circle { 
@@ -139,7 +129,6 @@
         }
         .btn-circle:hover { transform: scale(1.1) rotate(5deg); }
 
-        /* Responsive cho di động */
         @media (max-width: 768px) {
             .main-container { flex-direction: column; padding: 10px; }
             nav { width: 100%; }
@@ -190,7 +179,6 @@
 <script>
     let rawData = [];
 
-    // Tự động tải CSV và khởi tạo dropdown thông minh
     Papa.parse("data.csv", {
         download: true, header: true, skipEmptyLines: true,
         complete: function(results) {
@@ -217,7 +205,6 @@
     function renderQuestionList() {
         const qList = document.getElementById('qList');
         qList.innerHTML = "";
-        // Chỉ lấy tối đa 7 bài như thầy yêu cầu
         for(let i=1; i<=7; i++) {
             const btn = document.createElement('div');
             btn.className = 'q-btn';
@@ -238,21 +225,42 @@
 
         const area = document.getElementById('displayArea');
         if(found) {
-            // Tự động xử lý xuống hàng cho câu a, b, c và in đậm đề bài
+            // Xử lý đề bài: Xóa điểm, cắt xuống hàng cho câu a, b, c
             let processedDe = found.De_Bai
                 .replace(/^\s*[\.\-\+]*\s*/, '')
                 .replace(/^\(\s*[\d\,\.]+\s*điểm\s*\)\s*/i, '')
-                .replace(/([a-z]\))/g, '<br><span style="color:var(--secondary)">$1</span>');
+                .replace(/(?:\s+|^)([a-e][\)\.])\s/g, '<br><br><span style="color:var(--secondary); font-weight:800;">$1</span> ');
+
+            // --- THUẬT TOÁN ĐỘI MŨ TỰ ĐỘNG CHO GÓC ---
+            let processedLg = found.Loi_Giai;
+            
+            // 1. Nếu thầy lỡ gõ \hat thì tự chuyển thành \widehat
+            processedLg = processedLg.replace(/\\hat\{([A-Z]{3})\}/g, '\\widehat{$1}');
+            
+            // 2. Tự động tìm 3 chữ in hoa đứng trước dấu =, +, -, <, > để đội mũ (Né Tam giác)
+            processedLg = processedLg.replace(/(\\triangle\s*|\\Delta\s*)?\b([A-Z]{3})\b(\s*(=|\+|-|<|>))/g, function(match, isTriangle, baChuCai, dauToanHoc) {
+                if (isTriangle) return match; // Nếu có ký hiệu tam giác phía trước -> Giữ nguyên
+                return '\\widehat{' + baChuCai + '}' + dauToanHoc; // Đội mũ
+            });
+
+            // 3. Tự động tìm 3 chữ in hoa đứng sau dấu =, +, -, <, > để đội mũ
+            processedLg = processedLg.replace(/(=|\+|-|<|>)(\s*)(\\triangle\s*|\\Delta\s*)?\b([A-Z]{3})\b/g, function(match, dauToanHoc, khoangCach, isTriangle, baChuCai) {
+                if (isTriangle) return match; 
+                return dauToanHoc + khoangCach + '\\widehat{' + baChuCai + '}';
+            });
+
+            // Sau khi chỉnh LaTeX xong mới biến \n thành <br> để xuống hàng
+            processedLg = processedLg.replace(/\n/g, '<br>');
 
             area.innerHTML = `
                 <div style="animation: fadeIn 0.4s ease">
                     <h2 style="font-family:'Playfair Display'; font-size: 32px; color:var(--secondary); margin-bottom:20px;">${bai}</h2>
                     <div class="problem-text">${processedDe}</div>
-                    ${found.Link_Anh ? `<img src="${found.Link_Anh}">` : ""}
+                    ${found.Link_Anh ? `<img src="${found.Link_Anh}" style="margin: 25px 0; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">` : ""}
                     <div class="solution-card">
                         <div class="sol-header"><i class="fas fa-lightbulb"></i> HƯỚNG DẪN GIẢI CHI TIẾT</div>
                         <div style="line-height:2; color:#334155; font-size:1.1rem;">
-                            ${found.Loi_Giai.replace(/\n/g, '<br>')}
+                            ${processedLg}
                         </div>
                     </div>
                 </div>
