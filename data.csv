@@ -1,0 +1,128 @@
+Cum,De,Cau,De_Bai,Loi_Giai,Link_Anh
+1,1,Bài 1,". $\left( 1,5 điểm \right)$. Cho hàm số $\left( P \right)$ : $y=\frac{x^{2}}{4}$
+ a. Vẽ đồ thị $\left( P \right)$.
+ b. Tìm điểm K thuộc $\left( P \right)$ có tung độ nhỏ hơn hoành độ 1 đơn vị.","Bảng giá trị:
+ X -4 -2 0 2 4
+ $y=\frac{x^{2}}{4}$ 4 1 0 1 4
+ 
+ Vẽ đồ thị $\left( P \right)$:
+ Vì điểm K có tung độ nhỏ hơn hoành độ 1 đơn vị nên $y=x-1$
+ <br><br>Ta có phương trình: $x-1=\frac{x^{2}}{4}$
+ $\frac{x^{2}}{4}-x+1=0;$ <br><br>Suy ra $x=2$.
+ Với $x=2$ suy ra $y=1$.
+ <br><br>Vậy toạ độ điểm cần tìm là $\left( 2;1 \right)$.",
+1,1,Bài 2,". $\left( 1,0 điểm \right)$. Cho phương trình $3x^{2}+2x-5=0$.
+ a. Chứng minh phương trình trên có hai nghiệm phân biệt $x_{1}$, $x_{2}$.
+ b. Không giải phương trình, tính giá trị của biểu thức: $T=3x_{1}x_{2}-\left( x_{1}^{2}+x_{2}^{2} \right)$
+ $T=\left( x_{1}-2x_{2} \right)\left( x_{2}-x_{1} \right)+x_{2}^{2}$","a. <br><br>Ta có $3x^{2}+2x-5=0 \left( a=3;b=2;c=-5 \right)$.
+ <br><br>Ta có $\Delta=b^{2}-4ac=2^{2}-4\cdot 3\cdot \left( -5 \right)=4+60=64>0$.
+ Vì $\Delta>0$ nên phương trình có hai nghiệm phân biệt $x_{1}$, $x_{2}$.
+ b. Theo định lý Viète, ta có: $\begin{cases}x_{1}+x_{2}=\frac{-b}{a}=\frac{-2}{3}\\ x_{1}x_{2}=\frac{c}{a}=\frac{-5}{3}\end{cases}$
+ $x_{1}^{2}+x_{2}^{2}=\left( x_{1}+x_{2} \right)^{2}-2x_{1}x_{2}=\left( \frac{-2}{3} \right)^{2}-2\cdot \left( \frac{-5}{3} \right)=\frac{34}{9}.$
+ <br><br>Ta có $T=x_{1}x_{2}-x_{1}^{2}-2x_{2}^{2}+2x_{1}x_{2}+x_{2}^{2}$
+ $T=3x_{1}x_{2}-\left( x_{1}^{2}+x_{2}^{2} \righ<br><br>t) \Rightarrow T=3\cdot \left( \frac{-5}{3} \right)-\frac{34}{9} \Rightarrow T=-\frac{79}{9}$",
+1,1,Bài 3,". Thời gian tự học tại nhà của bạn Tú trong một tuần được biểu diễn trong biểu đồ cột sau
+ a. Tính thời gian trung bình bạn Tú tự học tại nhà mỗi ngày trong một tuần.
+ b. Chọn ngẫu nhiên một ngày trong tuần, tính xác suất của các biến cố sau:
+ A : ""Ngày được chọn có thời gian tự học tại nhà của bạn Tú lớn hơn 170 phút"".
+ B : ""Ngày được chọn có thời gian tự học tại nhà của bạn Tú không quá 160 phút"".","a. Tổng thời gian tự học của Tú trong tuần là:
+ $162+135+170+150+180+175+190=1162$ (phú<br><br>t)
+ Thời gian trung bình bạn Tú tự học tại nhà mỗi ngày là:
+ $\frac{1162}{7}=166$ (phút).
+ b. Gọi không gian mẫu là $\Omega$.
+ Tập hợp các ngày trong tuần là:
+ $\Omega=\left\{ Thứ 2; Thứ 3; Thứ 4; Thứ 5; Thứ 6; Thứ 7; CN \right\}$ .
+ <br><br>Suy ra $n\left( \Omega \right)=7$.
+ <br><br>Xét biến cố A : ""Ngày được chọn có thời gian tự học tại nhà của bạn Tú lớn hơn 170 phút"".
+ Các ngày thuận lợi cho biến cố A là: Thứ 6 $\left( 180 \right)$, Thứ 7 $\left( 175 \right)$, Chủ nhật $\left( 190 \right)$.
+ <br><br>Suy ra $n\left( A \right)=3$
+ Xác suất của biến cố A là $P\left( A \right)=\frac{n\left( A \right)}{n\left( \Omega \right)}=\frac{3}{7}.$
+ <br><br>Xét biến cố B : ""Ngày được chọn có thời gian tự học tại nhà của bạn Tú không quá 160 phút"".
+ Các ngày thuận lợi cho biến cố B là: Thứ 3 $\left( 135 \right)$, Thứ 5 $\left( 150 \right)$. <br><br>Suy ra $n\left( B \right)=2$.
+ Xác suất của biến cố B là
+ $P\left( B \right)=\frac{n\left( B \right)}{n\left( \Omega \right)}=\frac{2}{7}.$",
+1,1,Bài 4,". $\left( 1,0 điểm \right)$. Trên một miếng đất hình chữ nhật có chiều rộng là $x \left( m \right) \left( x>0 \right)$ chiều dài là $2x+10 \left( m \right)$, người ta làm một lối đi hình bình hành có bề rộng là 2 m.
+ Phần còn lại là hai miếng đất hình thang vuông có diện tích bằng nhau, người ta dự kiến trồng hoa hồng và hoa cúc.
+ a. Viết biểu thức A biểu diễn diện tích trồng hoa hồng theo x.
+ b. Người ta dự kiến lát sỏi lối đi, chi phí cho mỗi mét vuông lát sỏi hết 120 nghìn đồng.
+ Hỏi chi phí để làm lối đi là bao nhiêu? Biết diện tích miếng đất trồng hoa hồng là $45~m^{2}$","a. Diện tích của lối đi hình bình hành là $2\cdot x=2x \left( m^{2} \right)$.
+ Diện tích của cả miếng đất hình chữ nhật là $x\left( 2x+10 \right)=2x^{2}+10x \left( m^{2} \right)$.
+ Diện tích phần đất còn lại để trồng hoa là:
+ $2x^{2}+10x-2x=2x^{2}+8x \left( m^{2} \right)$ 
+ Vì hai miếng đất trồng hoa có diện tích bằng nhau nên diện tích trồng hoa hồng là:
+ $A=\left( 2x^{2}+8x \right):2=x^{2}+4x$ <br><br>Vậy biểu thức cần tìm là $A=x^{2}+4x$ .
+ b. Theo đề bài, diện tích trồng hoa hồng là 45 m² nên ta có phương trình:
+ $x^{2} + 4x = 45 \Rightarrow x^{2} + 4x-45 = 0$
+ $x_{1}=5$ (nhận vì $x>0$); $x_{2}=-9$ (loại).
+ Với $x=5$, diện tích của lối đi là:
+ $S=2\cdot 5=10 \left( m^{2} \right)$ Chi phí để làm lối đi là:
+ $10\cdot 120000=1200000$ (đồn<br><br>g) <br><br>Vậy chi phí cần tìm là 1200000 đồng.",
+1,1,Bài 5,". $\left( 1,0 điểm \right)$. Trong hình vẽ, 6 lon nước ngọt hình trụ được đặt sát nhau trong thùng carton có dạng hình hộp chữ nhật.
+ Mỗi lon có đường kính 7 cm và chiều cao 11 cm.
+ a. Tính thể tích thùng carton
+ b. Tính thể tích phần còn trống trong thùng carton khi đựng 6 lon nước ngọt.
+ (Các kết quả làm tròn đến hàng đơn vị) Biết công thức tính thể tích khối trụ là $V=\pi R^{2}h$ $\left( R \text{ là bán kính đáy, } h \text{ là chiều cao} \right)$.","a. Vì thùng carton đựng vừa khít 6 lon nước ngọt $\left( \text{xếp thành 2 hàng, mỗi hàng 3 lon hoặc ngược lại} \right)$ nên kích thước của thùng là:
+ Chiều dài của thùng là: $7\cdot 3=21 \left( cm \right)$.
+ Chiều rộng của thùng là: $7\cdot 2=14 \left( cm \right)$.
+ Chiều cao của thùng bằng chiều cao của lon nước: $11 \left( cm \right)$.
+ Thể tích thùng carton là:
+ $V_{thùng}=21\cdot 14\cdot 11=3234 \left( cm^{3} \right)$ <br><br>Vậy thể tích thùng carton là $3234~cm^{3}$.
+ b. Bán kính đáy của một lon nước ngọt là:
+ $R=7:2=3,5 \left( cm \right)$ Thể tích của một lon nước ngọt là:
+ $V_{lon}=\pi R^{2}h=\pi\cdot 3,5^{2}\cdot 11=134,75\pi \left( cm^{3} \right)$ Tổng thể tích của 6 lon nước ngọt là:
+ $V_{6~lon}=6\cdot 134,75\pi=808,5\pi \left( cm^{3} \right)$ Thể tích phần còn trống trong thùng carton là:
+ $V_{trống}=V_{thùng}-V_{6~lon}=3234-808,5\pi\approx 694 \left( cm^{3} \right)$ <br><br>Vậy thể tích phần còn trống 694 cm³.",
+1,1,Bài 6,". $\left( 1,0 điểm \right)$. Để đảm bảo dinh dưỡng trong bữa ăn hằng ngày thì mỗi gia đình 4 thành viên cần 900 đơn vị protêin và 400 đơn vị Lipit trong thức ăn hằng ngày.
+ Mỗi kilôgam thịt bò chứa 800 đơn vị protêin và 200 đơn vị Lipit, còn mỗi kilôgam thịt heo chứa 600 đơn vị protêin và 400 đơn vị Lipit.
+ Biết giá thịt bò là 100000 đồng/kg và thịt heo là 70000 đồng/kg.
+ Tính tổng số tiền mua thịt bò và thịt heo để đảm bảo dinh dưỡng hằng ngày cho 4 người?","Gọi $x \left( kg \right)$ là khối lượng thịt bò cần mua
+ $y \left( kg \right)$ là khối lượng thịt heo cần mua $\left( x,y>0 \right)$.
+ Vì tổng lượng protêin cần thiết cho gia đình là 900 đơn vị nên ta có phương trình:
+ $800x+600y=900 \left( 1 \right)$
+ Vì tổng lượng Lipit cần thiết cho gia đình là 400 đơn vị nên ta có phương trình:
+ $200x+400y=400 \left( 2 \right)$
+ Từ $\left( 1 \right)$ và $\left( 2 \right)$ ta có hệ phương trình:
+ $\begin{cases}800x+600y=900\\ 200x+400y=400\end{cases}\Rightarrow\begin{cases}x=0,6\\ y=0,7\end{cases}$
+ Tổng số tiền cần để mua thịt bò và thịt heo là:
+ $100000\cdot 0,6+70000\cdot 0,7=109000$ (đồn<br><br>g)
+ <br><br>Vậy tổng số tiền cần mua là 109000 đồng.",
+1,1,Bài 7,". $\left( 3,0 điểm \right)$. Từ điểm A nằm ngoài đường tròn $\left( O;R \right)$ vẽ hai tiếp tuyến AB, AC $\left( B,C \text{ là tiếp điểm} \right)$.
+ Vẽ đường kính BD của đường tròn $\left( O \right)$. Gọi K là hình chiếu của C trên BD, CK cắt AD tại I. Gọi H là giao điểm của OA và BC.
+ a. Chứng minh: Tứ giác ABOC nội tiếp và $AO\perp BC$.
+ b. Chứng minh: I là trung điểm của CK.
+ c. Đường thẳng BD và đường thẳng AC cắt nhau tại S. Tia SI cắt AB tại M. Giả sử $OA=2R$. Hãy tính diện tích của tứ giác AMOC theo R.","a. Chứng minh: Tứ giác ABOC nội tiếp và $AO\perp BC$.
+ <br><br>Xét $\triangle ABO$ vuông tại B $\left( do~AB\perp OB \right)$.
+ <br><br>Suy ra $\triangle ABO$ nội tiếp đường tròn đường kính AO. $\left( 1 \right)$
+ <br><br>Xét $\triangle ACO$ vuông tại C $\left( do~AC\perp OC \right)$.
+ <br><br>Suy ra $\triangle ACO$ nội tiếp đường tròn đường kính AO. $\left( 2 \right)$
+ Từ $\left( 1 \right)$ và $\left( 2 \right)$ suy ra 4 điểm A, B, O, C cùng thuộc một đường tròn đường kính AO.
+ <br><br>Suy ra tứ giác ABOC nội tiếp.
+ <br><br>Ta có $\begin{cases}AB=AC \left( \text{tính chất 2 tiếp tuyến cắt nhau} \right)\\ OB=OC=R\end{cases}$
+ $\Rightarrow OA$ là trung trực của BC.
+ $\Rightarrow OA\perp BC$ tại H.
+ b. Chứng minh: I là trung điểm của CK.
+ <br><br>Ta có $AB\perp BD$ $\left( \text{AB là tiếp tuyến tại B của đường kính BD} \right)$. $CK\perp BD$ $\left( \text{giả thiết} \right)$.
+ $\Rightarrow CK//AB$. <br><br>Xét $\triangle DAB$ Có $CK//AB$. Theo hệ quả định lý Thales: $\frac{IK}{AB}=\frac{DK}{DB}=\frac{DK}{2R}.$ $\left( 3 \right)$
+ $\widehat{BCD}=90^{\circ}$ $\left( \text{góc nội tiếp chắn nửa đường tròn đường kính BD} \right)$
+ $\Rightarrow CD\perp BC$ và $OA\perp BC$ <br><br>Suy ra $OA//CD$.
+ <br><br>Xét $\triangle DKC$ và $\triangle BOA$ có:
+ $\begin{cases} \widehat{CKD}=\widehat{OBA}=90^{\circ} \\ \widehat{KDC}=\widehat{BOA} \left( \text{2 góc đồng vị} \righ<br><br>t) \end{cases}$
+ $\Rightarrow \triangle DKC\sim \triangle OBA \left( g-g \right)$.
+ $\Rightarrow\frac{CK}{BA}=\frac{DK}{BO}=\frac{DK}{R} \Rightarrow \frac{CK}{2AB}=\frac{DK}{2R}$ $\left( 4 \right)$
+ Từ $\left( 3 \right)$ và $\left( 4 \right)$ suy ra $IK=\frac{1}{2}CK$ . <br><br>Vậy I là trung điểm của CK.
+ c. Tính diện tích của tứ giác AMOC theo R.
+ $\triangle ACO$ vuông tại C.
+ $AC^{2}+OC^{2}=OA^{2}$ $\left( \text{định lý Pythagore} \right)$.
+ $AC^{2}+R^{2}=\left( 2R \right)^{2}\Rightarrow AC^{2}=3R^{2}\Rightarrow AC=R\sqrt{3}$.
+ Diện tích $\triangle ACO$ là: $S_{ACO}=\frac{1}{2}OC\cdot AC=\frac{1}{2}\cdot R\cdot R\sqrt{3}=\frac{R^{2}\sqrt{3}}{2}.$
+ Vì $CK//AB$ $\left( cmt \right)$, theo định lý Thales ta có:
+ $\frac{IC}{MA}=\frac{SI}{SM}$ $\left( \text{áp dụng cho } \triangle SMA \text{ và } \triangle SIC \right)$.
+ $\frac{IK}{MB}=\frac{SI}{SM}$ $\left( \text{áp dụng cho } \triangle SMB \text{ và } \triangle SIK \right)$.
+ <br><br>Suy ra $\frac{IC}{MA}=\frac{IK}{MB}$ Mà $IC=IK$ $\left( cmt \right)$ nên $MA=MB$.
+ <br><br>Suy ra M là trung điểm của AB. $\triangle ABO$ vuông tại B.
+ $AB^{2}+OB^{2}=OA^{2}$ $\left( \text{định lý Pythagore} \right)$.
+ $AB^{2}=\left( 2R \right)^{2}-R^{2}=3R^{2}\Rightarrow AB=R\sqrt{3}$.
+ Diện tích $\triangle ABO$ là: $S_{ABO}=\frac{1}{2}OB\cdot AB=\frac{1}{2}\cdot R\cdot R\sqrt{3}=\frac{R^{2}\sqrt{3}}{2}$
+ Vì M là trung điểm của AB nên $S_{AMO}=\frac{1}{2}S_{ABO}=\frac{1}{2}\cdot \frac{R^{2}\sqrt{3}}{2}=\frac{R^{2}\sqrt{3}}{4}.$
+ Diện tích tứ giác AMOC là: $S_{AMOC}=S_{AMO}+S_{ACO}=\frac{R^{2}\sqrt{3}}{4}+\frac{R^{2}\sqrt{3}}{2}=\frac{3R^{2}\sqrt{3}}{4}.$
+ <br><br>Vậy diện tích tứ giác AMOC là $\frac{3R^{2}\sqrt{3}}{4}$",
