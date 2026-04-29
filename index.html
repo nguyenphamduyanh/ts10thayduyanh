@@ -225,32 +225,32 @@
 
         const area = document.getElementById('displayArea');
         if(found) {
-            // Xử lý đề bài: Xóa điểm, cắt xuống hàng cho câu a, b, c
+            // --- HÀM HỖ TRỢ ĐỘI MŨ TỰ ĐỘNG ---
+            const applyAutoHat = (text) => {
+                let t = text.replace(/\\hat\{([A-Z]{3})\}/g, '\\widehat{$1}');
+                // Trước dấu toán học
+                t = t.replace(/(\\triangle\s*|\\Delta\s*)?\b([A-Z]{3})\b(\s*(=|\+|-|<|>))/g, function(match, isTriangle, letters, suffix) {
+                    return isTriangle ? match : '\\widehat{' + letters + '}' + suffix;
+                });
+                // Sau dấu toán học
+                t = t.replace(/(=|\+|-|<|>)(\s*)(\\triangle\s*|\\Delta\s*)?\b([A-Z]{3})\b/g, function(match, op, space, isTriangle, letters) {
+                    return isTriangle ? match : op + space + '\\widehat{' + letters + '}';
+                });
+                // Sau chữ "góc"
+                t = t.replace(/(góc\s+)\b([A-Z]{3})\b/gi, '$1\\widehat{$2}');
+                return t;
+            };
+
+            // Xử lý đề bài: Xóa điểm, xuống hàng a, b, c và tự đội mũ góc
             let processedDe = found.De_Bai
                 .replace(/^\s*[\.\-\+]*\s*/, '')
                 .replace(/^\(\s*[\d\,\.]+\s*điểm\s*\)\s*/i, '')
                 .replace(/(?:\s+|^)([a-e][\)\.])\s/g, '<br><br><span style="color:var(--secondary); font-weight:800;">$1</span> ');
-
-            // --- THUẬT TOÁN ĐỘI MŨ TỰ ĐỘNG CHO GÓC ---
-            let processedLg = found.Loi_Giai;
             
-            // 1. Nếu thầy lỡ gõ \hat thì tự chuyển thành \widehat
-            processedLg = processedLg.replace(/\\hat\{([A-Z]{3})\}/g, '\\widehat{$1}');
-            
-            // 2. Tự động tìm 3 chữ in hoa đứng trước dấu =, +, -, <, > để đội mũ (Né Tam giác)
-            processedLg = processedLg.replace(/(\\triangle\s*|\\Delta\s*)?\b([A-Z]{3})\b(\s*(=|\+|-|<|>))/g, function(match, isTriangle, baChuCai, dauToanHoc) {
-                if (isTriangle) return match; // Nếu có ký hiệu tam giác phía trước -> Giữ nguyên
-                return '\\widehat{' + baChuCai + '}' + dauToanHoc; // Đội mũ
-            });
+            processedDe = applyAutoHat(processedDe);
 
-            // 3. Tự động tìm 3 chữ in hoa đứng sau dấu =, +, -, <, > để đội mũ
-            processedLg = processedLg.replace(/(=|\+|-|<|>)(\s*)(\\triangle\s*|\\Delta\s*)?\b([A-Z]{3})\b/g, function(match, dauToanHoc, khoangCach, isTriangle, baChuCai) {
-                if (isTriangle) return match; 
-                return dauToanHoc + khoangCach + '\\widehat{' + baChuCai + '}';
-            });
-
-            // Sau khi chỉnh LaTeX xong mới biến \n thành <br> để xuống hàng
-            processedLg = processedLg.replace(/\n/g, '<br>');
+            // Xử lý lời giải: Tự đội mũ và xuống hàng
+            let processedLg = applyAutoHat(found.Loi_Giai).replace(/\n/g, '<br>');
 
             area.innerHTML = `
                 <div style="animation: fadeIn 0.4s ease">
