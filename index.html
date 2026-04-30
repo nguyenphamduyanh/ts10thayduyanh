@@ -1,3 +1,4 @@
+<!-- Duy Anh hãy copy toàn bộ đoạn này và cập nhật vào index.html nhé -->
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -24,116 +25,112 @@
             --secondary: #2563eb; --accent: #ef4444; --glass: rgba(255, 255, 255, 0.9);
         }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
-        body { background: #f0f2f5 url('https://www.transparenttextures.com/patterns/mathematics.png'); height: 100vh; display: flex; flex-direction: column; }
+        
+        /* Background Pattern cho toàn trang */
+        body { 
+            background: #f0f2f5 url('https://www.transparenttextures.com/patterns/graphy.png'); 
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+        }
 
-        /* --- 1. HIỆU ỨNG 2 DÒNG CHỮ ĐẦU TIÊN --- */
-        header { background: var(--primary-gradient); padding: 25px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); z-index: 100; }
+        /* TRANG TRÍ HEADER MỚI */
+        header { 
+            background: var(--primary-gradient); 
+            padding: 40px 20px; 
+            text-align: center; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            z-index: 100;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Thêm các icon toán học bay lơ lửng ở header */
+        header::before {
+            content: "Σ  √  π  ∞";
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 40px;
+            color: rgba(255, 255, 255, 0.2);
+            font-family: serif;
+        }
+        header::after {
+            content: "y = ax + b";
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.2);
+            font-weight: 800;
+        }
+
         header h1 { 
             font-family: 'Playfair Display', serif; 
-            font-size: clamp(20px, 5vw, 32px); 
+            font-size: clamp(24px, 6vw, 42px); 
             color: #78350f; 
             text-transform: uppercase; 
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             animation: slideDown 0.8s ease-out;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
+
         .subtitle { 
-            font-size: clamp(12px, 3vw, 16px); 
+            font-size: clamp(14px, 3.5vw, 18px); 
             font-weight: 800; 
             color: #fff;
             display: inline-block; 
-            padding: 6px 20px; 
+            padding: 8px 25px; 
             border-radius: 50px; 
-            margin-top: 8px;
+            margin-top: 15px;
             text-shadow: 0 1px 3px rgba(0,0,0,0.3);
-            border: 1px solid rgba(255,255,255,0.4);
-            animation: 
-                fadeInScale 1s ease-out 0.5s both, 
-                shimmer 4s infinite alternate;
+            border: 2px solid rgba(255,255,255,0.5);
+            animation: fadeInScale 1s ease-out 0.5s both, shimmer 4s infinite alternate;
         }
 
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeInScale {
-            from { opacity: 0; transform: scale(0.8); }
-            to { opacity: 1; transform: scale(1); }
-        }
+        @keyframes slideDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInScale { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
         @keyframes shimmer {
             0% { background: rgba(239, 68, 68, 0.6); box-shadow: 0 0 10px #ef4444; }
-            33% { background: rgba(37, 99, 235, 0.6); box-shadow: 0 0 20px #2563eb; }
-            66% { background: rgba(16, 185, 129, 0.6); box-shadow: 0 0 15px #10b981; }
+            50% { background: rgba(37, 99, 235, 0.6); box-shadow: 0 0 20px #2563eb; }
             100% { background: rgba(247, 151, 30, 0.7); box-shadow: 0 0 25px #f7971e; transform: scale(1.05); }
         }
 
         .main-container { display: flex; flex: 1; overflow: hidden; padding: 20px; gap: 20px; }
 
-        /* --- 2. BỐ CỤC SIDEBAR VÀ NÚT CHỌN BÀI --- */
         nav { width: 320px; background: var(--glass); backdrop-filter: blur(10px); border-radius: 20px; padding: 20px; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1); display: flex; flex-direction: column; gap: 15px; }
-        .select-group label { font-weight: 700; color: #475569; font-size: 12px; text-transform: uppercase; margin-bottom: 5px; display: block; }
-        select { width: 100%; padding: 10px; border-radius: 10px; border: 2px solid #e2e8f0; font-weight: 600; outline: none; }
         
-        /* Xếp thành 2 cột */
-        .grid-questions { 
-            display: grid; 
-            grid-template-columns: 1fr 1fr; 
-            gap: 10px; 
-        }
-
+        .grid-questions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
         .q-btn { 
-            padding: 12px 5px; 
-            background: white; 
-            border-radius: 12px; 
-            border: 2px solid #f1f5f9; 
-            text-align: center; 
-            cursor: pointer; 
-            font-weight: 700; 
-            font-size: 14px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 12px 5px; background: white; border-radius: 12px; border: 2px solid #f1f5f9; 
+            text-align: center; cursor: pointer; font-weight: 700; transition: all 0.3s;
             color: #475569;
         }
-        .q-btn:hover { border-color: var(--secondary); background: #eff6ff; transform: translateY(-2px); }
-        
-        /* Hiệu ứng lung linh khi chọn */
         .q-btn.active { 
-            background: var(--secondary); 
-            color: white; 
-            border-color: var(--secondary); 
-            transform: scale(1.08);
-            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
-            z-index: 2;
+            background: var(--secondary); color: white; border-color: var(--secondary); 
+            transform: scale(1.08); box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
         }
 
         article { flex: 1; background: var(--glass); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px; overflow-y: auto; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1); }
-        .problem-text { font-size: 1.15rem; font-weight: 700; line-height: 1.7; color: #1e293b; margin-bottom: 25px; }
-        .solution-card { background: white; border-radius: 15px; padding: 25px; border-left: 8px solid #10b981; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
-        .sol-header { color: #10b981; font-weight: 800; font-size: 1.2rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
-
+        
+        /* Hiệu ứng mượt cho ảnh */
         .math-image {
             margin: 20px auto;
             max-width: 100%;
             display: block;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
         }
+        .math-image:hover { transform: scale(1.02); }
 
         .contact-fixed { position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; z-index: 1000; }
-        .btn-circle { width: 65px; height: 65px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; box-shadow: 0 8px 20px rgba(0,0,0,0.2); transition: 0.3s; text-decoration: none; overflow: hidden; }
-        .btn-zalo { background: #fff; }
-        .btn-zalo img { width: 100%; height: 100%; object-fit: cover; }
-        .btn-fb { background: #0084ff; font-size: 30px; }
-        .btn-toggle { background: var(--accent); padding: 0 25px; border-radius: 50px; height: 65px; font-weight: 800; border: none; cursor: pointer; color: white; font-size: 16px; box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3); }
+        .btn-toggle { background: var(--accent); padding: 0 25px; border-radius: 50px; height: 60px; font-weight: 800; border: none; cursor: pointer; color: white; box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3); }
 
         @media (max-width: 768px) {
             .main-container { flex-direction: column; padding: 10px; overflow-y: auto; }
-            nav { width: 100%; padding: 15px; gap: 10px; }
+            nav { width: 100%; }
             .grid-questions { grid-template-columns: repeat(4, 1fr); }
-            article { padding: 20px; }
-            .contact-fixed { bottom: 15px; right: 15px; }
         }
     </style>
 </head>
@@ -148,31 +145,30 @@
     <nav id="sidebar">
         <div style="display: flex; gap: 10px;">
             <div class="select-group" style="flex: 1;">
-                <label>Cụm</label>
-                <select id="cumSelect" onchange="updateExams()"></select>
+                <label style="font-size: 11px; font-weight: 800; color: #64748b;">CỤM BÀI</label>
+                <select id="cumSelect" onchange="updateExams()" style="width: 100%; padding: 10px; border-radius: 10px; border: 2px solid #e2e8f0;"></select>
             </div>
             <div class="select-group" style="flex: 1;">
-                <label>Đề</label>
-                <select id="deSelect" onchange="renderQuestionList()"></select>
+                <label style="font-size: 11px; font-weight: 800; color: #64748b;">ĐỀ SỐ</label>
+                <select id="deSelect" onchange="renderQuestionList()" style="width: 100%; padding: 10px; border-radius: 10px; border: 2px solid #e2e8f0;"></select>
             </div>
         </div>
         <div class="grid-questions" id="qList"></div>
     </nav>
 
     <article id="displayArea">
-        <div style="text-align: center; padding-top: 50px; color: #94a3b8;">
-            <i class="fas fa-book-open" style="font-size: 60px; opacity: 0.2;"></i>
-            <p style="margin-top: 15px; font-weight: 600;">Chọn bài tập để xem lời giải!</p>
+        <div style="text-align: center; padding-top: 100px; color: #94a3b8;">
+            <i class="fas fa-pencil-ruler" style="font-size: 60px; opacity: 0.2; margin-bottom: 20px;"></i>
+            <p style="font-weight: 600;">Chào Duy Anh! Hãy chọn một bài tập để bắt đầu ôn luyện.</p>
         </div>
     </article>
 </div>
 
 <div class="contact-fixed">
-    <div id="socialButtons" style="display: none; flex-direction: column; gap: 12px;">
-        <a href="https://zalo.me/0908734026" target="_blank" class="btn-circle btn-zalo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+    <div id="socialButtons" style="display: none; flex-direction: column; gap: 12px; margin-bottom: 12px;">
+        <a href="https://zalo.me/0908734026" target="_blank" style="width: 55px; height: 55px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" style="width: 35px;">
         </a>
-        <a href="https://m.me/duyanhnp.0910" target="_blank" class="btn-circle btn-fb"><i class="fab fa-facebook-messenger"></i></a>
     </div>
     <button class="btn-toggle" onclick="toggleSocial()">
         <i class="fas fa-comments"></i> Hỏi bài Thầy
@@ -182,8 +178,7 @@
 <script>
     let rawData = [];
 
-    // --- 3. CẤU HÌNH GITHUB ---
-    // Thay thế thông tin của bạn vào đây
+    // --- CẬP NHẬT THÔNG TIN CỦA BẠN TẠI ĐÂY ---
     const GITHUB_USER = "nguyenphamduyanh"; 
     const GITHUB_REPO = "ts10thayduyanh";
     const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/`;
@@ -199,10 +194,8 @@
     function initDropdowns() {
         const cumSet = [...new Set(rawData.map(item => item.Cum))];
         const cumSelect = document.getElementById('cumSelect');
-        if(cumSelect) {
-            cumSelect.innerHTML = cumSet.map(c => `<option value="${c}">${c}</option>`).join('');
-            updateExams();
-        }
+        cumSelect.innerHTML = cumSet.map(c => `<option value="${c}">${c}</option>`).join('');
+        updateExams();
     }
 
     function updateExams() {
@@ -224,9 +217,6 @@
                 document.querySelectorAll('.q-btn').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
                 showDetail(`Bài ${i}`);
-                if (window.innerWidth <= 768) {
-                    document.getElementById('displayArea').scrollIntoView({ behavior: 'smooth' });
-                }
             };
             qList.appendChild(btn);
         }
@@ -239,33 +229,20 @@
         const area = document.getElementById('displayArea');
 
         if(found) {
-            // Xử lý link ảnh từ Github
-            let finalImgTag = "";
+            let imgTag = "";
             if(found.Link_Anh && found.Link_Anh.trim() !== "") {
-                const imgPath = found.Link_Anh.startsWith('http') ? found.Link_Anh : IMAGE_BASE_URL + found.Link_Anh;
-                finalImgTag = `<img src="${imgPath}" class="math-image" onerror="this.style.display='none'">`;
+                const fullPath = found.Link_Anh.startsWith('http') ? found.Link_Anh : IMAGE_BASE_URL + found.Link_Anh;
+                imgTag = `<img src="${fullPath}" class="math-image" onerror="this.style.display='none'">`;
             }
 
-            const applyAutoHat = (t) => {
-                if(!t) return "";
-                t = t.replace(/\\hat\{([A-Z]{3})\}/g, '\\widehat{$1}');
-                t = t.replace(/(\\triangle\s*|\\Delta\s*)?\b([A-Z]{3})\b(\s*(=|\+|-|<|>))/g, (m, tr, l, s) => tr ? m : '\\widehat{' + l + '}' + s);
-                t = t.replace(/(=|\+|-|<|>)(\s*)(\\triangle\s*|\\Delta\s*)?\b([A-Z]{3})\b/g, (m, op, sp, tr, l) => tr ? m : op + sp + '\\widehat{' + l + '}');
-                t = t.replace(/(góc\s+)\b([A-Z]{3})\b/gi, '$1\\widehat{$2}');
-                return t;
-            };
-
-            let pDe = applyAutoHat(found.De_Bai.replace(/^\s*[\.\-\+]*\s*/, '').replace(/^\(\s*[\d\,\.]+\s*điểm\s*\)\s*/i, '').replace(/(?:\s+|^)([a-e][\)\.])\s/g, '<br><br><span style="color:var(--secondary); font-weight:800;">$1</span> '));
-            let pLg = applyAutoHat(found.Loi_Giai).replace(/\n/g, '<br>');
-
             area.innerHTML = `
-                <div style="animation: fadeIn 0.4s ease">
-                    <h2 style="font-family:'Playfair Display'; font-size: 28px; color:var(--secondary); margin-bottom:15px; border-bottom: 2px solid #eee; padding-bottom: 10px;">${bai}</h2>
-                    <div class="problem-text">${pDe}</div>
-                    ${finalImgTag}
-                    <div class="solution-card">
-                        <div class="sol-header"><i class="fas fa-lightbulb"></i> HƯỚNG DẪN GIẢI</div>
-                        <div style="line-height:2; color:#334155; font-size:1.05rem;">${pLg}</div>
+                <div style="animation: fadeIn 0.5s ease">
+                    <h2 style="font-family:'Playfair Display'; font-size: 30px; color:var(--secondary); margin-bottom:20px; border-bottom: 2px solid #eee; padding-bottom: 10px;">${bai}</h2>
+                    <div style="font-size: 1.2rem; font-weight: 700; color: #1e293b; margin-bottom: 25px;">${found.De_Bai}</div>
+                    ${imgTag}
+                    <div class="solution-card" style="margin-top: 30px;">
+                        <div class="sol-header"><i class="fas fa-lightbulb"></i> LỜI GIẢI CHI TIẾT</div>
+                        <div style="line-height:2; color:#334155;">${found.Loi_Giai.replace(/\n/g, '<br>')}</div>
                     </div>
                 </div>
             `;
