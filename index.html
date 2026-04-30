@@ -1,4 +1,3 @@
-<!-- Duy Anh hãy copy toàn bộ đoạn này và cập nhật vào index.html nhé -->
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -23,134 +22,128 @@
         :root { 
             --primary-gradient: linear-gradient(135deg, #FFD200 0%, #F7971E 100%);
             --secondary: #2563eb; --accent: #ef4444; --glass: rgba(255, 255, 255, 0.9);
+            --success: #10b981;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
-        
-        /* Background Pattern cho toàn trang */
-        body { 
-            background: #f0f2f5 url('https://www.transparenttextures.com/patterns/graphy.png'); 
-            height: 100vh; 
-            display: flex; 
-            flex-direction: column; 
-        }
+        body { background: #f0f2f5 url('https://www.transparenttextures.com/patterns/graphy.png'); height: 100vh; display: flex; flex-direction: column; }
 
-        /* TRANG TRÍ HEADER MỚI */
+        /* --- HEADER CÁ NHÂN HÓA --- */
         header { 
             background: var(--primary-gradient); 
-            padding: 40px 20px; 
+            padding: 45px 20px; 
             text-align: center; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15); 
             z-index: 100;
             position: relative;
             overflow: hidden;
         }
-
-        /* Thêm các icon toán học bay lơ lửng ở header */
-        header::before {
-            content: "Σ  √  π  ∞";
-            position: absolute;
-            top: 10px;
-            left: 20px;
-            font-size: 40px;
-            color: rgba(255, 255, 255, 0.2);
-            font-family: serif;
-        }
-        header::after {
-            content: "y = ax + b";
-            position: absolute;
-            bottom: 10px;
-            right: 20px;
-            font-size: 20px;
-            color: rgba(255, 255, 255, 0.2);
-            font-weight: 800;
-        }
+        header::before { content: "Σ √ π ∞"; position: absolute; top: 15px; left: 30px; font-size: 35px; color: rgba(255, 255, 255, 0.15); font-family: serif; }
+        header::after { content: "f(x) = ax² + bx + c"; position: absolute; bottom: 15px; right: 30px; font-size: 18px; color: rgba(255, 255, 255, 0.15); font-weight: 800; }
 
         header h1 { 
             font-family: 'Playfair Display', serif; 
-            font-size: clamp(24px, 6vw, 42px); 
+            font-size: clamp(26px, 6vw, 45px); 
             color: #78350f; 
             text-transform: uppercase; 
             letter-spacing: 3px;
+            margin-bottom: 5px;
             animation: slideDown 0.8s ease-out;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
+        .personal-slogan { color: #854d0e; font-weight: 700; font-style: italic; font-size: 14px; margin-bottom: 10px; opacity: 0.8; }
 
         .subtitle { 
-            font-size: clamp(14px, 3.5vw, 18px); 
+            font-size: clamp(13px, 3.5vw, 17px); 
             font-weight: 800; 
             color: #fff;
+            background: rgba(0,0,0,0.15);
             display: inline-block; 
             padding: 8px 25px; 
             border-radius: 50px; 
-            margin-top: 15px;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
-            border: 2px solid rgba(255,255,255,0.5);
+            border: 1px solid rgba(255,255,255,0.4);
             animation: fadeInScale 1s ease-out 0.5s both, shimmer 4s infinite alternate;
         }
 
         @keyframes slideDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes fadeInScale { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
         @keyframes shimmer {
-            0% { background: rgba(239, 68, 68, 0.6); box-shadow: 0 0 10px #ef4444; }
-            50% { background: rgba(37, 99, 235, 0.6); box-shadow: 0 0 20px #2563eb; }
-            100% { background: rgba(247, 151, 30, 0.7); box-shadow: 0 0 25px #f7971e; transform: scale(1.05); }
+            0% { box-shadow: 0 0 10px #ef4444; }
+            50% { box-shadow: 0 0 20px #2563eb; }
+            100% { box-shadow: 0 0 25px #f7971e; transform: scale(1.03); }
         }
 
         .main-container { display: flex; flex: 1; overflow: hidden; padding: 20px; gap: 20px; }
 
-        nav { width: 320px; background: var(--glass); backdrop-filter: blur(10px); border-radius: 20px; padding: 20px; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1); display: flex; flex-direction: column; gap: 15px; }
-        
-        .grid-questions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        /* --- SIDEBAR --- */
+        nav { width: 320px; background: var(--glass); backdrop-filter: blur(10px); border-radius: 20px; padding: 25px; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.08); display: flex; flex-direction: column; gap: 20px; }
+        .select-group label { font-size: 11px; font-weight: 800; color: #64748b; letter-spacing: 1px; display: block; margin-bottom: 8px; }
+        select { width: 100%; padding: 12px; border-radius: 12px; border: 2px solid #e2e8f0; font-weight: 600; outline: none; transition: 0.3s; background: white; }
+        select:focus { border-color: var(--secondary); }
+
+        .grid-questions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
         .q-btn { 
-            padding: 12px 5px; background: white; border-radius: 12px; border: 2px solid #f1f5f9; 
-            text-align: center; cursor: pointer; font-weight: 700; transition: all 0.3s;
-            color: #475569;
+            padding: 14px 5px; background: white; border-radius: 12px; border: 2px solid #f1f5f9; 
+            text-align: center; cursor: pointer; font-weight: 700; transition: all 0.3s; color: #475569;
         }
+        .q-btn:hover { border-color: var(--secondary); background: #f8fafc; transform: translateY(-2px); }
         .q-btn.active { 
             background: var(--secondary); color: white; border-color: var(--secondary); 
-            transform: scale(1.08); box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+            transform: scale(1.05); box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
         }
 
-        article { flex: 1; background: var(--glass); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px; overflow-y: auto; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1); }
+        /* --- NỘI DUNG BÀI GIẢI (SOLUTION CARD) --- */
+        article { flex: 1; background: var(--glass); backdrop-filter: blur(10px); border-radius: 25px; padding: 35px; overflow-y: auto; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.08); }
         
-        /* Hiệu ứng mượt cho ảnh */
-        .math-image {
-            margin: 20px auto;
-            max-width: 100%;
-            display: block;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-            transition: transform 0.3s ease;
+        .problem-title { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--secondary); margin-bottom: 20px; border-bottom: 3px solid #f1f5f9; padding-bottom: 10px; display: flex; align-items: center; gap: 15px; }
+        
+        .problem-text { font-size: 1.15rem; font-weight: 600; line-height: 1.8; color: #1e293b; margin-bottom: 30px; padding: 0 5px; }
+        
+        .solution-card { 
+            background: white; 
+            border-radius: 18px; 
+            padding: 25px; 
+            border-left: 8px solid var(--success); 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+            margin-top: 20px;
+            animation: slideUp 0.5s ease-out;
         }
-        .math-image:hover { transform: scale(1.02); }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
-        .contact-fixed { position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; z-index: 1000; }
-        .btn-toggle { background: var(--accent); padding: 0 25px; border-radius: 50px; height: 60px; font-weight: 800; border: none; cursor: pointer; color: white; box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3); }
+        .sol-header { color: var(--success); font-weight: 800; font-size: 1.2rem; margin-bottom: 18px; display: flex; align-items: center; gap: 12px; text-transform: uppercase; letter-spacing: 1px; }
+        .sol-content { line-height: 2; color: #334155; font-size: 1.05rem; font-weight: 500; }
+
+        .math-image { margin: 25px auto; max-width: 100%; display: block; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+        /* Nút liên hệ */
+        .contact-fixed { position: fixed; bottom: 30px; right: 30px; z-index: 1000; }
+        .btn-ask { background: var(--accent); color: white; padding: 15px 30px; border-radius: 50px; font-weight: 800; border: none; cursor: pointer; box-shadow: 0 10px 25px rgba(239, 68, 68, 0.3); display: flex; align-items: center; gap: 10px; transition: 0.3s; text-decoration: none; }
+        .btn-ask:hover { transform: scale(1.05); background: #dc2626; }
 
         @media (max-width: 768px) {
-            .main-container { flex-direction: column; padding: 10px; overflow-y: auto; }
+            .main-container { flex-direction: column; padding: 15px; }
             nav { width: 100%; }
             .grid-questions { grid-template-columns: repeat(4, 1fr); }
+            article { padding: 25px; }
         }
     </style>
 </head>
 <body>
 
 <header>
+    <div class="personal-slogan">"Học toán không khó, đã có thầy Duy Anh"</div>
     <h1>🎓 Toán Thầy Duy Anh</h1>
     <div class="subtitle">Hệ thống hỗ trợ ôn tập Tuyển sinh 10</div>
 </header>
 
 <div class="main-container">
     <nav id="sidebar">
-        <div style="display: flex; gap: 10px;">
+        <div style="display: flex; gap: 12px;">
             <div class="select-group" style="flex: 1;">
-                <label style="font-size: 11px; font-weight: 800; color: #64748b;">CỤM BÀI</label>
-                <select id="cumSelect" onchange="updateExams()" style="width: 100%; padding: 10px; border-radius: 10px; border: 2px solid #e2e8f0;"></select>
+                <label>CỤM BÀI</label>
+                <select id="cumSelect" onchange="updateExams()"></select>
             </div>
             <div class="select-group" style="flex: 1;">
-                <label style="font-size: 11px; font-weight: 800; color: #64748b;">ĐỀ SỐ</label>
-                <select id="deSelect" onchange="renderQuestionList()" style="width: 100%; padding: 10px; border-radius: 10px; border: 2px solid #e2e8f0;"></select>
+                <label>ĐỀ SỐ</label>
+                <select id="deSelect" onchange="renderQuestionList()"></select>
             </div>
         </div>
         <div class="grid-questions" id="qList"></div>
@@ -158,27 +151,22 @@
 
     <article id="displayArea">
         <div style="text-align: center; padding-top: 100px; color: #94a3b8;">
-            <i class="fas fa-pencil-ruler" style="font-size: 60px; opacity: 0.2; margin-bottom: 20px;"></i>
-            <p style="font-weight: 600;">Chào Duy Anh! Hãy chọn một bài tập để bắt đầu ôn luyện.</p>
+            <i class="fas fa-lightbulb" style="font-size: 80px; opacity: 0.15; margin-bottom: 25px;"></i>
+            <h3 style="color: #64748b; margin-bottom: 10px;">Chào em, thầy Duy Anh đây!</h3>
+            <p style="font-weight: 600;">Hãy chọn bài tập bên trái để xem hướng dẫn giải chi tiết nhé.</p>
         </div>
     </article>
 </div>
 
 <div class="contact-fixed">
-    <div id="socialButtons" style="display: none; flex-direction: column; gap: 12px; margin-bottom: 12px;">
-        <a href="https://zalo.me/0908734026" target="_blank" style="width: 55px; height: 55px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" style="width: 35px;">
-        </a>
-    </div>
-    <button class="btn-toggle" onclick="toggleSocial()">
-        <i class="fas fa-comments"></i> Hỏi bài Thầy
-    </button>
+    <a href="https://zalo.me/0908734026" target="_blank" class="btn-ask">
+        <i class="fab fa-facebook-messenger"></i> Hỏi bài thầy Duy Anh
+    </a>
 </div>
 
 <script>
     let rawData = [];
-
-    // --- CẬP NHẬT THÔNG TIN CỦA BẠN TẠI ĐÂY ---
+    // Cập nhật đúng Repo theo ảnh bạn gửi
     const GITHUB_USER = "nguyenphamduyanh"; 
     const GITHUB_REPO = "ts10thayduyanh";
     const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/`;
@@ -194,15 +182,15 @@
     function initDropdowns() {
         const cumSet = [...new Set(rawData.map(item => item.Cum))];
         const cumSelect = document.getElementById('cumSelect');
-        cumSelect.innerHTML = cumSet.map(c => `<option value="${c}">${c}</option>`).join('');
+        cumSelect.innerHTML = cumSet.map(c => `<option value="${c}">Cụm ${c}</option>`).join('');
         updateExams();
     }
 
     function updateExams() {
-        const selectedCum = document.getElementById('cumSelect').value;
+        const selectedCum = document.getElementById('cumSelect').value.replace('Cụm ', '');
         const deSet = [...new Set(rawData.filter(item => item.Cum == selectedCum).map(item => item.De))];
         const deSelect = document.getElementById('deSelect');
-        deSelect.innerHTML = deSet.map(d => `<option value="${d}">Đề ${d}</option>`).join('');
+        deSelect.innerHTML = deSet.map(d => `<option value="${d}">Đề số ${d}</option>`).join('');
         renderQuestionList();
     }
 
@@ -223,27 +211,41 @@
     }
 
     function showDetail(bai) {
-        const cum = document.getElementById('cumSelect').value;
-        const de = document.getElementById('deSelect').value;
+        const cum = document.getElementById('cumSelect').value.replace('Cụm ', '');
+        const de = document.getElementById('deSelect').value.replace('Đề số ', '');
         const found = rawData.find(item => item.Cum == cum && item.De == de && item.Cau.trim() == bai);
         const area = document.getElementById('displayArea');
 
         if(found) {
             let imgTag = "";
             if(found.Link_Anh && found.Link_Anh.trim() !== "") {
-                const fullPath = found.Link_Anh.startsWith('http') ? found.Link_Anh : IMAGE_BASE_URL + found.Link_Anh;
-                imgTag = `<img src="${fullPath}" class="math-image" onerror="this.style.display='none'">`;
+                // Tự động sửa lỗi tên file từ 'h' sang 'c' nếu cần để khớp với GitHub của bạn
+                let path = found.Link_Anh;
+                const fullPath = path.startsWith('http') ? path : IMAGE_BASE_URL + path;
+                imgTag = `<img src="${fullPath}" class="math-image" onerror="this.src='${fullPath.replace('/h1', '/c1')}'">`;
             }
 
+            const applyAutoHat = (t) => {
+                if(!t) return "";
+                t = t.replace(/\\hat\{([A-Z]{3})\}/g, '\\widehat{$1}');
+                t = t.replace(/(góc\s+)\b([A-Z]{3})\b/gi, '$1\\widehat{$2}');
+                return t;
+            };
+
+            let pDe = applyAutoHat(found.De_Bai).replace(/\n/g, '<br>');
+            let pLg = applyAutoHat(found.Loi_Giai).replace(/\n/g, '<br>');
+
             area.innerHTML = `
-                <div style="animation: fadeIn 0.5s ease">
-                    <h2 style="font-family:'Playfair Display'; font-size: 30px; color:var(--secondary); margin-bottom:20px; border-bottom: 2px solid #eee; padding-bottom: 10px;">${bai}</h2>
-                    <div style="font-size: 1.2rem; font-weight: 700; color: #1e293b; margin-bottom: 25px;">${found.De_Bai}</div>
-                    ${imgTag}
-                    <div class="solution-card" style="margin-top: 30px;">
-                        <div class="sol-header"><i class="fas fa-lightbulb"></i> LỜI GIẢI CHI TIẾT</div>
-                        <div style="line-height:2; color:#334155;">${found.Loi_Giai.replace(/\n/g, '<br>')}</div>
+                <div class="problem-title">
+                    <i class="fas fa-edit"></i> ${bai}
+                </div>
+                <div class="problem-text">${pDe}</div>
+                ${imgTag}
+                <div class="solution-card">
+                    <div class="sol-header">
+                        <i class="fas fa-lightbulb"></i> Hướng dẫn giải chi tiết
                     </div>
+                    <div class="sol-content">${pLg}</div>
                 </div>
             `;
             MathJax.typesetPromise();
