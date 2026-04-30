@@ -27,7 +27,7 @@ Suy ra $x=2$.
 
 Với $x=2$ suy ra $y=1$.
 
-Vậy toạ độ điểm cần tìm là $(2;1)$.",image/h1d1b1.png
+Vậy toạ độ điểm cần tìm là $(2;1)$.",image/c1d1b1.png
 1,1,Bài 2,"Cho phương trình $3x^{2}+2x-5=0$.
 
 a. Chứng minh phương trình trên có hai nghiệm phân biệt $x_{1}, x_{2}$.
@@ -75,7 +75,7 @@ Suy ra $n(A) = 3$. Xác suất $P(A) = \frac{3}{7}$.
 
 - Xét biến cố $B$: Các ngày có thời gian $\le$ 160 phút là Thứ 3 (135), Thứ 5 (150).
 
-Suy ra $n(B) = 2$. Xác suất $P(B) = \frac{2}{7}$.",image/h1d1b3.png
+Suy ra $n(B) = 2$. Xác suất $P(B) = \frac{2}{7}$.",image/c1d1b3.png
 1,1,Bài 4,"Trên một miếng đất hình chữ nhật có chiều rộng là $x(m) (x>0)$, chiều dài là $2x+10(m)$, người ta làm một lối đi hình bình hành có bề rộng là 2 m. Phần còn lại là hai miếng đất hình thang vuông có diện tích bằng nhau để trồng hoa hồng và hoa cúc.
 
 a. Viết biểu thức $A$ biểu diễn diện tích trồng hoa hồng theo $x$.
@@ -98,7 +98,7 @@ Giải phương trình được $x = 5$ (nhận) hoặc $x = -9$ (loại).
 
 Với $x = 5$, diện tích lối đi là: $S = 2 \cdot 5 = 10 (m^{2})$.
 
-Chi phí làm lối đi: $10 \cdot 120.000 = 1.200.000$ (đồng).",image/h1d1b4.png
+Chi phí làm lối đi: $10 \cdot 120.000 = 1.200.000$ (đồng).",image/c1d1b4.png
 1,1,Bài 5,"6 lon nước ngọt hình trụ được đặt sát nhau trong thùng carton hình hộp chữ nhật. Mỗi lon có đường kính 7 cm và chiều cao 11 cm.
 
 a. Tính thể tích thùng carton.
@@ -165,7 +165,7 @@ $S_{ACO} = \frac{1}{2} R \cdot R\sqrt{3} = \frac{R^{2}\sqrt{3}}{2}$.
 
 $S_{AMO} = \frac{1}{2} S_{ABO} = \frac{R^{2}\sqrt{3}}{4}$.
 
-$S_{AMOC} = S_{AMO} + S_{ACO} = \frac{3R^{2}\sqrt{3}}{4}$.",image/h1d1b7.png
+$S_{AMOC} = S_{AMO} + S_{ACO} = \frac{3R^{2}\sqrt{3}}{4}$.",image/c1d1b7.png
 1,2,Bài 1,"Cho parabol $(P):y=-\frac{1}{2}x^{2}.$
 
 a. Vẽ đồ thị (P).
