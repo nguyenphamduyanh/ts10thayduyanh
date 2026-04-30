@@ -27,24 +27,28 @@
         body { background: #f0f2f5 url('https://www.transparenttextures.com/patterns/mathematics.png'); height: 100vh; display: flex; flex-direction: column; }
 
         /* --- 1. HIỆU ỨNG 2 DÒNG CHỮ ĐẦU TIÊN --- */
+        header { background: var(--primary-gradient); padding: 25px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); z-index: 100; }
         header h1 { 
             font-family: 'Playfair Display', serif; 
             font-size: clamp(20px, 5vw, 32px); 
             color: #78350f; 
             text-transform: uppercase; 
             letter-spacing: 2px;
-            animation: slideDown 0.8s ease-out; /* Hiệu ứng trượt xuống */
+            animation: slideDown 0.8s ease-out;
         }
         .subtitle { 
             font-size: clamp(12px, 3vw, 16px); 
             font-weight: 800; 
-            color: #b45309; 
-            background: rgba(255,255,255,0.3); 
+            color: #fff;
             display: inline-block; 
             padding: 6px 20px; 
             border-radius: 50px; 
             margin-top: 8px;
-            animation: fadeInScale 1s ease-out 0.5s both; /* Hiệu ứng hiện ra và phóng nhẹ sau 0.5s */
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.4);
+            animation: 
+                fadeInScale 1s ease-out 0.5s both, 
+                shimmer 4s infinite alternate;
         }
 
         @keyframes slideDown {
@@ -55,46 +59,59 @@
             from { opacity: 0; transform: scale(0.8); }
             to { opacity: 1; transform: scale(1); }
         }
+        @keyframes shimmer {
+            0% { background: rgba(239, 68, 68, 0.6); box-shadow: 0 0 10px #ef4444; }
+            33% { background: rgba(37, 99, 235, 0.6); box-shadow: 0 0 20px #2563eb; }
+            66% { background: rgba(16, 185, 129, 0.6); box-shadow: 0 0 15px #10b981; }
+            100% { background: rgba(247, 151, 30, 0.7); box-shadow: 0 0 25px #f7971e; transform: scale(1.05); }
+        }
 
-        header { background: var(--primary-gradient); padding: 25px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); z-index: 100; }
         .main-container { display: flex; flex: 1; overflow: hidden; padding: 20px; gap: 20px; }
 
+        /* --- 2. BỐ CỤC SIDEBAR VÀ NÚT CHỌN BÀI --- */
         nav { width: 320px; background: var(--glass); backdrop-filter: blur(10px); border-radius: 20px; padding: 20px; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1); display: flex; flex-direction: column; gap: 15px; }
         .select-group label { font-weight: 700; color: #475569; font-size: 12px; text-transform: uppercase; margin-bottom: 5px; display: block; }
         select { width: 100%; padding: 10px; border-radius: 10px; border: 2px solid #e2e8f0; font-weight: 600; outline: none; }
         
-        .grid-questions { display: grid; grid-template-columns: 1fr; gap: 12px; } /* Đổi sang 1 cột để hiện chữ "Bài x" đẹp hơn */
-        
-        /* --- 2. HIỆU ỨNG BÀI 1, BÀI 2 --- */
+        /* Xếp thành 2 cột */
+        .grid-questions { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 10px; 
+        }
+
         .q-btn { 
-            padding: 15px; 
+            padding: 12px 5px; 
             background: white; 
             border-radius: 12px; 
             border: 2px solid #f1f5f9; 
-            text-align: left; 
+            text-align: center; 
             cursor: pointer; 
             font-weight: 700; 
+            font-size: 14px;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
+            justify-content: center;
             align-items: center;
-            justify-content: space-between;
+            color: #475569;
         }
-        .q-btn:hover { border-color: var(--secondary); background: #eff6ff; padding-left: 20px; }
+        .q-btn:hover { border-color: var(--secondary); background: #eff6ff; transform: translateY(-2px); }
+        
+        /* Hiệu ứng lung linh khi chọn */
         .q-btn.active { 
             background: var(--secondary); 
             color: white; 
             border-color: var(--secondary); 
-            transform: translateX(10px); /* Nhích sang phải khi chọn */
-            box-shadow: -5px 5px 15px rgba(37, 99, 235, 0.3);
+            transform: scale(1.08);
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+            z-index: 2;
         }
-        .q-btn.active::after { content: '\f105'; font-family: 'Font Awesome 6 Free'; font-weight: 900; }
 
         article { flex: 1; background: var(--glass); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px; overflow-y: auto; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1); }
         .problem-text { font-size: 1.15rem; font-weight: 700; line-height: 1.7; color: #1e293b; margin-bottom: 25px; }
         .solution-card { background: white; border-radius: 15px; padding: 25px; border-left: 8px solid #10b981; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
         .sol-header { color: #10b981; font-weight: 800; font-size: 1.2rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
 
-        /* --- CSS CHO HÌNH ẢNH GITHUB --- */
         .math-image {
             margin: 20px auto;
             max-width: 100%;
@@ -114,7 +131,7 @@
         @media (max-width: 768px) {
             .main-container { flex-direction: column; padding: 10px; overflow-y: auto; }
             nav { width: 100%; padding: 15px; gap: 10px; }
-            .grid-questions { grid-template-columns: repeat(2, 1fr); }
+            .grid-questions { grid-template-columns: repeat(4, 1fr); }
             article { padding: 20px; }
             .contact-fixed { bottom: 15px; right: 15px; }
         }
@@ -164,11 +181,11 @@
 
 <script>
     let rawData = [];
-    
-    // --- 3. CẤU HÌNH ĐƯỜNG DẪN GITHUB ---
-    // Bạn thay đổi username và repo của bạn vào đây
-    const GITHUB_USER = "nguyenphamduyanh"; // Ví dụ
-    const GITHUB_REPO = "ts10thayduyanh"; // Ví dụ
+
+    // --- 3. CẤU HÌNH GITHUB ---
+    // Thay thế thông tin của bạn vào đây
+    const GITHUB_USER = "duyanh-math"; 
+    const GITHUB_REPO = "on-tap-ts10";
     const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/`;
 
     Papa.parse("data.csv", {
@@ -202,7 +219,7 @@
         for(let i=1; i<=7; i++) {
             const btn = document.createElement('div');
             btn.className = 'q-btn'; 
-            btn.innerText = `Bài ${i}`; // Sửa từ B.1 thành Bài 1
+            btn.innerText = `Bài ${i}`; 
             btn.onclick = function() {
                 document.querySelectorAll('.q-btn').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
@@ -223,14 +240,14 @@
 
         if(found) {
             // Xử lý link ảnh từ Github
-            // Nếu Link_Anh trong CSV là "image/c1d1b1.png" thì nó sẽ ghép thành link raw
             let finalImgTag = "";
-            if(found.Link_Anh) {
+            if(found.Link_Anh && found.Link_Anh.trim() !== "") {
                 const imgPath = found.Link_Anh.startsWith('http') ? found.Link_Anh : IMAGE_BASE_URL + found.Link_Anh;
                 finalImgTag = `<img src="${imgPath}" class="math-image" onerror="this.style.display='none'">`;
             }
 
             const applyAutoHat = (t) => {
+                if(!t) return "";
                 t = t.replace(/\\hat\{([A-Z]{3})\}/g, '\\widehat{$1}');
                 t = t.replace(/(\\triangle\s*|\\Delta\s*)?\b([A-Z]{3})\b(\s*(=|\+|-|<|>))/g, (m, tr, l, s) => tr ? m : '\\widehat{' + l + '}' + s);
                 t = t.replace(/(=|\+|-|<|>)(\s*)(\\triangle\s*|\\Delta\s*)?\b([A-Z]{3})\b/g, (m, op, sp, tr, l) => tr ? m : op + sp + '\\widehat{' + l + '}');
