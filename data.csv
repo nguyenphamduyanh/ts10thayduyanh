@@ -1,131 +1,171 @@
 Cum,De,Cau,De_Bai,Loi_Giai,Link_Anh
-1,1,Bài 1,". $\left( 1,5 điểm \right)$. Cho hàm số $\left( P \right)$ : $y=\frac{x^{2}}{4}$
- a. Vẽ đồ thị $\left( P \right)$.
- b. Tìm điểm K thuộc $\left( P \right)$ có tung độ nhỏ hơn hoành độ 1 đơn vị.","Bảng giá trị:
- X -4 -2 0 2 4
- $y=\frac{x^{2}}{4}$ 4 1 0 1 4
- 
- Vẽ đồ thị $\left( P \right)$:
- Vì điểm K có tung độ nhỏ hơn hoành độ 1 đơn vị nên $y=x-1$
- <br><br>Ta có phương trình: $x-1=\frac{x^{2}}{4}$
- $\frac{x^{2}}{4}-x+1=0;$ <br><br>Suy ra $x=2$.
- Với $x=2$ suy ra $y=1$.
- <br><br>Vậy toạ độ điểm cần tìm là $\left( 2;1 \right)$.",
-1,1,Bài 2,". $\left( 1,0 điểm \right)$. Cho phương trình $3x^{2}+2x-5=0$.
- a. Chứng minh phương trình trên có hai nghiệm phân biệt $x_{1}$, $x_{2}$.
- b. Không giải phương trình, tính giá trị của biểu thức: $T=3x_{1}x_{2}-\left( x_{1}^{2}+x_{2}^{2} \right)$
- $T=\left( x_{1}-2x_{2} \right)\left( x_{2}-x_{1} \right)+x_{2}^{2}$","a. <br><br>Ta có $3x^{2}+2x-5=0 \left( a=3;b=2;c=-5 \right)$.
- <br><br>Ta có $\Delta=b^{2}-4ac=2^{2}-4\cdot 3\cdot \left( -5 \right)=4+60=64>0$.
- Vì $\Delta>0$ nên phương trình có hai nghiệm phân biệt $x_{1}$, $x_{2}$.
- b. Theo định lý Viète, ta có: $\begin{cases}x_{1}+x_{2}=\frac{-b}{a}=\frac{-2}{3}\\ x_{1}x_{2}=\frac{c}{a}=\frac{-5}{3}\end{cases}$
- $x_{1}^{2}+x_{2}^{2}=\left( x_{1}+x_{2} \right)^{2}-2x_{1}x_{2}=\left( \frac{-2}{3} \right)^{2}-2\cdot \left( \frac{-5}{3} \right)=\frac{34}{9}.$
- <br><br>Ta có $T=x_{1}x_{2}-x_{1}^{2}-2x_{2}^{2}+2x_{1}x_{2}+x_{2}^{2}$
- $T=3x_{1}x_{2}-\left( x_{1}^{2}+x_{2}^{2} \righ<br><br>t) \Rightarrow T=3\cdot \left( \frac{-5}{3} \right)-\frac{34}{9} \Rightarrow T=-\frac{79}{9}$",
-1,1,Bài 3,". Thời gian tự học tại nhà của bạn Tú trong một tuần được biểu diễn trong biểu đồ cột sau
- a. Tính thời gian trung bình bạn Tú tự học tại nhà mỗi ngày trong một tuần.
- b. Chọn ngẫu nhiên một ngày trong tuần, tính xác suất của các biến cố sau:
- A : ""Ngày được chọn có thời gian tự học tại nhà của bạn Tú lớn hơn 170 phút"".
- B : ""Ngày được chọn có thời gian tự học tại nhà của bạn Tú không quá 160 phút"".","a. Tổng thời gian tự học của Tú trong tuần là:
- $162+135+170+150+180+175+190=1162$ (phú<br><br>t)
- Thời gian trung bình bạn Tú tự học tại nhà mỗi ngày là:
- $\frac{1162}{7}=166$ (phút).
- b. Gọi không gian mẫu là $\Omega$.
- Tập hợp các ngày trong tuần là:
- $\Omega=\left\{ Thứ 2; Thứ 3; Thứ 4; Thứ 5; Thứ 6; Thứ 7; CN \right\}$ .
- <br><br>Suy ra $n\left( \Omega \right)=7$.
- <br><br>Xét biến cố A : ""Ngày được chọn có thời gian tự học tại nhà của bạn Tú lớn hơn 170 phút"".
- Các ngày thuận lợi cho biến cố A là: Thứ 6 $\left( 180 \right)$, Thứ 7 $\left( 175 \right)$, Chủ nhật $\left( 190 \right)$.
- <br><br>Suy ra $n\left( A \right)=3$
- Xác suất của biến cố A là $P\left( A \right)=\frac{n\left( A \right)}{n\left( \Omega \right)}=\frac{3}{7}.$
- <br><br>Xét biến cố B : ""Ngày được chọn có thời gian tự học tại nhà của bạn Tú không quá 160 phút"".
- Các ngày thuận lợi cho biến cố B là: Thứ 3 $\left( 135 \right)$, Thứ 5 $\left( 150 \right)$. <br><br>Suy ra $n\left( B \right)=2$.
- Xác suất của biến cố B là
- $P\left( B \right)=\frac{n\left( B \right)}{n\left( \Omega \right)}=\frac{2}{7}.$",
-1,1,Bài 4,". $\left( 1,0 điểm \right)$. Trên một miếng đất hình chữ nhật có chiều rộng là $x \left( m \right) \left( x>0 \right)$ chiều dài là $2x+10 \left( m \right)$, người ta làm một lối đi hình bình hành có bề rộng là 2 m.
- Phần còn lại là hai miếng đất hình thang vuông có diện tích bằng nhau, người ta dự kiến trồng hoa hồng và hoa cúc.
- a. Viết biểu thức A biểu diễn diện tích trồng hoa hồng theo x.
- b. Người ta dự kiến lát sỏi lối đi, chi phí cho mỗi mét vuông lát sỏi hết 120 nghìn đồng.
- Hỏi chi phí để làm lối đi là bao nhiêu? Biết diện tích miếng đất trồng hoa hồng là $45~m^{2}$","a. Diện tích của lối đi hình bình hành là $2\cdot x=2x \left( m^{2} \right)$.
- Diện tích của cả miếng đất hình chữ nhật là $x\left( 2x+10 \right)=2x^{2}+10x \left( m^{2} \right)$.
- Diện tích phần đất còn lại để trồng hoa là:
- $2x^{2}+10x-2x=2x^{2}+8x \left( m^{2} \right)$ 
- Vì hai miếng đất trồng hoa có diện tích bằng nhau nên diện tích trồng hoa hồng là:
- $A=\left( 2x^{2}+8x \right):2=x^{2}+4x$ <br><br>Vậy biểu thức cần tìm là $A=x^{2}+4x$ .
- b. Theo đề bài, diện tích trồng hoa hồng là 45 m² nên ta có phương trình:
- $x^{2} + 4x = 45 \Rightarrow x^{2} + 4x-45 = 0$
- $x_{1}=5$ (nhận vì $x>0$); $x_{2}=-9$ (loại).
- Với $x=5$, diện tích của lối đi là:
- $S=2\cdot 5=10 \left( m^{2} \right)$ Chi phí để làm lối đi là:
- $10\cdot 120000=1200000$ (đồn<br><br>g) <br><br>Vậy chi phí cần tìm là 1200000 đồng.",
-1,1,Bài 5,". $\left( 1,0 điểm \right)$. Trong hình vẽ, 6 lon nước ngọt hình trụ được đặt sát nhau trong thùng carton có dạng hình hộp chữ nhật.
- Mỗi lon có đường kính 7 cm và chiều cao 11 cm.
- a. Tính thể tích thùng carton
- b. Tính thể tích phần còn trống trong thùng carton khi đựng 6 lon nước ngọt.
- (Các kết quả làm tròn đến hàng đơn vị) Biết công thức tính thể tích khối trụ là $V=\pi R^{2}h$ $\left( R \text{ là bán kính đáy, } h \text{ là chiều cao} \right)$.","a. Vì thùng carton đựng vừa khít 6 lon nước ngọt $\left( \text{xếp thành 2 hàng, mỗi hàng 3 lon hoặc ngược lại} \right)$ nên kích thước của thùng là:
- Chiều dài của thùng là: $7\cdot 3=21 \left( cm \right)$.
- Chiều rộng của thùng là: $7\cdot 2=14 \left( cm \right)$.
- Chiều cao của thùng bằng chiều cao của lon nước: $11 \left( cm \right)$.
- Thể tích thùng carton là:
- $V_{thùng}=21\cdot 14\cdot 11=3234 \left( cm^{3} \right)$ <br><br>Vậy thể tích thùng carton là $3234~cm^{3}$.
- b. Bán kính đáy của một lon nước ngọt là:
- $R=7:2=3,5 \left( cm \right)$ Thể tích của một lon nước ngọt là:
- $V_{lon}=\pi R^{2}h=\pi\cdot 3,5^{2}\cdot 11=134,75\pi \left( cm^{3} \right)$ Tổng thể tích của 6 lon nước ngọt là:
- $V_{6~lon}=6\cdot 134,75\pi=808,5\pi \left( cm^{3} \right)$ Thể tích phần còn trống trong thùng carton là:
- $V_{trống}=V_{thùng}-V_{6~lon}=3234-808,5\pi\approx 694 \left( cm^{3} \right)$ <br><br>Vậy thể tích phần còn trống 694 cm³.",
-1,1,Bài 6,". $\left( 1,0 điểm \right)$. Để đảm bảo dinh dưỡng trong bữa ăn hằng ngày thì mỗi gia đình 4 thành viên cần 900 đơn vị protêin và 400 đơn vị Lipit trong thức ăn hằng ngày.
- Mỗi kilôgam thịt bò chứa 800 đơn vị protêin và 200 đơn vị Lipit, còn mỗi kilôgam thịt heo chứa 600 đơn vị protêin và 400 đơn vị Lipit.
- Biết giá thịt bò là 100000 đồng/kg và thịt heo là 70000 đồng/kg.
- Tính tổng số tiền mua thịt bò và thịt heo để đảm bảo dinh dưỡng hằng ngày cho 4 người?","Gọi $x \left( kg \right)$ là khối lượng thịt bò cần mua
- $y \left( kg \right)$ là khối lượng thịt heo cần mua $\left( x,y>0 \right)$.
- Vì tổng lượng protêin cần thiết cho gia đình là 900 đơn vị nên ta có phương trình:
- $800x+600y=900 \left( 1 \right)$
- Vì tổng lượng Lipit cần thiết cho gia đình là 400 đơn vị nên ta có phương trình:
- $200x+400y=400 \left( 2 \right)$
- Từ $\left( 1 \right)$ và $\left( 2 \right)$ ta có hệ phương trình:
- $\begin{cases}800x+600y=900\\ 200x+400y=400\end{cases}\Rightarrow\begin{cases}x=0,6\\ y=0,7\end{cases}$
- Tổng số tiền cần để mua thịt bò và thịt heo là:
- $100000\cdot 0,6+70000\cdot 0,7=109000$ (đồn<br><br>g)
- <br><br>Vậy tổng số tiền cần mua là 109000 đồng.",
-1,1,Bài 7,". $\left( 3,0 điểm \right)$. Từ điểm A nằm ngoài đường tròn $\left( O;R \right)$ vẽ hai tiếp tuyến AB, AC $\left( B,C \text{ là tiếp điểm} \right)$.
- Vẽ đường kính BD của đường tròn $\left( O \right)$. Gọi K là hình chiếu của C trên BD, CK cắt AD tại I. Gọi H là giao điểm của OA và BC.
- a. Chứng minh: Tứ giác ABOC nội tiếp và $AO\perp BC$.
- b. Chứng minh: I là trung điểm của CK.
- c. Đường thẳng BD và đường thẳng AC cắt nhau tại S. Tia SI cắt AB tại M. Giả sử $OA=2R$. Hãy tính diện tích của tứ giác AMOC theo R.","a. Chứng minh: Tứ giác ABOC nội tiếp và $AO\perp BC$.
- <br><br>Xét $\triangle ABO$ vuông tại B $\left( do~AB\perp OB \right)$.
- <br><br>Suy ra $\triangle ABO$ nội tiếp đường tròn đường kính AO. $\left( 1 \right)$
- <br><br>Xét $\triangle ACO$ vuông tại C $\left( do~AC\perp OC \right)$.
- <br><br>Suy ra $\triangle ACO$ nội tiếp đường tròn đường kính AO. $\left( 2 \right)$
- Từ $\left( 1 \right)$ và $\left( 2 \right)$ suy ra 4 điểm A, B, O, C cùng thuộc một đường tròn đường kính AO.
- <br><br>Suy ra tứ giác ABOC nội tiếp.
- <br><br>Ta có $\begin{cases}AB=AC \left( \text{tính chất 2 tiếp tuyến cắt nhau} \right)\\ OB=OC=R\end{cases}$
- $\Rightarrow OA$ là trung trực của BC.
- $\Rightarrow OA\perp BC$ tại H.
- b. Chứng minh: I là trung điểm của CK.
- <br><br>Ta có $AB\perp BD$ $\left( \text{AB là tiếp tuyến tại B của đường kính BD} \right)$. $CK\perp BD$ $\left( \text{giả thiết} \right)$.
- $\Rightarrow CK//AB$. <br><br>Xét $\triangle DAB$ Có $CK//AB$. Theo hệ quả định lý Thales: $\frac{IK}{AB}=\frac{DK}{DB}=\frac{DK}{2R}.$ $\left( 3 \right)$
- $\widehat{BCD}=90^{\circ}$ $\left( \text{góc nội tiếp chắn nửa đường tròn đường kính BD} \right)$
- $\Rightarrow CD\perp BC$ và $OA\perp BC$ <br><br>Suy ra $OA//CD$.
- <br><br>Xét $\triangle DKC$ và $\triangle BOA$ có:
- $\begin{cases} \widehat{CKD}=\widehat{OBA}=90^{\circ} \\ \widehat{KDC}=\widehat{BOA} \left( \text{2 góc đồng vị} \righ<br><br>t) \end{cases}$
- $\Rightarrow \triangle DKC\sim \triangle OBA \left( g-g \right)$.
- $\Rightarrow\frac{CK}{BA}=\frac{DK}{BO}=\frac{DK}{R} \Rightarrow \frac{CK}{2AB}=\frac{DK}{2R}$ $\left( 4 \right)$
- Từ $\left( 3 \right)$ và $\left( 4 \right)$ suy ra $IK=\frac{1}{2}CK$ . <br><br>Vậy I là trung điểm của CK.
- c. Tính diện tích của tứ giác AMOC theo R.
- $\triangle ACO$ vuông tại C.
- $AC^{2}+OC^{2}=OA^{2}$ $\left( \text{định lý Pythagore} \right)$.
- $AC^{2}+R^{2}=\left( 2R \right)^{2}\Rightarrow AC^{2}=3R^{2}\Rightarrow AC=R\sqrt{3}$.
- Diện tích $\triangle ACO$ là: $S_{ACO}=\frac{1}{2}OC\cdot AC=\frac{1}{2}\cdot R\cdot R\sqrt{3}=\frac{R^{2}\sqrt{3}}{2}.$
- Vì $CK//AB$ $\left( cmt \right)$, theo định lý Thales ta có:
- $\frac{IC}{MA}=\frac{SI}{SM}$ $\left( \text{áp dụng cho } \triangle SMA \text{ và } \triangle SIC \right)$.
- $\frac{IK}{MB}=\frac{SI}{SM}$ $\left( \text{áp dụng cho } \triangle SMB \text{ và } \triangle SIK \right)$.
- <br><br>Suy ra $\frac{IC}{MA}=\frac{IK}{MB}$ Mà $IC=IK$ $\left( cmt \right)$ nên $MA=MB$.
- <br><br>Suy ra M là trung điểm của AB. $\triangle ABO$ vuông tại B.
- $AB^{2}+OB^{2}=OA^{2}$ $\left( \text{định lý Pythagore} \right)$.
- $AB^{2}=\left( 2R \right)^{2}-R^{2}=3R^{2}\Rightarrow AB=R\sqrt{3}$.
- Diện tích $\triangle ABO$ là: $S_{ABO}=\frac{1}{2}OB\cdot AB=\frac{1}{2}\cdot R\cdot R\sqrt{3}=\frac{R^{2}\sqrt{3}}{2}$
- Vì M là trung điểm của AB nên $S_{AMO}=\frac{1}{2}S_{ABO}=\frac{1}{2}\cdot \frac{R^{2}\sqrt{3}}{2}=\frac{R^{2}\sqrt{3}}{4}.$
- Diện tích tứ giác AMOC là: $S_{AMOC}=S_{AMO}+S_{ACO}=\frac{R^{2}\sqrt{3}}{4}+\frac{R^{2}\sqrt{3}}{2}=\frac{3R^{2}\sqrt{3}}{4}.$
- <br><br>Vậy diện tích tứ giác AMOC là $\frac{3R^{2}\sqrt{3}}{4}$",
+1,1,Bài 1,"Cho hàm số $(P): y=\frac{x^{2}}{4}$
+
+a. Vẽ đồ thị $(P)$.
+
+b. Tìm điểm $K$ thuộc $(P)$ có tung độ nhỏ hơn hoành độ 1 đơn vị.","a. Vẽ đồ thị $(P)$:
+
+Bảng giá trị:
+
+$x$: -4 ; -2 ; 0 ; 2 ; 4
+
+$y$: 4 ; 1 ; 0 ; 1 ; 4
+
+Đồ thị $(P)$ đi qua các điểm $(-4;4), (-2;1), (0;0), (2;1), (4;4)$.
+
+b. Tìm tọa độ điểm $K$:
+
+Vì điểm $K$ có tung độ nhỏ hơn hoành độ 1 đơn vị nên $y=x-1$.
+
+Ta có phương trình: $x-1=\frac{x^{2}}{4}$
+
+$\Leftrightarrow x^2 - 4x + 4 = 0$
+
+$\Leftrightarrow (x-2)^2 = 0$
+
+Suy ra $x=2$.
+
+Với $x=2$ suy ra $y=1$.
+
+Vậy toạ độ điểm cần tìm là $(2;1)$.",image/h1d1b1.png
+1,1,Bài 2,"Cho phương trình $3x^{2}+2x-5=0$.
+
+a. Chứng minh phương trình trên có hai nghiệm phân biệt $x_{1}, x_{2}$.
+
+b. Không giải phương trình, tính giá trị của biểu thức: $T=3x_{1}x_{2}-(x_{1}^{2}+x_{2}^{2})$","a. Chứng minh hai nghiệm phân biệt:
+
+Ta có $3x^{2}+2x-5=0$ ($a=3; b=2; c=-5$).
+
+$\Delta = b^{2}-4ac = 2^{2}-4 \cdot 3 \cdot (-5) = 4+60 = 64 > 0$.
+
+Vì $\Delta > 0$ nên phương trình có hai nghiệm phân biệt $x_{1}, x_{2}$.
+
+b. Tính giá trị biểu thức $T$:
+
+Theo định lý Viète, ta có: $\begin{cases}x_{1}+x_{2}=\frac{-b}{a}=\frac{-2}{3}\\ x_{1}x_{2}=\frac{c}{a}=\frac{-5}{3}\end{cases}$
+
+Ta có: $x_{1}^{2}+x_{2}^{2} = (x_{1}+x_{2})^{2}-2x_{1}x_{2} = \left(\frac{-2}{3}\right)^{2}-2 \cdot \left(\frac{-5}{3}\right) = \frac{34}{9}.$
+
+Thay vào biểu thức: $T = 3x_{1}x_{2}-(x_{1}^{2}+x_{2}^{2})$
+
+$T = 3 \cdot \left(\frac{-5}{3}\right) - \frac{34}{9} = -5 - \frac{34}{9} = -\frac{79}{9}.$",
+1,1,Bài 3,"Thời gian tự học tại nhà của bạn Tú trong một tuần được biểu diễn trong biểu đồ cột.
+
+a. Tính thời gian trung bình bạn Tú tự học tại nhà mỗi ngày trong một tuần.
+
+b. Chọn ngẫu nhiên một ngày trong tuần, tính xác suất của các biến cố sau:
+
+A: ""Ngày được chọn có thời gian tự học tại nhà của bạn Tú lớn hơn 170 phút"".
+
+B: ""Ngày được chọn có thời gian tự học tại nhà của bạn Tú không quá 160 phút"".","a. Thời gian trung bình:
+
+Tổng thời gian tự học của Tú trong tuần là:
+
+$162+135+170+150+180+175+190 = 1162$ (phút).
+
+Thời gian trung bình mỗi ngày là: $\frac{1162}{7} = 166$ (phút).
+
+b. Tính xác suất:
+
+Không gian mẫu $n(\Omega) = 7$.
+
+- Xét biến cố $A$: Các ngày có thời gian > 170 phút là Thứ 6 (180), Thứ 7 (175), Chủ nhật (190).
+
+Suy ra $n(A) = 3$. Xác suất $P(A) = \frac{3}{7}$.
+
+- Xét biến cố $B$: Các ngày có thời gian $\le$ 160 phút là Thứ 3 (135), Thứ 5 (150).
+
+Suy ra $n(B) = 2$. Xác suất $P(B) = \frac{2}{7}$.",image/h1d1b3.png
+1,1,Bài 4,"Trên một miếng đất hình chữ nhật có chiều rộng là $x(m) (x>0)$, chiều dài là $2x+10(m)$, người ta làm một lối đi hình bình hành có bề rộng là 2 m. Phần còn lại là hai miếng đất hình thang vuông có diện tích bằng nhau để trồng hoa hồng và hoa cúc.
+
+a. Viết biểu thức $A$ biểu diễn diện tích trồng hoa hồng theo $x$.
+
+b. Người ta dự kiến lát sỏi lối đi, chi phí cho mỗi mét vuông là 120 nghìn đồng. Hỏi chi phí để làm lối đi là bao nhiêu? Biết diện tích miếng đất trồng hoa hồng là $45 m^{2}$.","a. Biểu thức diện tích $A$:
+
+Diện tích lối đi hình bình hành là: $2 \cdot x = 2x (m^{2})$.
+
+Diện tích cả miếng đất: $x(2x+10) = 2x^{2}+10x (m^{2})$.
+
+Diện tích trồng hoa (hồng và cúc): $2x^{2}+10x - 2x = 2x^{2}+8x (m^{2})$.
+
+Diện tích trồng hoa hồng là: $A = (2x^{2}+8x) : 2 = x^{2}+4x$.
+
+b. Tính chi phí:
+
+Theo đề: $x^{2}+4x = 45 \Leftrightarrow x^{2}+4x - 45 = 0$.
+
+Giải phương trình được $x = 5$ (nhận) hoặc $x = -9$ (loại).
+
+Với $x = 5$, diện tích lối đi là: $S = 2 \cdot 5 = 10 (m^{2})$.
+
+Chi phí làm lối đi: $10 \cdot 120.000 = 1.200.000$ (đồng).",image/h1d1b4.png
+1,1,Bài 5,"6 lon nước ngọt hình trụ được đặt sát nhau trong thùng carton hình hộp chữ nhật. Mỗi lon có đường kính 7 cm và chiều cao 11 cm.
+
+a. Tính thể tích thùng carton.
+
+b. Tính thể tích phần còn trống trong thùng khi đựng 6 lon nước. (Làm tròn đến hàng đơn vị). Cho $V_{tru} = \pi R^{2}h$.","a. Thể tích thùng carton:
+
+Chiều dài thùng: $7 \cdot 3 = 21 (cm)$.
+
+Chiều rộng thùng: $7 \cdot 2 = 14 (cm)$.
+
+Chiều cao thùng: $11 (cm)$.
+
+$V_{thung} = 21 \cdot 14 \cdot 11 = 3234 (cm^{3})$.
+
+b. Thể tích phần trống:
+
+Bán kính lon nước: $R = 7 : 2 = 3,5 (cm)$.
+
+Thể tích 1 lon: $V_{1} = \pi \cdot 3,5^{2} \cdot 11 \approx 423,33 (cm^{3})$.
+
+Tổng thể tích 6 lon: $V_{6} = 6 \cdot (\pi \cdot 3,5^{2} \cdot 11) = 808,5\pi \approx 2540 (cm^{3})$.
+
+Thể tích phần trống: $V_{trong} = 3234 - 808,5\pi \approx 694 (cm^{3})$.",image/h1d1b5.png
+1,1,Bài 6,"Một gia đình cần 900 đơn vị protein và 400 đơn vị Lipit mỗi ngày. 1kg thịt bò chứa 800 đơn vị protein và 200 đơn vị Lipit. 1kg thịt heo chứa 600 đơn vị protein và 400 đơn vị Lipit. Giá bò: 100.000 đ/kg, heo: 70.000 đ/kg. Tính số tiền mua thịt để đảm bảo dinh dưỡng?","Gọi $x, y$ lần lượt là khối lượng thịt bò và thịt heo cần mua ($x, y > 0$).
+
+Ta có hệ phương trình:
+
+$\begin{cases} 800x + 600y = 900 \\ 200x + 400y = 400 \end{cases}$
+
+Giải hệ phương trình ta được: $x = 0,6$ và $y = 0,7$.
+
+Tổng số tiền cần trả là:
+
+$100.000 \cdot 0,6 + 70.000 \cdot 0,7 = 109.000$ (đồng).",
+1,1,Bài 7,"Từ $A$ ngoài $(O;R)$ vẽ tiếp tuyến $AB, AC$. Vẽ đường kính $BD$. $K$ là hình chiếu của $C$ trên $BD$, $CK$ cắt $AD$ tại $I$. $H = OA \cap BC$.
+
+a. Chứng minh: Tứ giác $ABOC$ nội tiếp và $AO \perp BC$.
+
+b. Chứng minh: $I$ là trung điểm của $CK$.
+
+c. $BD \cap AC = \{S\}$. $SI$ cắt $AB$ tại $M$. Tính $S_{AMOC}$ theo $R$ khi $OA=2R$.","a. Tứ giác ABOC nội tiếp và $AO \perp BC$:
+
+$\angle ABO = \angle ACO = 90^\circ$ nên $A, B, O, C$ cùng thuộc đường tròn đường kính $AO$.
+
+$AB=AC$ và $OB=OC=R$ nên $OA$ là trung trực $BC \Rightarrow AO \perp BC$.
+
+b. $I$ là trung điểm $CK$:
+
+Ta có $CK // AB$ (cùng $\perp BD$).
+
+Theo hệ quả Thales trong $\triangle DAB$: $\frac{IK}{AB} = \frac{DK}{DB}$.
+
+Chứng minh được $\triangle DKC \sim \triangle OBA \Rightarrow \frac{CK}{AB} = \frac{DK}{OB} = \frac{DK}{R}$.
+
+Từ đó suy ra $\frac{IK}{AB} = \frac{CK}{2AB} \Rightarrow IK = \frac{1}{2}CK$.
+
+c. Tính diện tích $AMOC$:
+
+Khi $OA=2R \Rightarrow AC=AB=R\sqrt{3}$.
+
+Chứng minh được $M$ là trung điểm $AB$ dựa vào Thales và $I$ là trung điểm $CK$.
+
+$S_{ACO} = \frac{1}{2} R \cdot R\sqrt{3} = \frac{R^{2}\sqrt{3}}{2}$.
+
+$S_{AMO} = \frac{1}{2} S_{ABO} = \frac{R^{2}\sqrt{3}}{4}$.
+
+$S_{AMOC} = S_{AMO} + S_{ACO} = \frac{3R^{2}\sqrt{3}}{4}$.",image/h1d1b7.png
 1,2,Bài 1,"Cho parabol $(P):y=-\frac{1}{2}x^{2}.$
 
 a. Vẽ đồ thị (P).
@@ -170,7 +210,7 @@ a. Câu lạc bộ nào có sự chênh lệch nhiều nhất giữa số nam si
 
 b. Chọn ngẫu nhiên một học sinh. Tính xác suất biến cố A: ""Học sinh là nữ"" và B: ""Học sinh không tham gia CLB bơi lội và khiêu vũ"".","a. Chênh lệch học sinh:
 
-Cờ vua: $",28-15
+Cờ vua: $",
 1,2,Bài 4,"Một khu vườn hình chữ nhật có chiều rộng x (m), chiều dài y (m). Xây hồ hình tròn tiếp xúc với các cạnh khu vườn.
 
 a. Viết biểu thức tính diện tích phần còn lại của khu vườn theo x và y.
@@ -237,3 +277,2139 @@ $\triangle HBD$ vuông cân tại D $\Rightarrow DQ=\frac{1}{2}HB$.
 Tính được $MO=R\sqrt{5}, AH=\frac{2R}{\sqrt{5}} \Rightarrow AB=\frac{4R}{\sqrt{5}}, DQ=\frac{R}{\sqrt{5}}$.
 
 $S_{ABD}=\frac{1}{2} \cdot \frac{R}{\sqrt{5}} \cdot \frac{4R}{\sqrt{5}} = \frac{2R^{2}}{5}$.",
+1,3,Bài 1,"Cho $(P)$: $y=x^{2}$.
+
+a. Vẽ đồ thị $(P)$.
+
+b. Tìm các điểm $M$ thuộc $(P)$ có tung độ là 25.","a. Vẽ đồ thị $(P)$:
+
+Bảng giá trị:
+
+$x$: -2 ; -1 ; 0 ; 1 ; 2
+
+$y$: 4 ; 1 ; 0 ; 1 ; 4
+
+Đồ thị $(P)$ đi qua các điểm $(-2;4), (-1;1), (0;0), (1;1), (2;4)$.
+
+b. Tìm tọa độ các điểm $M$:
+
+Vì điểm thuộc $(P)$ có tung độ là 25 nên $y=25$.
+
+Ta có phương trình: $x^{2}=25 \Leftrightarrow x^{2}-25=0$.
+
+Suy ra $x_{1}=5$ và $x_{2}=-5$.
+
+Với $x=5$ suy ra $y=25$.
+
+Với $x=-5$ suy ra $y=25$.
+
+Vậy tọa độ các điểm cần tìm là $(5;25)$ và $(-5;25)$.",
+1,3,Bài 2,"Cho phương trình $2x^{2}-4x+1=0$.
+
+a. Chứng minh phương trình trên có hai nghiệm phân biệt $x_{1}$, $x_{2}$.
+
+b. Không giải phương trình, tính giá trị của biểu thức: $A=x_{1}(x_{1}+2026)+x_{2}(x_{2}+2027)-x_{2}$.","a. Chứng minh phương trình có hai nghiệm phân biệt:
+
+Ta có $2x^{2}-4x+1=0$ ($a=2; b=-4; c=1$).
+
+Ta có $\Delta=b^{2}-4ac=(-4)^{2}-4\cdot2\cdot1=16-8=8>0$.
+
+Vì $\Delta>0$ nên phương trình có hai nghiệm phân biệt $x_{1}, x_{2}$.
+
+b. Tính giá trị biểu thức $A$:
+
+Theo định lý Vi-ét, ta có: $\begin{cases} x_{1}+x_{2}=\frac{-b}{a}=2 \\ x_{1}x_{2}=\frac{c}{a}=\frac{1}{2} \end{cases}$
+
+Ta có: $x_{1}^{2}+x_{2}^{2}=(x_{1}+x_{2})^{2}-2x_{1}x_{2}=2^{2}-2\cdot\frac{1}{2}=3$.
+
+Biến đổi biểu thức $A$:
+
+$A=x_{1}^{2}+2026x_{1}+x_{2}^{2}+2027x_{2}-x_{2}$
+
+$A=(x_{1}^{2}+x_{2}^{2})+2026x_{1}+2026x_{2}$
+
+$A=(x_{1}^{2}+x_{2}^{2})+2026(x_{1}+x_{2})$
+
+Thế giá trị vào:
+
+$A=3+2026\cdot2 = 4055$.",
+1,3,Bài 3,"Kết quả xếp loại học tập học kì 1 của học sinh trường THCS A được biểu diễn trong biểu đồ cột kép. Nhà trường chọn ra ngẫu nhiên một em học sinh để tham gia làm bài khảo sát năng lực.
+
+a. Trường có bao nhiêu học sinh đạt kết quả học tập tốt ở học kì I ?
+
+b. Tính xác suất của các biến cố sau:
+
+A: ""Học sinh được chọn có kết quả học tập tốt"".
+
+B: ""Học sinh được chọn có kết quả học tập từ khá trở lên"".","a. Số học sinh đạt loại tốt:
+
+Số học sinh đạt kết quả học tập tốt ở học kì 1 là: $221+215+207+193=836$ (học sinh).
+
+b. Tính xác suất:
+
+Tìm không gian mẫu: $n(\Omega)=(221+305+50)+(215+292+61)+(207+275+77)+(193+318+75)=2304$.
+
+- Biến cố A: ""Học sinh được chọn có kết quả học tập tốt"".
+
+Số khả năng thuận lợi $n(A)=836$.
+
+Xác suất $P(A)=\frac{836}{2304}=\frac{209}{576}$.
+
+- Biến cố B: ""Học sinh được chọn có kết quả học tập từ khá trở lên"".
+
+Số học sinh khá là: $305+292+275+318=1190$.
+
+Số khả năng thuận lợi $n(B)=836+1190=2026$.
+
+Xác suất $P(B)=\frac{2026}{2304}=\frac{1013}{1152}$.",
+1,3,Bài 4,"Anh Tâm có một mảnh vườn hình vuông với diện tích bằng $81 m^{2}$. Anh muốn mở rộng mảnh vườn này thành mảnh vườn hình chữ nhật sao cho các cạnh của hình chữ nhật cách các cạnh của hình vuông tương ứng các khoảng cách là $x; 2x, 3x$ như hình bên ($x>0$).
+
+a. Viết biểu thức $S$ biểu thị diện tích của mảnh vườn sau khi mở rộng theo $x$.
+
+b. Biết rằng sau khi mở rộng, diện tích của mảnh vườn tăng thêm $810 m^{2}$. Tìm giá trị của $x$.","a. Viết biểu thức $S$:
+
+Cạnh của mảnh vườn hình vuông ban đầu là $\sqrt{81}=9(m)$.
+
+Chiều dài của hình chữ nhật mới là: $9+x+3x=9+4x(m)$.
+
+Chiều rộng của hình chữ nhật mới là: $9+x+2x=9+3x(m)$.
+
+Diện tích $S$ sau khi mở rộng là: $S=(9+4x)(9+3x) = 12x^{2}+63x+81(m^{2})$.
+
+b. Tìm $x$:
+
+Diện tích mảnh vườn mới là: $81+810=891(m^{2})$.
+
+Ta có phương trình: $12x^{2}+63x+81=891 \Leftrightarrow 12x^{2}+63x-810=0$.
+
+Giải phương trình được $x_{1}=6$ (nhận) và $x_{2}=-\frac{45}{4}$ (loại vì $x>0$).
+
+Vậy giá trị của $x$ là 6.",
+1,3,Bài 5,"Một viên gạch hình hộp chữ nhật có kích thước $20 cm \times 8 cm \times 8 cm$. Bên trong có bốn lỗ hình trụ bằng nhau có đường kính đáy là 2,5 cm.
+
+a. Tính thể tính đất sét để làm một viên gạch (Lấy $\pi=3,14)$.
+
+b. Bác Tư mua 10 thiên gạch (1 thiên = 1000 viên), giá một viên là 2500 đồng. Bác Tư đã mua dư 2% số lượng gạch cần dùng. Tính tổng số tiền Bác Tư mua gạch.","a. Tính thể tích đất sét:
+
+Bán kính đáy của mỗi lỗ hình trụ là: $2,5:2=1,25(cm)$.
+
+Thể tích của bốn lỗ hình trụ là: $V_{lo}=4\cdot\pi\cdot1,25^{2}\cdot20=125\pi \approx 392,5 (cm^{3})$.
+
+Thể tích khối hộp chữ nhật là: $V_{hop}=20\cdot8\cdot8=1280(cm^{3})$.
+
+Thể tích đất sét là: $V = 1280 - 125 \cdot 3,14 = 887,5 (cm^{3})$.
+
+b. Tính tổng số tiền mua gạch:
+
+Số lượng gạch Bác Tư đã mua là: $10\cdot1000=10000$ (viên).
+
+Tổng số tiền Bác Tư phải trả là: $10000\cdot2500=25.000.000$ (đồng).",
+1,3,Bài 6,"Trong một trại nuôi tôm, kỹ sư pha chế nước mặn:
+
+- Nếu lấy 200 ml nguồn 1 pha với 300 ml nguồn 2 thì được nồng độ 27%.
+
+- Nếu lấy 300 ml nguồn 1 pha với 200 ml nguồn 2 thì được nồng độ 28%.
+
+a. Tính nồng độ mặn ở mỗi nguồn nước ban đầu.
+
+b. Mỗi hồ cần $4 m^{3}$ nước nồng độ 28%. Hỏi thể tích nước mỗi nguồn cần dùng là bao nhiêu?","a. Tính nồng độ ban đầu:
+
+Gọi $x, y$ (%) là nồng độ mặn của nguồn 1 và nguồn 2 ($x, y > 0$).
+
+Từ dữ kiện pha chế, ta có hệ phương trình:
+
+$\begin{cases} 200 \cdot \frac{x}{100} + 300 \cdot \frac{y}{100} = 500 \cdot 27\% \\ 300 \cdot \frac{x}{100} + 200 \cdot \frac{y}{100} = 500 \cdot 28\% \end{cases} \Rightarrow \begin{cases} 2x + 3y = 135 \\ 3x + 2y = 140 \end{cases}$
+
+Giải hệ ta được: $x=30$ và $y=25$.
+
+Vậy nồng độ nguồn 1 là 30% và nguồn 2 là 25%.
+
+b. Tính thể tích cho hồ $4 m^{3}$:
+
+Gọi $x, y$ ($m^{3}$) là thể tích nguồn 1 và nguồn 2 cần dùng.
+
+Ta có hệ: $\begin{cases} x + y = 4 \\ 0,3x + 0,25y = 4 \cdot 28\% = 1,12 \end{cases} \Rightarrow \begin{cases} x = 2,4 \\ y = 1,6 \end{cases}$
+
+Vậy cần 2,4 $m^{3}$ nguồn 1 và 1,6 $m^{3}$ nguồn 2.",
+1,3,Bài 7,"Cho $\triangle ABC$ nhọn ($AB<AC$) nội tiếp đường tròn $(O;R)$. Hai cao $AD, BE$ cắt nhau tại $H$. Gọi $M, N$ là giao điểm của $(O)$ với các tia $BE, AD$.
+
+a. Chứng minh: Tứ giác $ABDE$ nội tiếp và xác định tâm $I$. Suy ra $DE // MN$.
+
+b. Kẻ đường kính $CK$. Chứng minh tứ giác $AKBH$ là hình bình hành và $H, I, K$ thẳng hàng.
+
+c. Chứng minh: khi $\widehat{BCA}=60^{\circ}$ thì $DE=\frac{1}{2}AB$ và tính diện tích hình viên phân cung $DE$.","a. Chứng minh $ABDE$ nội tiếp và $DE // MN$:
+
+$\triangle AEB$ và $\triangle ADB$ cùng nhìn $AB$ dưới một góc $90^{\circ}$ nên $A, B, D, E$ cùng thuộc đường tròn tâm $I$ (trung điểm $AB$).
+
+Tứ giác $ABDE$ nội tiếp $\Rightarrow \widehat{BDE} = \widehat{BAE}$ (cùng chắn cung $BE$).
+
+Trong $(O)$, $\widehat{BMN} = \widehat{BAN}$ (cùng chắn cung $BN$).
+
+Suy ra $\widehat{BDE} = \widehat{BMN} \Rightarrow DE // MN$ (đồng vị).
+
+b. Chứng minh $AKBH$ là hbh và $H, I, K$ thẳng hàng:
+
+Ta có $KA \perp AC$ và $KB \perp BC$ (góc nội tiếp chắn nửa đường tròn).
+
+Mà $BH \perp AC$ và $AH \perp BC \Rightarrow KA // BH$ và $KB // AH$.
+
+Suy ra $AKBH$ là hình bình hành. Vì $I$ là trung điểm $AB$ nên $I$ cũng là trung điểm $HK \Rightarrow H, I, K$ thẳng hàng.
+
+c. Khi $\widehat{BCA}=60^{\circ}$:
+
+$\triangle CDE \sim \triangle CAB$ (g-g) $\Rightarrow \frac{DE}{AB} = \cos \widehat{C} = \cos 60^{\circ} = \frac{1}{2} \Rightarrow DE = \frac{1}{2}AB$.
+
+Bán kính đường tròn $(I)$ là $R_{I} = \frac{AB}{2} = \frac{R\sqrt{3}}{2}$.
+
+$\triangle IED$ đều $\Rightarrow \widehat{DIE}=60^{\circ}$.
+
+Diện tích viên phân: $S = S_{quat} - S_{IED} = \frac{\pi R_{I}^{2} \cdot 60}{360} - \frac{R_{I}^{2}\sqrt{3}}{4} = \frac{R^{2}\pi}{8} - \frac{3R^{2}\sqrt{3}}{16}$.",
+2,1,Bài 1,"Cho hàm số: $y=\frac{3}{2}x^{2}$ có đồ thị ( P ).
+
+a. Vẽ đồ thị (P) trên hệ trục tọa độ.
+
+b. Tìm tọa độ các điểm thuộc (P) có tung độ bằng 24.","b. Thay $y = 24$ vào công thức hàm số:
+
+$24 = \frac{3}{2}x^2$
+
+$\Leftrightarrow x^2 = 16$
+
+$\Leftrightarrow x = 4$ hoặc $x = -4$
+
+Vậy tọa độ các điểm cần tìm là $(4; 24)$ và $(-4; 24)$.",
+2,1,Bài 2,"Cho phương trình $-3x^{2}+2x+4=0$.
+
+a. Chứng minh phương trình trên có hai nghiệm phân biệt.
+
+b. Không giải phương trình, hãy tính giá trị của biểu thức $A=\frac{2x_{1}}{x_{2}}+\frac{2x_{2}}{x_{1}}$","a. Ta có $\Delta' = 1^2 - (-3) \cdot 4 = 13 > 0$. Phương trình luôn có 2 nghiệm phân biệt.
+
+b. Theo hệ thức Vi-ét: $x_1+x_2 = \frac{2}{3}; x_1x_2 = \frac{-4}{3}$.
+
+$A = 2 \cdot \frac{x_1^2+x_2^2}{x_1x_2} = 2 \cdot \frac{(x_1+x_2)^2-2x_1x_2}{x_1x_2}$
+
+$A = 2 \cdot \frac{(\frac{2}{3})^2 - 2(\frac{-4}{3})}{\frac{-4}{3}} = -\frac{14}{3}$.",
+2,1,Bài 3,"Trong một siêu thị tiện lợi có ba khách hàng Phúc, Bình, An đến quầy thu ngân cùng một lúc. Nhân viên thu ngân sẽ chọn lần lượt một khách hàng để thanh toán trước.
+
+a. Có tất cả bao nhiêu kết quả có thể xảy ra? Liệt kê tất cả các kết quả có thể xảy ra của phép thử trên.
+
+b. Tính xác suất của mỗi biến cố sau:
+
+A: ""Phúc được thanh toán cuối cùng"";
+
+B: ""An được thanh toán trước Bình"".","a. Có $3! = 6$ kết quả.
+
+Liệt kê: (Phúc, Bình, An); (Phúc, An, Bình); (Bình, Phúc, An); (Bình, An, Phúc); (An, Phúc, Bình); (An, Bình, Phúc).
+
+b. Biến cố A: {(Bình, An, Phúc); (An, Bình, Phúc)} $\Rightarrow P(A) = \frac{2}{6} = \frac{1}{3}$.
+
+Biến cố B: {(An, Phúc, Bình); (An, Bình, Phúc); (Phúc, An, Bình)} $\Rightarrow P(B) = \frac{3}{6} = \frac{1}{2}$.",
+2,1,Bài 4,"Một trường học xây dựng một sân bóng rổ hình chữ nhật có kích thước như hình vẽ. Gọi x là bề rộng của cửa vào và cửa ra, đồng thời cũng là chiều rộng của lối đi.
+
+a. Viết biểu thức S biểu diễn theo x diện tích của lối đi.
+
+b. Bạn An đi bộ từ cửa vào đến cửa ra và đi dọc hết các cạnh của lối đi. Hãy tính quãng đường An đã đi, biết diện tích của lối đi theo thiết kế là 129 m²?","a. Diện tích lối đi gồm 2 hình chữ nhật: $S=x\cdot15+x\cdot28+x^{2}=x^{2}+43x$
+
+b. $x^{2}+43x=129\Rightarrow x=3$ (nhận) hoặc $x=-46$ (loại).
+
+Quãng đường An đi là: $15+3+28=46~m$.",
+2,1,Bài 5,"Cho hình bên là một thúng gạo vun đầy. Thúng có dạng nửa hình cầu với đường kính 50 cm, phần gạo vun lên có dạng hình nón cao 15 cm.
+
+a. Tính thể tích phần gạo trong thúng (làm tròn đến hàng phần mười).
+
+b. Nhà Dung dùng lon sữa bò cũ có dạng hình trụ (bán kính đáy là 5 cm, chiều cao 15 cm ) để đong gạo. Biết mỗi ngày ăn 5 lon, mỗi lần đong chiếm 90% thể tích lon. Hỏi lượng gạo trên ăn được nhiều nhất bao nhiêu ngày?","a. Bán kính thúng $R=25$ cm.
+
+$V_1 = \frac{2}{3}\pi R^3 = \frac{31250}{3}\pi$.
+
+$V_2 = \frac{1}{3}\pi R^2 h = 3125\pi$.
+
+$V = V_1 + V_2 \approx 42542,4 cm^3$.
+
+b. $V_{lon} = \pi \cdot 5^2 \cdot 15 = 375\pi$.
+
+Gạo ăn 1 ngày: $375\pi \cdot 90\% \cdot 5 = 1687,5\pi$.
+
+Số ngày: $V : 1687,5\pi \approx 8,02$.
+
+Vậy ăn được nhiều nhất 8 ngày.",
+2,1,Bài 6,Lớp 9 A chọn ra $\frac{1}{4}$ số nam và $\frac{1}{3}$ số nữ tham gia kéo co. Biết số nam và nữ tham gia bằng nhau và còn lại 20 học sinh tham gia cổ động. Tìm số học sinh nam và nữ của lớp 9A.,"Gọi x là nam, y là nữ ($x, y \in \mathbb{N}^*$).
+
+Ta có hệ pt:
+
+$\begin{cases} \frac{1}{4}x = \frac{1}{3}y \\ \frac{3}{4}x + \frac{2}{3}y = 20 \end{cases}$
+
+$\Leftrightarrow \begin{cases} x = 16 \\ y = 12 \end{cases}$ (nhận).
+
+Vậy lớp có 16 nam, 12 nữ.",
+2,1,Bài 7,"Cho tam giác $ABC(AC<AB)$ có ba góc nhọn và đường cao AM, BE, CD cắt nhau tại H. Gọi I O lần lượt là trung điểm của AH BC.
+
+a. Chứng minh: tứ giác ADHE nội tiếp đường tròn tâm I đường kính AH và tứ giác BCED nội tiếp đường tròn tâm O đường kính BC.
+
+b. Chứng minh: ID là tiếp tuyến của đường tròn (O) đường kính BC và tứ giác OMED nội tiếp.
+
+c. Tính theo R diện tích của tam giác ABC, biết $\widehat{ABC}=45^{\circ}$, $\widehat{ACB}=60^{\circ}$ và $BC=2R$.","a. $\widehat{ADH} = \widehat{AEH} = 90^\circ \Rightarrow$ ADHE nội tiếp đường tròn tâm I.
+
+$\widehat{BDC} = \widehat{BEC} = 90^\circ \Rightarrow$ BCED nội tiếp đường tròn tâm O.
+
+b. $\triangle IDH$ cân tại I, $\triangle ODB$ cân tại O $\Rightarrow \widehat{IDO} = \widehat{IDH} + \widehat{HDO} = 90^\circ$.
+
+Tương tự $\widehat{IEO} = 90^\circ$ và $\widehat{IMO} = 90^\circ \Rightarrow$ I, D, O, M, E cùng thuộc đường tròn đường kính OI.
+
+c. $S = \frac{1}{2} BC \cdot AM = R^2(3-\sqrt{3})$.",
+2,2,Bài 1,"Cho (P): $y=\frac{1}{2}x^{2}$
+
+a. Vẽ đồ thị ( P ).
+
+b. Tìm điểm M thuộc (P) có tung độ gấp đôi hoành độ và khác gốc toạ độ.","a. Bảng giá trị: $(-4;8), (-2;2), (0;0), (2;2), (4;8)$.
+
+b. $y=2x \Rightarrow \frac{1}{2}x^2 = 2x$
+
+$\Leftrightarrow x^2 - 4x = 0 \Leftrightarrow x = 0$ (loại) hoặc $x = 4$.
+
+Với $x = 4 \Rightarrow y = 8$.
+
+Vậy $M(4; 8)$.",
+2,2,Bài 2,"Cho phương trình: $2x^{2}-8x-3=0$.
+
+a. Chứng minh: phương trình trên có hai nghiệm phân biệt.
+
+b. Không giải phương trình, tính giá trị biểu thức $A=x_{1}(x_{1}-2)+x_{2}(x_{2}-2)$.","a. $\Delta' = (-4)^2 - 2(-3) = 22 > 0 \Rightarrow$ 2 nghiệm phân biệt.
+
+b. Vi-ét: $x_1+x_2=4, x_1x_2=-1,5$.
+
+$A = (x_1^2+x_2^2) - 2(x_1+x_2) = (x_1+x_2)^2 - 2x_1x_2 - 2(x_1+x_2)$
+
+$A = 4^2 - 2(-1,5) - 2(4) = 11$.",
+2,2,Bài 3,"Cho biểu đồ đoạn thẳng biểu diễn số lượng máy tính để bàn và máy tính xách tay được bán ra trong 6 tháng đầu năm của một công ty X.
+
+a. Trong 6 tháng đầu năm, tháng nào có sự chênh lệch giữa số lượng máy tính xách tay và máy tính để bàn được bán ra là ít nhất?
+
+b. Chọn ngẫu nhiên 1 tháng trong 6 tháng đầu năm, tính xác suất của các biến cố sau:
+
+A: ""Tháng được chọn có số lượng máy tính để bàn mà công ty bán được không quá 30 máy"".
+
+B: ""Tháng được chọn có sự chênh lệch số lượng giữa 2 loại máy bán ra không quá 20 máy"".",a. Chênh lệch tháng Ba là $,
+2,2,Bài 4,"Tại một giao lộ, có một vòng xuyến được thiết kế gồm hình tròn có bán kính là a (mét) được trồng hoa hồng và hình vành khuyên có độ rộng là $a-1$ (mét) bao quanh hình tròn đó.
+
+a. Viết biểu thức M theo biển a biểu diễn diện tích phần đất trồng hoa cúc.
+
+b. Biết rằng diện tích phần đất trồng hoa hồng bằng với diện tích phần đất trồng hoa cúc và $a>1$ Tính giá trị của a (làm tròn kết quả đến hàng phần mười).","a. $R_{ngoai} = a + (a-1) = 2a-1$.
+
+$M = \pi(2a-1)^2 - \pi a^2 = \pi(3a^2-4a+1)$.
+
+b. $\pi a^2 = \pi(3a^2-4a+1) \Leftrightarrow 2a^2-4a+1=0$.
+
+$a = \frac{2+\sqrt{2}}{2} \approx 1,7$ (nhận vì $a>1$).",
+2,2,Bài 5,"Gạch chống nóng 6 lỗ có kích thước $195~mm\times135~mm\times90$ mm. Mỗi viên gạch có 6 lỗ rỗng, mỗi lỗ rỗng này có dạng hình trụ với đường kính đáy 28 mm.
+
+a. Lấy $\pi=3,14$. Hãy tính thể tích nguyên vật liệu để làm nên một viên gạch trên.
+
+b. Một khối đất nung kích thước 2,1 mx1,5 m×1,5 m. Hao hụt đất nung trong quá trình làm gạch là 10%. Hỏi cần bao nhiêu khối đất như trên để làm ra 10000 viên gạch?","a. $V_{hop} = 195 \cdot 135 \cdot 90 = 2369250 mm^3$.
+
+$V_{lo} = 6 \cdot 3,14 \cdot 14^2 \cdot 195 = 719740,8 mm^3$.
+
+$V_{gach} = 1649509,2 mm^3$.
+
+b. $V_{10000} \approx 16,5 m^3$.
+
+$V_{dat} = 16,5 : 0,9 \approx 18,33 m^3$.
+
+$V_{khoi} = 4,725 m^3 \Rightarrow n \approx 3,88 \Rightarrow$ Cần 4 khối.",
+2,2,Bài 6,Một dãy phố có 6 căn nhà liên tiếp đánh số chẵn liên tiếp. Tìm thương và số dư khi lấy số địa chỉ nhà cuối dãy chia cho số địa chỉ nhà đầu dây thì thương là 2 và số dư là 2. Hãy cho biết số địa chỉ từng căn nhà ở dãy phố đó?,"Gọi $x$ là số đầu, $y$ là số cuối.
+
+$y - x = (6-1) \cdot 2 = 10$.
+
+$y = 2x + 2$.
+
+Giải hệ: $x=8, y=18$.
+
+Dãy số: 8, 10, 12, 14, 16, 18.",
+2,2,Bài 7,"Cho đường tròn (0) có đường kính BC. Trên nửa đường tròn (O), lấy hai điểm A và D. Tia BA và CD cắt nhau tại S, AC cắt BD tại H. Gọi I là trung điểm của SH.
+
+a. Tính số đo $\widehat{BAC}$ và chứng minh tứ giác SAHD nội tiếp.
+
+b. Tia SH cắt BC tại M. Chứng minh: $\widehat{IAH}=\widehat{MDC}$.
+
+c. Trong trường hợp $\widehat{BSC}=60^{\circ}$ và $BC=6$ cm. Tính độ dài AD và bán kính đường tròn ngoại tiếp $\triangle SAD$.","a. $\widehat{BAC} = 90^\circ$. SAHD nội tiếp đường tròn đường kính SH.
+
+b. $\triangle IAH$ cân $\Rightarrow \widehat{IAH} = \widehat{IHA} = \widehat{MHC}$.
+
+Tứ giác DMCH nội tiếp $\Rightarrow \widehat{MDC} = \widehat{MHC}$. Suy ra đpcm.
+
+c. $\triangle SAD \sim \triangle SCB \Rightarrow AD = BC \cdot \cos 60^\circ = 3$ cm.
+
+Bán kính ngoại tiếp $\triangle SAD$ chính là $ID = \sqrt{3}$ cm.",
+2,3,Bài 1,"Cho hàm số $y=-\frac{1}{2}x^{2}(P)$.
+
+a. Vẽ đồ thị (P) của hàm số trên.
+
+b. Tìm những điểm A thuộc ( P ) sao cho tung độ bằng $-\frac{1}{2}$","a. Bảng giá trị: $(-4;-8), (-2;-2), (0;0), (2;-2), (4;-8)$.
+
+b. $y = -1/2 \Rightarrow -1/2x^2 = -1/2 \Leftrightarrow x = \pm 1$.
+
+Tọa độ: $(1; -1/2)$ và $(-1; -1/2)$.",
+2,3,Bài 2,"Cho phương trình $3x^{2}-2x-5=0$.
+
+a. Chứng tỏ phương trình có hai nghiệm phân biệt $x_1, x_2$.
+
+b. Không giải phương trình, hãy tính giá trị của biểu thức: $M=x_{1}(x_{1}-1)+x_{2}(x_{2}-1)$.","a. $a \cdot c = 3 \cdot (-5) = -15 < 0 \Rightarrow$ Phương trình luôn có 2 nghiệm trái dấu.
+
+b. Vi-ét: $x_1+x_2 = 2/3, x_1x_2 = -5/3$.
+
+$M = (x_1+x_2)^2 - 2x_1x_2 - (x_1+x_2) = (2/3)^2 - 2(-5/3) - 2/3 = 28/9$.",
+2,3,Bài 3,"Một hộp kín chứa 5 loại thẻ ghi tên: THÀNH, PHỎ, HỒ, CHÍ, MINH.
+
+a. Trong hộp có bao nhiêu thẻ loại tên ngắn (không quá 3 chữ cái).
+
+b. Tính xác suất của biến cố A : ""học sinh rút được loại thẻ không phải tên ngắn"".","a. Thẻ ngắn: PHỐ(4), HỒ(7), CHÍ(2) $\Rightarrow 13$ thẻ.
+
+b. $n(\Omega) = 23$. Thẻ không ngắn: THÀNH(5), MINH(5) $\Rightarrow n(A)=10$.
+
+$P(A) = 10/23$.",
+2,3,Bài 4,"Một khu đất hình chữ nhật rộng 35 m chia làm hai vườn trồng rau. Lối đi giữa rộng 1,5 m, các lối đi còn lại rộng 0,5 m. Vườn 2 dài ít hơn vườn 1 là 15 m.
+
+a. Viết biểu thức biểu diễn theo x tổng diện tích trồng rau của hai khu vườn.
+
+b. Tìm diện tích hai khu trồng rau biết diện tích khu đất lớn hơn diện tích trồng rau là $162,5~m^{2}$.","a. $S = 34x + 34(x-15) = 68x - 510$.
+
+b. $35(2x-12,5) - (68x-510) = 162,5 \Leftrightarrow 2x=90 \Leftrightarrow x=45$.
+
+Tổng diện tích: $68 \cdot 45 - 510 = 2550 m^2$.",
+2,3,Bài 5,"Bồn nước hình trụ đường kính 1,4 m, cao 3,25 m. Nước đầy nửa bồn và có phao cầu bán kính 30 cm chìm hoàn toàn.
+
+a. Tính thể tích nước có trong bồn (làm tròn đến hàng phần mười).
+
+b. Bơm thêm nước công suất $0,0024~m^{3}/gi\hat{a}y$. Sau bao nhiêu phút thì bồn đầy?","a. $V_1$ (nửa trụ) $= \pi \cdot 0,7^2 \cdot 1,625 = 0,79625\pi$.
+
+$V_{phao} = \frac{4}{3}\pi \cdot 0,3^3 = 0,036\pi$.
+
+$V_{nuoc} = V_1 - V_{phao} \approx 2,4 m^3$.
+
+b. $V_{trong} = V_1 \approx 2,5 m^3$.
+
+$t = V_{trong} : 0,0024 \approx 1042s \approx 17,37$ phút.",
+2,3,Bài 6,"Anh Bình làm tổng cộng 212 giờ (định mức và thêm giờ). Lương định mức 38000 đ/h, thêm giờ 150% lương định mức. Tổng nhận 8436000 đ. Tính giờ làm thêm?","Gọi $x$ là định mức, $y$ là thêm giờ.
+
+$x + y = 212$.
+
+$38000x + 57000y = 8436000$.
+
+Giải hệ: $x=192, y=20$.
+
+Vậy làm thêm 20 giờ.",
+2,3,Bài 7,"Cho $\triangle ABC$ nhọn ($AB<AC$) nội tiếp $(O;R)$. Hai đường cao AD, BE cắt nhau tại H. Tia BE, AD (O) M, N.
+
+a. Chứng minh tứ giác ABDE nội tiếp. Xác định tâm I. Chứng minh $DE//MN$.
+
+b. Kẻ đường kính CK. Chứng minh AKBH là hình bình hành và H, I, K thẳng hàng.
+
+c. Khi $\widehat{BCA}=60^{\circ}$, chứng minh $DE=\frac{1}{2}AB$ và tính diện tích hình viên phân cung DE của (I) theo R.","(Tương tự Bài 7 Cụm 1 Đề 3).
+
+$S_{vp} = \frac{R^2\pi}{8} - \frac{3R^2\sqrt{3}}{16}$.",
+3,1,Bài 1,"Cho parabol $(P): y=-\frac{1}{2}x^{2}$.
+
+a. Vẽ đồ thị $(P)$ trên hệ trục tọa độ.
+
+b. Tìm tọa độ các điểm $D$ thuộc $(P)$ (khác gốc tọa độ) có tung độ gấp đôi hoành độ.","a) Lập bảng giá trị:
+
+x: -4; -2; 0; 2; 4
+
+$y=-\frac{1}{2}x^{2}$: -8; -2; 0; -2; -8
+
+Vẽ đồ thị theo bảng giá trị.
+
+b) Vì điểm $D$ có tung độ gấp đôi hoành độ nên $y=2x$.
+
+Ta có phương trình: $2x = -\frac{1}{2}x^2$
+
+$\Leftrightarrow \frac{1}{2}x^2 + 2x = 0$
+
+$\Leftrightarrow x=0$ hoặc $x=-4$.
+
+Vì $D$ khác gốc tọa độ nên $x \neq 0$, suy ra $x=-4$.
+
+Với $x=-4 \Rightarrow y=2(-4)=-8$.
+
+Vậy tọa độ điểm cần tìm là $D(-4;-8)$.",
+3,1,Bài 2,"Cho phương trình $x^{2}-4x-2=0$.
+
+a. Chứng minh phương trình trên có hai nghiệm phân biệt $x_{1}, x_{2}$.
+
+b. Không giải phương trình, tính giá trị của biểu thức $A=\frac{x_{1}^{2}}{x_{2}}+\frac{x_{2}^{2}}{x_{1}}$.","a) Ta có $\Delta = b^{2}-4ac = (-4)^{2}-4 \cdot 1 \cdot (-2) = 24 > 0$.
+
+Vì $\Delta > 0$ nên phương trình có hai nghiệm phân biệt $x_1, x_2$.
+
+b) Theo định lý Vi-ét, ta có:
+
+$\{ x_1 + x_2 = 4; x_1x_2 = -2 \}$.
+
+Ta có $x_1^2 + x_2^2 = (x_1+x_2)^2 - 2x_1x_2 = 4^2 - 2(-2) = 20$.
+
+Biểu thức $A = \frac{x_1^3 + x_2^3}{x_1x_2} = \frac{(x_1+x_2)(x_1^2 - x_1x_2 + x_2^2)}{x_1x_2}$.
+
+$A = \frac{4 \cdot (20 - (-2))}{-2} = \frac{4 \cdot 22}{-2} = \frac{88}{-2} = -44$.
+
+Vậy $A = -44$.",
+3,1,Bài 3,"Khảo sát số giờ tự học tại nhà trong một tuần của một nhóm học sinh. Kết quả biểu diễn qua biểu đồ (2 học sinh học 9h, 4 học sinh học 5h, 6 học sinh học 8h, 8 học sinh học 6h, 10 học sinh học 7h).
+
+a. Tính số giờ tự học trung bình.
+
+b. Tính xác suất thực nghiệm biến cố M: ""Học sinh học từ 8 giờ trở lên"".
+
+c. Tính xác suất thực nghiệm biến cố N: ""Học sinh học ít hơn 7 giờ"".","a) Tổng số học sinh: $2+4+6+8+10=30$ (học sinh).
+
+Tổng số giờ tự học: $9\cdot2+5\cdot4+8\cdot6+6\cdot8+7\cdot10=204$ (giờ).
+
+Số giờ tự học trung bình: $\frac{204}{30}=6,8$ giờ.
+
+b) Biến cố M (8h và 9h) có: $n(M) = 6 + 2 = 8$ học sinh.
+
+Xác suất $P(M) = \frac{8}{30} = \frac{4}{15}$.
+
+c) Biến cố N (5h và 6h) có: $n(N) = 4 + 8 = 12$ học sinh.
+
+Xác suất $P(N) = \frac{12}{30} = \frac{2}{5}$.",
+3,1,Bài 4,"Một sân vận động gồm hình chữ nhật (chiều rộng $x$, chiều dài $y$) và hai nửa hình tròn đường kính $x$.
+
+a. Viết biểu thức tính chu vi $P$ của đường chạy.
+
+b. Biết $y=1,5x$ và $P=314,16$ m. Tính tổng chi phí trải cỏ nhân tạo với giá $250,000$ đồng/$m^2$ (lấy $\pi=3,14$).","a) Chu vi đường chạy: $P = 2y + \pi x$.
+
+b) Với $y=1,5x \Rightarrow P = 2(1,5x) + 3,14x = 6,14x$.
+
+$6,14x = 314,16 \Rightarrow x \approx 51,17$ m.
+
+$y \approx 76,75$ m.
+
+Diện tích sân: $S = xy + \pi(\frac{x}{2})^2 \approx 5982,07$ $m^2$.
+
+Tổng chi phí: $5982,07 \cdot 250,000 \approx 1,495,517,500$ đồng (tùy sai số làm tròn).
+
+Theo đề bài: 1,495,516,632,11 đồng.",
+3,1,Bài 5,"Một viên nến hình cầu bán kính $R=4$ cm đặt khít trong hộp trụ.
+
+a. Tính thể tích hộp trụ và viên nến.
+
+b. Tính chi phí hạt sáp đổ đầy phần trống cho 500 bộ quà tặng (15,000 đồng/$100 cm^3$).","a) Hộp trụ có $r=4$ cm, $h=2R=8$ cm.
+
+$V_{tru} = \pi r^2 h = 3,14 \cdot 4^2 \cdot 8 = 401,92$ $cm^3$.
+
+$V_{cau} = \frac{4}{3}\pi R^3 \approx 267,95$ $cm^3$.
+
+b) Thể tích trống 1 bộ: $V_{trong} = 401,92 - 267,95 = 133,97$ $cm^3$.
+
+Giá $1 cm^3$ là 150 đồng.
+
+Chi phí 500 bộ: $133,97 \cdot 150 \cdot 500 = 10,047,750$ đồng.",
+3,1,Bài 6,"Hai xe máy đi từ A đến B. Vận tốc xe 1 gấp 1,2 lần xe 2. Sau 30 phút, xe 1 giảm vận tốc còn bằng nửa vận tốc xe 2. Hai xe đến B cùng lúc. Tính thời gian xe 2 đi từ A đến B.","Gọi vận tốc xe 2 là $v$, thời gian đi là $t$ (giờ). Quãng đường $S = vt$.
+
+Xe 1: đi 0,5h vận tốc $1,2v \Rightarrow S_1 = 0,6v$.
+
+Thời gian còn lại $(t-0,5)h$ vận tốc $0,5v \Rightarrow S_2 = 0,5v(t-0,5)$.
+
+Ta có: $vt = 0,6v + 0,5v(t-0,5) \Rightarrow t = 0,6 + 0,5t - 0,25$.
+
+$\Leftrightarrow 0,5t = 0,35 \Rightarrow t = 0,7$ giờ.
+
+Đổi: $0,7 \cdot 60 = 42$ phút.",
+3,1,Bài 7,"Cho tam giác $ABC$ nhọn $(AB<AC)$ nội tiếp $(O; 5cm)$, đường cao $AD, BE$ cắt nhau tại $H$. Kẻ kính $AK$.
+
+a. Chứng minh $AC \perp KC$ và $\triangle ABD \sim \triangle AKC$.
+
+b. Chứng minh tứ giác $CDHE$ nội tiếp và $AH \cdot AD = AE \cdot AC$.
+
+c. Cho $BC=8$ cm, tính $AH$.","a) $\widehat{ACK}=90^{\circ}$ (góc nội tiếp chắn nửa đường tròn) $\Rightarrow AC \perp KC$.
+
+$\triangle ABD$ và $\triangle AKC$ có $\widehat{ADB}=\widehat{ACK}=90^{\circ}$ và $\widehat{ABD}=\widehat{AKC}$ (cùng chắn cung $AC$) $\Rightarrow$ đồng dạng (g-g).
+
+b) $\widehat{HDC}=\widehat{HEC}=90^{\circ} \Rightarrow CDHE$ nội tiếp đường kính $HC$.
+
+$\triangle AHE \sim \triangle ACD$ (g-g) $\Rightarrow \frac{AH}{AC}=\frac{AE}{AD} \Rightarrow AH \cdot AD = AE \cdot AC$.
+
+c) Kẻ $OM \perp BC \Rightarrow M$ là trung điểm $BC \Rightarrow MC=4$ cm.
+
+$OM = \sqrt{OC^2-MC^2} = \sqrt{5^2-4^2} = 3$ cm.
+
+$BHCK$ là hình bình hành nên $H, M, K$ thẳng hàng và $M$ là trung điểm $HK$.
+
+$OM$ là đường trung bình $\triangle AHK \Rightarrow AH = 2OM = 6$ cm.",
+3,2,Bài 1,"Cho parabol (P): $y=\frac{x^{2}}{2}$
+
+a. Vẽ đồ thị (P) trên hệ trục tọa độ
+
+b. Tìm tọa độ những điểm thuộc $(P)$ có tung độ bằng 4.","a) Lập bảng giá trị
+
+X: -4; -2; 0; 2; 4
+
+$y=\frac{x^{2}}{2}$: 8; 2; 0; 2; 8
+
+Vẽ các điểm (-4;8), (-2;2),(0;0),(2;2),(4;8) rồi nối lại ta được đồ thị (P).
+
+b) Vì tung độ bằng 4 nên $y=4$.
+
+Ta có: $4=\frac{x^{2}}{2} \Leftrightarrow x^2 = 8 \Leftrightarrow x_{1}=2\sqrt{2}, x_{2}=-2\sqrt{2}$.
+
+Với $x_{1}=2\sqrt{2}$ suy ra $y_{1}=4$.
+
+Với $x_{2}=-2\sqrt{2}$ suy ra $y_{2}=4$.
+
+Vậy tọa độ các điểm cần tìm là $(2\sqrt{2};4)$ và $(-2\sqrt{2};4)$.",
+3,2,Bài 2,"Cho phương trình $3x^{2}+2x-3=0$.
+
+a. Chứng minh phương trình trên có hai nghiệm phân biệt $x_1, x_2$.
+
+b. Không giải phương trình, tính giá trị của biểu thức $M=(x_{1}-2x_{2})(x_{2}-x_{1})+x_{2}^{2}$","a) Ta có $\Delta=b^{2}-4ac=2^{2}-4\cdot3\cdot(-3)=4+36=40>0$.
+
+Vì $\Delta>0$ nên phương trình có hai nghiệm phân biệt $x_1, x_2$.
+
+b) Theo định lý Vi-ét, ta có: $\begin{cases} x_1+x_2 = \frac{-2}{3} \\ x_1x_2 = -1 \end{cases}$
+
+Ta có: $x_{1}^{2}+x_{2}^{2}=(x_{1}+x_{2})^{2}-2x_{1}x_{2}=(\frac{-2}{3})^{2}-2\cdot(-1)=\frac{22}{9}.$
+
+Ta có: $M = (x_{1}-2x_{2})(x_{2}-x_{1})+x_{2}^{2} = x_1x_2 - x_1^2 - 2x_2^2 + 2x_1x_2 + x_2^2$
+
+$= 3x_1x_2 - x_1^2 - x_2^2 = 3x_1x_2 - (x_1^2 + x_2^2)$
+
+$= 3\cdot(-1) - \frac{22}{9} = -\frac{49}{9}$.
+
+Vậy $M = -\frac{49}{9}$.",
+3,2,Bài 3,"Biểu đồ cột kép biểu diễn thu nhập và chi phí (đơn vị: triệu đồng) trong một tuần của một cửa hàng.
+
+a. Trong tuần này, cửa hàng có lợi nhuận cao nhất là ngày thứ mấy?
+
+b. Chọn ngẫu nhiên một ngày trong tuần, tính xác suất của các biến cố sau:
+
+A: ""Ngày được chọn có thu nhập lớn hơn 200 triệu đồng"".
+
+B: ""Ngày được chọn có lợi nhuận lớn hơn 50 triệu đồng"".","a) Lợi nhuận trong ngày = thu nhập - chi phí.
+
+Thứ 2: $150-100=50$.
+
+Thứ 3: $200-150=50$.
+
+Thứ 4: $180-130=50$.
+
+Thứ 5: $250-180=70$.
+
+Thứ 6: $220-170=50$.
+
+Thứ 7: $300-250=50$.
+
+Chủ nhật: $280-200=80$.
+
+Vậy cửa hàng có lợi nhuận cao nhất là Chủ nhật.
+
+b) Không gian mẫu $n(\Omega)=7$.
+
+Biến cố A xảy vào các ngày: Thứ 5, Thứ 6, Thứ 7, Chủ nhật $\Rightarrow n(A)=4 \Rightarrow P(A)=\frac{4}{7}$.
+
+Biến cố B xảy ra vào các ngày: Thứ 5, Chủ nhật $\Rightarrow n(B)=2 \Rightarrow P(B)=\frac{2}{7}$.
+
+Vậy $P(A)=\frac{4}{7}, P(B)=\frac{2}{7}$.",
+3,2,Bài 4,"Nhà ông Năm có một khu vườn hình vuông với kích thước cạnh là $3x$ (mét). Ông Năm muốn xây một hồ cá hình tròn tiếp xúc với các cạnh của khu vườn.
+
+a. Viết biểu thức $S$ biểu thị diện tích hồ cá theo $x$.
+
+b. Ông Năm trồng cỏ phần còn lại. Hao hụt cỏ là 10%. Tổng chi phí mua cỏ là 425,700 đồng, giá 50,000 đồng/$m^2$. Tính diện tích ban đầu của khu vườn? (Lấy $\pi \approx 3,14$).","a) Bán kính hồ cá là $r=\frac{3x}{2}$.
+
+Diện tích hồ cá là: $S=\pi r^{2}=\pi(\frac{3x}{2})^{2}=\frac{9\pi}{4}x^{2}$.
+
+b) Diện tích khu vườn $S_{vuon}=9x^2$.
+
+Diện tích cỏ thực tế: $S_{co} = 9x^2 - \frac{9\pi}{4}x^2 = \frac{9(4-\pi)}{4}x^2$.
+
+Diện tích cỏ đã mua: $S_{mua} = \frac{425700}{50000} = 8,514$ $m^2$.
+
+Vì hao hụt 10% nên $S_{mua} = 110\% \cdot S_{co} \Rightarrow S_{co} = 8,514 / 1,1 = 7,74$ $m^2$.
+
+Với $\pi \approx 3,14$: $1,935x^2 = 7,74 \Rightarrow x^2 = 4 \Rightarrow x=2$.
+
+Cạnh vườn là $3 \cdot 2 = 6$m. Diện tích ban đầu: $6^2 = 36$ $m^2$.",
+3,2,Bài 5,"Một thùng nước hình trụ cao 36 cm, đường kính đáy 3 dm.
+
+a. Tính thể tích của thùng.
+
+b. Múc nước đổ vào bể chứa $1 m^3$. Mỗi lần múc 90% thùng. Sau 40 lần bể đầy chưa?","a) $R = 15$ cm. $V = \pi R^2 h = \pi \cdot 15^2 \cdot 36 = 8100\pi$ $cm^3 \approx 25,45$ lít.
+
+b) Lượng nước 1 lần: $V_1 = 0,9 \cdot 8100\pi = 7290\pi$ $cm^3$.
+
+Sau 40 lần: $V_{40} = 40 \cdot 7290\pi = 291600\pi$ $cm^3 \approx 916297$ $cm^3$.
+
+Đổi $1 m^3 = 1,000,000$ $cm^3$.
+
+Vì $916297 < 1,000,000$ nên sau 40 lần bể chưa đầy.",
+3,2,Bài 6,"Hai máy sản xuất cùng số lượng linh kiện. Máy 1 mỗi giờ làm thêm 3 linh kiện, xong sớm 2 giờ. Máy 2 mỗi giờ làm thêm 5 linh kiện, xong sớm 3 giờ và làm thêm được 15 linh kiện. Tính số lượng linh kiện mỗi máy phải sản xuất theo kế hoạch?","Gọi $x$ (linh kiện/giờ) là năng suất dự kiến, $y$ (giờ) là thời gian dự kiến.
+
+Số linh kiện kế hoạch là $xy$.
+
+Máy 1: $(x+3)(y-2) = xy \Leftrightarrow -2x + 3y = 6$ (1).
+
+Máy 2: $(x+5)(y-3) = xy + 15 \Leftrightarrow -3x + 5y = 30$ (2).
+
+Giải hệ (1) và (2) ta được $x=60, y=42$.
+
+Số linh kiện kế hoạch: $60 \cdot 42 = 2520$ linh kiện.",
+3,2,Bài 7,"Từ M ngoài (O;R) với $OM=2R$, kẻ tiếp tuyến MA, MC. Vẽ đường kính AB. MB cắt (O) tại D. OM cắt AC tại H.
+
+a. Chứng minh $\triangle ABD$ vuông và $OM \perp AC$.
+
+b. Chứng minh $OD^2 = OH \cdot OM$ và $\widehat{ODH} = \widehat{DAC}$.
+
+c. K là trung điểm BD. AC cắt OK tại E. Tính $S_{OEB}$ theo R.","a) $\widehat{ADB}=90^{\circ}$ (góc nội tiếp chắn nửa đường tròn) $\Rightarrow \triangle ABD$ vuông tại D.
+
+$MA=MC, OA=OC=R \Rightarrow OM$ là trung trực $AC \Rightarrow OM \perp AC$ tại H.
+
+b) $\triangle OAM$ vuông tại A, đường cao AH $\Rightarrow OA^2 = OH \cdot OM$. Mà $OA=OD=R \Rightarrow OD^2 = OH \cdot OM$.
+
+$\Rightarrow \frac{OD}{OM} = \frac{OH}{OD} \Rightarrow \triangle ODH \sim \triangle OMD$ (c-g-c) $\Rightarrow \widehat{ODH} = \widehat{OMD}$.
+
+Tứ giác AHDM nội tiếp đường kính AM $\Rightarrow \widehat{HMD} = \widehat{HAD}$. Vậy $\widehat{ODH} = \widehat{DAC}$.
+
+c) $OK \perp BD$ tại K. $\triangle OHE \sim \triangle OKM$ (g-g) $\Rightarrow OK \cdot OE = OH \cdot OM = R^2 = OB^2$.
+
+$\Rightarrow \triangle OBK \sim \triangle OEB$ (c-g-c) $\Rightarrow \widehat{OBE} = \widehat{OKB} = 90^{\circ} \Rightarrow \triangle OEB$ vuông tại B.
+
+$\cos \widehat{AOM} = \frac{R}{2R} = \frac{1}{2} \Rightarrow \widehat{AOM}=60^{\circ} \Rightarrow \widehat{BAE}=30^{\circ}$.
+
+$BE = AB \cdot \tan 30^{\circ} = 2R \cdot \frac{\sqrt{3}}{3}$.
+
+$S_{OEB} = \frac{1}{2} OB \cdot BE = \frac{1}{2} \cdot R \cdot \frac{2R\sqrt{3}}{3} = \frac{R^2\sqrt{3}}{3}$.",
+3,3,Bài 1,"Cho hàm số $(P): y=\frac{-1}{2}x^{2}$
+
+a. Vẽ đồ thị $(P)$ của hàm số trên
+
+b. Tìm những điểm thuộc đồ thị $(P)$ có hoành độ gấp hai lần tung độ.","a) Bảng giá trị:
+
+$x$: -4; -2; 0; 2; 4
+
+$y=-\frac{1}{2}x^{2}$: -8; -2; 0; -2; -8
+
+Vẽ đồ thị theo bảng giá trị.
+
+b) Vì điểm thuộc $(P)$ có hoành độ gấp hai lần tung độ nên $x=2y \Rightarrow y=\frac{1}{2}x$.
+
+Ta có phương trình:
+
+$\frac{1}{2}x = -\frac{1}{2}x^{2}$
+
+$\Leftrightarrow \frac{1}{2}x^{2} + \frac{1}{2}x = 0$
+
+$\Leftrightarrow x=0$ hoặc $x=-1$.
+
+Với $x=0 \Rightarrow y=0$.
+
+Với $x=-1 \Rightarrow y=-\frac{1}{2}$.
+
+Vậy tọa độ các điểm cần tìm là $(0;0)$ và $(-1;-\frac{1}{2})$.",
+3,3,Bài 2,"Cho phương trình: $2x^{2}-7x+4=0$.
+
+a. Chứng minh phương trình trên có hai nghiệm phân biệt $x_{1};x_{2}$
+
+b. Không giải phương trình. Hãy tính giá trị của biểu thức $Q=\frac{x_{1}}{x_{2}+2}-x_{1}+\frac{x_{2}}{x_{1}+2}-x_{2}$","a) Ta có $\Delta = b^{2}-4ac = (-7)^{2}-4 \cdot 2 \cdot 4 = 17 > 0$.
+
+Vì $\Delta > 0$ nên phương trình có hai nghiệm phân biệt $x_{1}, x_{2}$.
+
+b) Theo định lý Vi-ét:
+
+$x_{1}+x_{2} = \frac{7}{2}$
+
+$x_{1}x_{2} = 2$
+
+$x_{1}^{2}+x_{2}^{2} = (x_{1}+x_{2})^{2}-2x_{1}x_{2} = (\frac{7}{2})^{2}-2 \cdot 2 = \frac{33}{4}$.
+
+Ta có: $Q = \frac{x_{1}}{x_{2}+2} + \frac{x_{2}}{x_{1}+2} - (x_{1}+x_{2})$
+
+$Q = \frac{x_{1}(x_{1}+2)+x_{2}(x_{2}+2)}{(x_{2}+2)(x_{1}+2)} - (x_{1}+x_{2})$
+
+$Q = \frac{x_{1}^{2}+2x_{1}+x_{2}^{2}+2x_{2}}{x_{1}x_{2}+2x_{1}+2x_{2}+4} - (x_{1}+x_{2})$
+
+$Q = \frac{(x_{1}^{2}+x_{2}^{2})+2(x_{1}+x_{2})}{x_{1}x_{2}+2(x_{1}+x_{2})+4} - (x_{1}+x_{2})$
+
+$Q = \frac{\frac{33}{4}+2 \cdot \frac{7}{2}}{2+2 \cdot \frac{7}{2}+4} - \frac{7}{2} = -\frac{121}{52}$.",
+3,3,Bài 3,"Dựa vào biểu đồ số huy chương Vàng, Bạc, Đồng của hai trường A và B:
+
+a. Tổng số huy chương các loại của trường nào cao hơn?
+
+b. Tính xác suất lấy được huy chương Bạc từ trường A.
+
+c. Tính xác suất lấy được huy chương không phải là huy chương Bạc từ cả hai trường.","a) Tổng trường A: $9+8+10=27$.
+
+Tổng trường B: $8+11+12=31$.
+
+Vậy trường B cao hơn.
+
+b) $n(\Omega) = 27$. Số huy chương Bạc trường A là 8.
+
+$P(A) = \frac{8}{27}$.
+
+c) Tổng huy chương 2 trường: $n(\Omega) = 27+31=58$.
+
+Tổng huy chương Bạc: $8+11=19$.
+
+Số huy chương không phải Bạc: $n(B) = 58-19=39$.
+
+$P(B) = \frac{39}{58}$.",
+3,3,Bài 4,"14 học sinh (nam và nữ) gói 96 phần quà. Tổng số quà nam gói bằng tổng số quà nữ gói. Mỗi bạn nữ gói nhiều hơn mỗi bạn nam 2 phần. Hỏi có bao nhiêu học sinh nam, bao nhiêu học sinh nữ?","Gọi $x$ là số học sinh nam $(x \in \mathbb{N}^*, x<14)$.
+
+Số học sinh nữ là $14-x$.
+
+Mỗi nhóm gói: $96:2=48$ phần.
+
+Số quà mỗi nam gói: $\frac{48}{x}$. Số quà mỗi nữ gói: $\frac{48}{14-x}$.
+
+Ta có phương trình: $\frac{48}{14-x} - \frac{48}{x} = 2$
+
+$\Leftrightarrow 48x - 48(14-x) = 2x(14-x)$
+
+$\Leftrightarrow 2x^{2}+68x-672=0$
+
+$x_{1}=8$ (nhận); $x_{2}=-42$ (loại).
+
+Vậy có 8 học sinh nam và $14-8=6$ học sinh nữ.",
+3,3,Bài 5,"Một cốc nước hình trụ cao 15 cm, bán kính đáy 3 cm, mực nước cao 12 cm.
+
+a. Tính thể tích nước trong cốc.
+
+b. Thả chìm 3 viên bi hình cầu bán kính 2 cm vào cốc, nước có tràn không? Nếu có, tính thể tích tràn (lấy $\pi \approx 3,14$).","a) $V_{nuoc} = \pi r^{2}h = \pi \cdot 3^{2} \cdot 12 = 108\pi \approx 339,12 cm^{3}$.
+
+b) $V_{3bi} = 3 \cdot \frac{4}{3}\pi R^{3} = 4\pi \cdot 2^{3} = 32\pi cm^{3}$.
+
+Thể tích phần trống của cốc: $V_{trong} = \pi \cdot 3^{2} \cdot (15-12) = 27\pi cm^{3}$.
+
+Vì $V_{bi} > V_{trong} (32\pi > 27\pi)$ nên nước bị tràn.
+
+Thể tích tràn: $V_{tran} = 32\pi - 27\pi = 5\pi \approx 15,7 cm^{3}$.",
+3,3,Bài 6,"Mảnh đất hình vuông cạnh $x(m)$. Góc khu đất xây hồ bơi hình chữ nhật (cách 2 cạnh lần lượt 16m và 12m).
+
+a. Viết biểu thức thu gọn $S$ biểu thị phần diện tích còn lại.
+
+b. Biết diện tích hồ bơi là $32 m^{2}$ và $x>16$. Tính $x$.","a) Chiều dài hồ bơi: $x-16(m)$. Chiều rộng hồ bơi: $x-12(m)$.
+
+Diện tích hồ bơi: $(x-16)(x-12)$.
+
+$S = x^{2} - (x-16)(x-12) = x^{2} - (x^{2} - 28x + 192) = 28x - 192$.
+
+b) Ta có: $(x-16)(x-12) = 32$
+
+$\Leftrightarrow x^{2} - 28x + 160 = 0$
+
+$\Leftrightarrow x_{1}=20$ (nhận); $x_{2}=8$ (loại do $x>16$).
+
+Vậy cạnh khu đất là 20 m.",
+3,3,Bài 7,"Tam giác ABC nhọn nội tiếp $(O;R)$, đường cao AD, BE, CK cắt nhau tại H. AD cắt $(O)$ tại M.
+
+a. Chứng minh $\triangle ABD \sim \triangle CBK$ và CB là phân giác $\widehat{KCM}$.
+
+b. BE cắt $(O)$ tại Q. I là trung điểm BC, IE cắt AQ tại G. Chứng minh $EG \perp AQ$.
+
+c. Tính bán kính đường tròn ngoại tiếp $\triangle BOC$ theo $R$ nếu $\widehat{BAC}=60^{\circ}$.","a) Xét $\triangle ABD$ và $\triangle CBK$: $\widehat{ADB}=\widehat{CKB}=90^{\circ}$, $\widehat{B}$ chung $\Rightarrow \triangle ABD \sim \triangle CBK$ (g-g).
+
+$\Rightarrow \widehat{BAD}=\widehat{BCK}$. Mà $\widehat{BAD}=\widehat{BCM}$ (cùng chắn cung $BM$) $\Rightarrow \widehat{BCK}=\widehat{BCM}$.
+
+b) $\triangle BEC$ vuông tại E, $IE$ là trung tuyến $\Rightarrow IE=IC \Rightarrow \triangle IEC$ cân $\Rightarrow \widehat{IEC}=\widehat{C}$.
+
+Ta có $\widehat{AEG}=\widehat{IEC}$ (đối đỉnh) $\Rightarrow \widehat{AEG}=\widehat{C}$.
+
+Mà $\widehat{C}=\widehat{AQE}$ (cùng chắn cung $AB$) $\Rightarrow \widehat{AEG}=\widehat{AQE} \Rightarrow \triangle AEG \sim \triangle AQE$ (g-g).
+
+$\Rightarrow \widehat{AGE}=\widehat{AEQ}=90^{\circ} \Rightarrow EG \perp AQ$.
+
+c) $\widehat{BOC}=2\widehat{A}=120^{\circ}$. Tâm $O'$ của $(BOC)$ nằm trên trung trực $OI$.
+
+Ta có $\triangle O'BO$ cân tại $O'$ và $\widehat{BOO'}=60^{\circ} \Rightarrow \triangle O'BO$ đều $\Rightarrow O'B = OB = R$.
+
+Vậy bán kính là $R$.",
+4,1,Bài 1,"a. Vẽ đồ thị hàm số $y=\frac{1}{2}x^{2} (P)$
+
+b. Tìm điểm M thuộc (P) có tung độ gấp đôi hoành độ và khác 0.","a. Bảng giá trị:
+
+X: -2; -1; 0; 1; 2
+
+$y=\frac{1}{2}x^{2}$: 2; 0,5; 0; 0,5; 2
+
+Vẽ đồ thị theo bảng giá trị.
+
+b. Vì điểm M có tung độ gấp đôi hoành độ nên $y=2x$.
+
+Ta có phương trình: $\frac{1}{2}x^{2}=2x$
+
+$\Leftrightarrow \frac{1}{2}x^{2}-2x=0$
+
+$\Leftrightarrow x=0$ hoặc $x=4$.
+
+Vì điểm M khác gốc tọa độ $O(0;0)$ nên chọn $x=4$.
+
+Với $x=4$ suy ra $y=8$.
+
+Vậy tọa độ điểm cần tìm là $M(4; 8)$.",
+4,1,Bài 2,"Cho phương trình: $3x^{2}-2x-2=0$.
+
+a. Chứng tỏ phương trình luôn có hai nghiệm phân biệt $x_{1}, x_{2}$.
+
+b. Không giải phương trình, tính giá trị biểu thức $A=x_{1}^{3}+x_{2}^{3}-3x_{1}^{2}x_{2}-3x_{1}x_{2}^{2}$.","a. Ta có $3x^{2}-2x-2=0 (a=3; b=-2; c=-2)$.
+
+$\Delta=b^{2}-4ac=(-2)^{2}-4\cdot3\cdot(-2)=4+24=28>0$.
+
+Vì $\Delta>0$ nên phương trình có hai nghiệm phân biệt $x_{1}, x_{2}$.
+
+b. Theo định lý Viète, ta có:
+
+$\{x_{1}+x_{2}=\frac{2}{3}; x_{1}x_{2}=\frac{-2}{3}\}$.
+
+Ta có: $x_{1}^{2}+x_{2}^{2}=(x_{1}+x_{2})^{2}-2x_{1}x_{2}=(\frac{2}{3})^{2}-2\cdot(\frac{-2}{3})=\frac{16}{9}$.
+
+Biểu thức $A=x_{1}^{3}+x_{2}^{3}-3x_{1}^{2}x_{2}-3x_{1}x_{2}^{2}$
+
+$A=(x_{1}+x_{2})(x_{1}^{2}-x_{1}x_{2}+x_{2}^{2})-3x_{1}x_{2}(x_{1}+x_{2})$
+
+$A=\frac{2}{3}\cdot[\frac{16}{9}-(\frac{-2}{3})]-3\cdot(\frac{-2}{3})\cdot\frac{2}{3} = \frac{80}{27}$.
+
+Vậy $A=\frac{80}{27}$.",
+4,1,Bài 3,"Có 6 tấm bìa ghi số từ 1 đến 6. Chọn ngẫu nhiên đồng thời 4 tấm bìa, sắp xếp từ nhỏ đến lớn thu được số dạng $abcd$ ($a<b<c<d$). Tính xác suất để số thu được có chữ số cuối lớn hơn chữ số đầu 3 đơn vị.","Tìm không gian mẫu: $n(\Omega)=\frac{6\cdot5\cdot4\cdot3}{4\cdot3\cdot2\cdot1}=15$.
+
+Các kết quả có thể: $\Omega = \{1234; 1235; 1236; 1245; 1246; 1256; 1345; 1346; 1356; 1456; 2345; 2346; 2356; 2456; 3456\}$.
+
+Biến cố A: ""$d=a+3$"":
+
+TH1: $a=1 \Rightarrow d=4$. Các số $b,c \in \{2,3\}$. Có 1 bộ: (1,2,3,4).
+
+TH2: $a=2 \Rightarrow d=5$. Các số $b,c \in \{3,4\}$. Có 1 bộ: (2,3,4,5).
+
+TH3: $a=3 \Rightarrow d=6$. Các số $b,c \in \{4,5\}$. Có 1 bộ: (3,4,5,6).
+
+Suy ra $n(A)=3$.
+
+Xác suất $P(A)=\frac{3}{15}=\frac{1}{5}$.",
+4,1,Bài 4,"Bác An có mảnh đất hình chữ nhật chia thành: hồ cá hình chữ nhật và khu trồng cây hình vuông. Chiều rộng tổng x (m), chiều dài tổng y (m). Diện tích hồ cá bằng 4 lần diện tích trồng cây. Đường đi xung quanh hồ và qua đỉnh hình vuông rộng 1m.
+
+a. Viết biểu thức diện tích (S) lát gạch theo x.
+
+b. Nếu diện tích lát gạch là 50 $m^2$. Tính y.","a. Đường chéo hình vuông trồng cây: $d=x-2(m)$.
+
+Diện tích trồng cây: $S_{hc}=\frac{d^{2}}{2}=\frac{(x-2)^{2}}{2}$.
+
+Diện tích hồ cá: $S_{ca}=4 \cdot S_{hc}=2(x-2)^{2}$.
+
+Diện tích tổng thể: $S_{tong}=xy$.
+
+Diện tích lát gạch: $S=xy-2(x-2)^{2}-\frac{(x-2)^{2}}{2} = xy-\frac{5(x-2)^{2}}{2}$.
+
+b. Chiều dài hồ cá: $y-3-(x-2)$.
+
+Ta có $S_{ca}=(x-2)(y-x-1) = 2(x-2)^{2} \Rightarrow y=3x-3$.
+
+Thay vào biểu thức S: $x(3x-3)-\frac{5(x-2)^{2}}{2}=50$
+
+$\Leftrightarrow x^{2}+14x-120=0 \Rightarrow x=6$ (nhận).
+
+Với $x=6 \Rightarrow y=3\cdot6-3=15$.
+
+Vậy $y=15m$.",
+4,1,Bài 5,"Hồ cá phần hình cầu tâm O. Miệng hồ $AB=60$ cm. Khoảng cách miệng đến đáy sâu nhất $IT=90$ cm.
+
+a. Tính bán kính R của mặt cầu.
+
+b. Rót nước cách miệng 40 cm. Tính thể tích nước (lít).","a. Gọi $R$ là bán kính. $IA=30$ cm. $O, I, T$ thẳng hàng.
+
+$OI=IT-OT=90-R$.
+
+Xét $\triangle OIA$ vuông tại I: $R^{2}=(90-R)^{2}+30^{2}$
+
+$\Leftrightarrow 180R=9000 \Rightarrow R=50(cm)$.
+
+b. Độ sâu mực nước: $h=90-40=50(cm)$.
+
+Vì $h=R=50$ nên mặt nước đi qua tâm O.
+
+Phần nước là nửa hình cầu: $V_{nc}=\frac{1}{2}\cdot\frac{4}{3}\pi R^{3} = \frac{2}{3}\pi \cdot 50^{3} = \frac{250000\pi}{3} cm^{3}$.
+
+Đổi sang lít: $V_{nc} = \frac{250\pi}{3} \approx 261,8$ lít.",
+4,1,Bài 6,Nhà máy pha chất A và B. Kho có 135l A và 615l B. Loại I tỉ lệ A:B là 1:9. Loại II tỉ lệ A:B là 1:3. Sử dụng hết kho thì sản xuất được bao nhiêu mỗi loại?,"Gọi $x, y$ lần lượt là số lít nhiên liệu loại I và II.
+
+Lượng chất A: $\frac{1}{10}x + \frac{1}{4}y = 135$ (1).
+
+Lượng chất B: $\frac{9}{10}x + \frac{3}{4}y = 615$ (2).
+
+Giải hệ phương trình ta được: $x=350; y=400$.
+
+Vậy sản xuất được 350 lít loại I và 400 lít loại II.",
+4,1,Bài 7,"Cho (O) dây AB. H là trung điểm AB. Tiếp tuyến tại A cắt tia OH tại K.
+
+a. Chứng minh: $\widehat{KBO}=90^{\circ}$ và KAOB nội tiếp.
+
+b. Kẻ đường kính AC. Chứng minh: $OH\cdot OK=OC^{2} \Rightarrow \widehat{OCH}=\widehat{OKC}$.
+
+c. Tiếp tuyến tại C cắt AB tại E. OE cắt KC tại I. Tính bán kính ngoại tiếp KHIE biết $\widehat{KAB}=70^{\circ}, HI=6$ cm.","a. $\triangle OAB$ cân tại O, OH là phân giác $\Rightarrow \widehat{AOK}=\widehat{BOK}$.
+
+$\triangle KAO = \triangle KBO (c-g-c) \Rightarrow \widehat{KBO}=\widehat{KAO}=90^{\circ}$.
+
+A, B nhìn OK góc $90^{\circ}$ nên KAOB nội tiếp đường tròn đường kính OK.
+
+b. $\triangle OAK$ vuông tại A, đường cao AH $\Rightarrow OA^{2}=OH\cdot OK$.
+
+Mà $OA=OC \Rightarrow OC^{2}=OH\cdot OK \Rightarrow \frac{OH}{OC}=\frac{OC}{OK}$.
+
+$\triangle OHC \sim \triangle OCK (c-g-c) \Rightarrow \widehat{OCH}=\widehat{OKC}$.
+
+c. Chứng minh $KC \perp OE$ tại I. Tứ giác KHIE có $\widehat{KIE}=\widehat{KHE}=90^{\circ}$ nên nội tiếp đường tròn đường kính KE.
+
+Bán kính $r = \frac{KE}{2}$.
+
+Từ các tỉ số lượng giác với $\widehat{AOH}=70^{\circ}$ và $HI=6$:
+
+$r = 3 \cdot \frac{OE}{OH} \approx 10,85$ cm.",
+4,2,Bài 1,"Cho hàm số $y=\frac{x^{2}}{2}$ có đồ thị là Parabol (P).
+
+a. Vẽ đồ thị (P) trên mặt phẳng tọa độ Oxy.
+
+b. Tìm tọa độ các điểm thuộc (P) có tung độ gấp đôi hoành độ.","a. Bảng giá trị
+
+X: -4; -2; 0; 2; 4
+
+$y=\frac{x^{2}}{2}$: 8; 2; 0; 2; 8
+
+Vẽ đồ thị (P) qua các điểm trên.
+
+b. Vì điểm thuộc (P) có tung độ gấp đôi hoành độ nên $y=2x$.
+
+Ta có phương trình: $2x=\frac{x^{2}}{2}$
+
+$\Leftrightarrow \frac{x^{2}}{2}-2x=0$
+
+$\Leftrightarrow x_{1}=0; x_{2}=4$.
+
+Với $x_{1}=0 \Rightarrow y_{1}=0$.
+
+Với $x_{2}=4 \Rightarrow y_{2}=8$.
+
+Vậy toạ độ các điểm cần tìm là (0:0) và (4; 8).",
+4,2,Bài 2,"Cho phương trình: $2025x^{2}+2025x-2=0$.
+
+a. Chứng minh phương trình đã cho có hai nghiệm phân biệt $x_{1}$, $x_{2}$.
+
+b. Không giải phương trình, hãy tính giá trị biểu thức $T=\frac{(x_{1}+x_{2})^{3028}}{\sqrt{\frac{1}{4}(x_{1}-x_{2})^{2}+\frac{2027}{8}x_{1}x_{2}}}$","a. Ta có $2025x^{2}+2025x-2=0$ ($a=2025; b=2025; c=-2$).
+
+$\Delta=b^{2}-4ac=2025^{2}-4\cdot2025\cdot(-2)=2025^{2}+16200>0$.
+
+Vì $\Delta>0$ nên phương trình có hai nghiệm phân biệt $x_{1}, x_{2}$.
+
+b. Theo định lý Viète, ta có: $\{x_{1}+x_{2}=-1; x_{1}x_{2}=\frac{-2}{2025}\}$.
+
+Biến đổi biểu thức trong căn: $\frac{1}{4}(x_{1}-x_{2})^{2}+\frac{2027}{8}x_{1}x_{2} = \frac{1}{4}[(x_{1}+x_{2})^{2}-4x_{1}x_{2}]+\frac{2027}{8}x_{1}x_{2}$
+
+$=\frac{1}{4}(x_{1}+x_{2})^{2}-x_{1}x_{2}+\frac{2027}{8}x_{1}x_{2} = \frac{1}{4}(x_{1}+x_{2})^{2}+\frac{2019}{8}x_{1}x_{2}$.
+
+Thay giá trị vào: $T=\frac{(-1)^{3028}}{\sqrt{\frac{1}{4}(-1)^{2}+\frac{2019}{8} \cdot (\frac{-2}{2025})}} = \frac{1}{\sqrt{\frac{1}{4}-\frac{2019}{4 \cdot 2025}}} = \frac{1}{\sqrt{\frac{1}{1350}}} = \sqrt{1350} = 15\sqrt{6}$.",
+4,2,Bài 3,"Số lượng huy chương Vàng, Bạc và Đồng của 10 quốc gia tham dự SEA Games 33 được thống kê trong bảng.
+
+a. Tỉ lệ phần trăm số huy chương Vàng của Việt Nam so với tổng số huy chương Vàng của 10 quốc gia là bao nhiêu?
+
+b. Tính tổng số huy chương của mỗi quốc gia.
+
+c. Tính xác suất để quốc gia được chọn có tổng số huy chương lớn hơn giá trị trung bình của 10 quốc gia.","a. Tổng số huy chương Vàng: $233+91+87+57+52+50+3+2+1+0=576$.
+
+Tỉ lệ của Việt Nam: $\frac{87}{576} \cdot 100\% \approx 15,1\%$.
+
+b. Tổng số huy chương: Thái Lan (499), Indonesia (333), Việt Nam (278), Malaysia (231), Singapore (202), Philippines (277), Myanmar (73), Lào (39), Brunei (9), Timor-Leste (8).
+
+c. $n(\Omega)=10$. Tổng huy chương 10 quốc gia: 1949. Giá trị trung bình: $194,9$.
+
+Các quốc gia có tổng > 194,9: Thái Lan, Indonesia, Việt Nam, Malaysia, Singapore, Philippines (6 quốc gia).
+
+Xác suất $P(A) = \frac{6}{10} = \frac{3}{5}$.",
+4,2,Bài 4,"Một khu vườn hình chữ nhật dài $8a(m)$, rộng $6a(m)$. Bác Hai xây ao cá hình thoi có các đỉnh là trung điểm các cạnh khu vườn, phần còn lại trồng cỏ.
+
+a. Tìm a khi biết chu vi ao cá là 100 mét.
+
+b. Biết chi phí trồng cỏ là 65 nghìn đồng/$m^2$. Tính số tiền (triệu đồng) trồng cỏ.","a. Gọi các trung điểm cạnh là M, N, P, Q. Cạnh ao cá $MN = \sqrt{(4a)^2 + (3a)^2} = 5a$.
+
+Chu vi ao cá: $4 \cdot 5a = 20a$.
+
+Theo đề: $20a = 100 \Rightarrow a = 5$.
+
+b. Diện tích khu vườn: $8a \cdot 6a = 48a^2$. Diện tích ao cá: $\frac{1}{2} \cdot 8a \cdot 6a = 24a^2$.
+
+Diện tích cỏ: $48a^2 - 24a^2 = 24a^2$.
+
+Với $a=5$, diện tích cỏ: $24 \cdot 5^2 = 600 (m^2)$.
+
+Số tiền: $600 \cdot 65 = 39.000$ (nghìn đồng) = 39 triệu đồng.",
+4,2,Bài 5,"Một cái lon hình trụ đường kính $d=2,9dm$. Nhúng một quả cầu vừa khít vào lon thì nước vừa ngập quả cầu.
+
+a. Tính thể tích quả cầu (làm tròn đến hàng phần trăm).
+
+b. Tính chiều cao mực nước trong lon trước khi nhúng quả cầu.","a. $R = \frac{2,9}{2} = 1,45(dm)$.
+
+$V_c = \frac{4}{3}\pi R^3 = \frac{4}{3}\pi(1,45)^3 \approx 12,77 (dm^3)$.
+
+b. Chiều cao nước sau khi nhúng: $h_{sau} = d = 2,9dm$.
+
+Thể tích nước: $V_n = V_{tru} - V_c = \pi R^2 (2R) - \frac{4}{3}\pi R^3 = \frac{2}{3}\pi R^3$.
+
+Gọi $h_0$ là chiều cao ban đầu: $\pi R^2 h_0 = \frac{2}{3}\pi R^3 \Rightarrow h_0 = \frac{2}{3}R = \frac{2}{3} \cdot 1,45 \approx 0,97 (dm)$.",
+4,2,Bài 6,Một chiếc thuyền xuôi dòng từ A đến B rồi ngược về A. Nếu vận tốc riêng tăng gấp đôi thì tổng thời gian chỉ còn 40% thường lệ. Tính tỉ số vận tốc riêng ngày thường so với vận tốc dòng nước.,"Gọi $v$ là vận tốc riêng, $u$ là vận tốc dòng nước. Quãng đường AB là $s$.
+
+Thời gian thường: $t_1 = \frac{s}{v+u} + \frac{s}{v-u} = \frac{2sv}{v^2-u^2}$.
+
+Thời gian khi vận tốc riêng là $2v$: $t_2 = \frac{s}{2v+u} + \frac{s}{2v-u} = \frac{4sv}{4v^2-u^2}$.
+
+Theo đề: $t_2 = 0,4 t_1 \Rightarrow \frac{4sv}{4v^2-u^2} = 0,4 \cdot \frac{2sv}{v^2-u^2}$.
+
+$\Leftrightarrow \frac{4}{4v^2-u^2} = \frac{0,8}{v^2-u^2} \Leftrightarrow 4(v^2-u^2) = 0,8(4v^2-u^2)$
+
+$\Leftrightarrow 4v^2 - 4u^2 = 3,2v^2 - 0,8u^2 \Leftrightarrow 0,8v^2 = 3,2u^2 \Leftrightarrow \frac{v^2}{u^2} = 4 \Rightarrow \frac{v}{u} = 2$.",
+4,2,Bài 7,"Từ A ngoài (O;R) kẻ hai tiếp tuyến AB, AC. Kẻ đường kính BS. OA cắt BC tại H.
+
+a. Chứng minh $OA \perp BC$ tại H và $BC^2 = 2 \cdot SC \cdot HA$.
+
+b. Tính CS theo R và r (r là bán kính đường tròn nội tiếp $\triangle ABC$).
+
+c. Vẽ $HD \perp AB$. F là trung điểm OB, E là giao điểm AF và CD. Chứng minh C, H, E, A cùng thuộc một đường tròn.","a. $AB=AC, OB=OC \Rightarrow OA$ là trung trực BC $\Rightarrow OA \perp BC$ tại H.
+
+$OH$ là đường trung bình $\triangle SBC \Rightarrow SC = 2OH$.
+
+$\triangle ABH \sim \triangle BOH \Rightarrow BH^2 = AH \cdot OH \Rightarrow (\frac{BC}{2})^2 = AH \cdot \frac{SC}{2} \Rightarrow BC^2 = 2 \cdot SC \cdot AH$.
+
+b. Chứng minh I (giao của OA và đường tròn) là tâm nội tiếp $\triangle ABC$.
+
+$IH = r, OH = OI - IH = R - r \Rightarrow SC = 2(R-r)$.
+
+c. Chứng minh $AF \perp CD$ tại E. $\triangle AEC$ và $\triangle AHC$ cùng nhìn AC dưới góc $90^{\circ}$ nên A, H, E, C cùng thuộc đường tròn đường kính AC.",
+4,3,Bài 1,"Cho hàm số (P): $y=-\frac{x^{2}}{4}$ có đồ thị (P).
+
+a. Vẽ đồ thị (P) của hàm số trên.
+
+b. Tìm những điểm M thuộc đồ thị (P) có tung độ bằng 2 lần hoành độ.","a. Bảng giá trị:
+
+X: -4; -2; 0; 2; 4
+
+$y=-\frac{x^{2}}{4}$: -4; -1; 0; -1; -4
+
+Vẽ đồ thị (P) qua các điểm trên.
+
+b. Vì điểm M có tung độ bằng 2 lần hoành độ nên ta có $y=2x$.
+
+Ta có phương trình:
+
+$2x=-\frac{x^{2}}{4}$
+
+$\Leftrightarrow \frac{x^{2}}{4}+2x=0$
+
+$\Leftrightarrow x_{1}=0; x_{2}=-8$.
+
+Với $x_{1}=0 \Rightarrow y_{1}=0$.
+
+Với $x_{2}=-8 \Rightarrow y_{2}=-16$.
+
+Vậy toạ độ các điểm cần tìm là $(0;0)$ và $(-8;-16)$.",
+4,3,Bài 2,"Cho phương trình bậc hai $\sqrt{3}x^{2}-2x-\sqrt{3}=0$.
+
+a. Chứng minh phương trình trên có hai nghiệm phân biệt $x_{1}, x_{2}$.
+
+b. Không giải phương trình, tính giá trị của biểu thức: $C=2\sqrt{3}x_{1}-x_{1}^{2}-x_{2}^{2}-\sqrt{3}(x_{1}-x_{2})$","a. Ta có $\sqrt{3}x^{2}-2x-\sqrt{3}=0$ ($a=\sqrt{3}; b=-2; c=-\sqrt{3}$).
+
+Ta có $\Delta=b^{2}-4ac=(-2)^{2}-4\cdot\sqrt{3}\cdot(-\sqrt{3})=4+12=16>0$.
+
+Vì $\Delta>0$ nên phương trình có hai nghiệm phân biệt $x_{1}, x_{2}$.
+
+b. Theo định lý Viète, ta có:
+
+$\{x_{1}+x_{2}=\frac{2}{\sqrt{3}}; x_{1}x_{2}=-1\}$.
+
+Ta có $x_{1}^{2}+x_{2}^{2}=(x_{1}+x_{2})^{2}-2x_{1}x_{2}=(\frac{2}{\sqrt{3}})^{2}-2(-1)=\frac{4}{3}+2=\frac{10}{3}$.
+
+Biến đổi biểu thức C:
+
+$C=2\sqrt{3}x_{1}-x_{1}^{2}-x_{2}^{2}-\sqrt{3}x_{1}+\sqrt{3}x_{2}$
+
+$C=\sqrt{3}x_{1}+\sqrt{3}x_{2}-(x_{1}^{2}+x_{2}^{2})$
+
+$C=\sqrt{3}(x_{1}+x_{2})-(x_{1}^{2}+x_{2}^{2})$
+
+Thế giá trị:
+
+$C=\sqrt{3}\cdot\frac{2}{\sqrt{3}}-\frac{10}{3}=2-\frac{10}{3}=-\frac{4}{3}$.",
+4,3,Bài 3,"Biểu đồ cột kép biểu diễn số học sinh nam và nữ của lớp 9A có sở thích chơi một số môn: bóng đá, bóng rổ, bơi.
+
+a. Tính số học sinh của lớp 9A.
+
+b. Chọn ngẫu nhiên một học sinh. Tính xác suất của biến cố B: ""Học sinh được chọn là nữ và không thích bơi"".","a. Số học sinh nam: $12+4+5=21$ (học sinh).
+
+Số học sinh nữ: $10+5+6=21$ (học sinh).
+
+Số học sinh lớp 9A: $21+21=42$ (học sinh).
+
+b. Số phần tử không gian mẫu $n(\Omega)=42$.
+
+Học sinh nữ thích bóng đá là 10, bóng rổ là 5.
+
+Số học sinh nữ không thích bơi là: $10+5=15$ (học sinh).
+
+Suy ra $n(B)=15$.
+
+Xác suất $P(B)=\frac{15}{42}=\frac{5}{14}$.",
+4,3,Bài 4,"Ý tưởng khu vườn hình chữ nhật $3m \times 2m$. Hệ thống phun sương có 1 phần dọc chiều dài và 1 phần giữa rộng $x$ mét. Cuối hệ thống là hình thang cân.
+
+a. Biểu diễn diện tích hệ thống phun sương theo $x$.
+
+b. Nếu $x=0,6$ thì diện tích phần trồng rau là bao nhiêu?","a. Diện tích phần chạy dọc ($3 \times x$): $3x$ ($m^2$).
+
+Diện tích phần hình thang cân (đáy $2, x$; cao $x$): $\frac{(2+x)x}{2}=x+0,5x^2$ ($m^2$).
+
+Chiều cao phần nằm giữa: $2-2x$ (m).
+
+Diện tích phần nằm giữa ($x \times (2-2x)$): $2x-2x^2$ ($m^2$).
+
+Tổng diện tích hệ thống: $S_{HT}=3x + x + 0,5x^2 + 2x - 2x^2 = -1,5x^2+6x$ ($m^2$).
+
+b. Diện tích cả vườn: $3 \cdot 2 = 6$ ($m^2$).
+
+Diện tích trồng rau: $S_{Rau}=6 - (-1,5x^2+6x) = 1,5x^2-6x+6$.
+
+Thay $x=0,6$: $S_{Rau}=1,5 \cdot (0,6)^2 - 6 \cdot 0,6 + 6 = 2,94$ ($m^2$).",
+4,3,Bài 5,"Bồn nước hình trụ đường kính đáy 1,6 m, cao 2,3 m.
+
+a. Tính thể tích bồn nước.
+
+b. Khi nước còn 20% thì bơm tự động. Bơm cách nắp bồn 10 cm thì ngắt. Công suất máy bơm 1086 lít/giờ. Tính thời gian bơm (phút).","a. Bán kính $r=0,8$ m. Thể tích: $V=\pi r^2 h \approx 3,14 \cdot (0,8)^2 \cdot 2,3 = 4,62208$ ($m^3$).
+
+b. Thể tích nước lúc 20%: $V_1=0,2 \cdot V = 0,924416$ ($m^3$).
+
+Mực nước khi ngắt (cách nắp 0,1 m): $h_2=2,3-0,1=2,2$ (m).
+
+Thể tích lúc ngắt: $V_2 = 3,14 \cdot (0,8)^2 \cdot 2,2 = 4,42112$ ($m^3$).
+
+Lượng nước cần bơm: $V_{bom} = V_2 - V_1 = 3,496704$ ($m^3$) = 3496,704 lít.
+
+Thời gian bơm: $t = \frac{3496,704}{1086} \cdot 60 \approx 193$ phút.",
+4,3,Bài 6,"Trọng và Quốc chạy bộ quanh tam giác vuông cân ABC tại A ($AB=AC=a$). Trọng chạy $A \to B \to C \to A$, Quốc chạy $A \to C \to B \to A$. Gặp lần 1 tại M trên BC ($BM=600$ m), lần 2 tại N trên AB ($AN=200$ m).
+
+a. Chứng minh: $\frac{x}{y}=\frac{AB+BM}{AC+CM}$.
+
+b. Tính độ dài các cạnh khuôn viên.","a. Thời gian $t_1$ đến khi gặp lần 1: $x = \frac{AB+BM}{t_1}, y = \frac{AC+CM}{t_1} \Rightarrow \frac{x}{y}=\frac{AB+BM}{AC+CM}$.
+
+b. Cạnh $BC=a\sqrt{2}$. $CM=a\sqrt{2}-600$.
+
+Tỉ số $\frac{x}{y} = \frac{a+600}{a + a\sqrt{2} - 600}$ (1).
+
+Quãng đường từ M đến N: $S_T = (a\sqrt{2}-600)+a+200$, $S_Q = 600+(a-200)$.
+
+Tỉ số $\frac{x}{y} = \frac{a\sqrt{2}+a-400}{a+400}$ (2).
+
+Từ (1), (2) giải được $a=500\sqrt{2} \approx 707$ (m).
+
+Cạnh $BC=1000$ m.",
+4,3,Bài 7,"Cho (O;R) đường kính AB. C là trung điểm AO, $Cx \perp AB$ tại C cắt (O) tại I. K là trung điểm CI, AK cắt (O) tại M. BM cắt Cx tại D. Tiếp tuyến tại M cắt Cx tại N. BK cắt DA tại H.
+
+a. Chứng minh 4 điểm B, M, K, C cùng thuộc một đường tròn và $BH \perp AD$.
+
+b. Chứng minh $NK=NM$ và $AK \cdot AM = R^2$.
+
+c. Tính diện tích $\triangle ABD$ theo R.","a. $\widehat{KMB}=\widehat{KCB}=90^{\circ}$ nên B, M, K, C thuộc đường tròn đường kính KB.
+
+$\triangle ABD$ có AM, DC là đường cao cắt nhau tại K $\Rightarrow$ K là trực tâm $\Rightarrow BK \perp AD$.
+
+b. Chứng minh $\widehat{NMK}=\widehat{NKM} \Rightarrow NK=NM$.
+
+$\triangle ACK \sim \triangle AMB$ (g-g) $\Rightarrow \frac{AC}{AM}=\frac{AK}{AB} \Rightarrow AK \cdot AM = AC \cdot AB = \frac{R}{2} \cdot 2R = R^2$.
+
+c. $CI = \sqrt{R^2 - (\frac{R}{2})^2} = \frac{R\sqrt{3}}{2} \Rightarrow CK = \frac{R\sqrt{3}}{4}$.
+
+$\triangle ACK \sim \triangle DCB$ (g-g) $\Rightarrow DC = \frac{AC \cdot CB}{CK} = \frac{\frac{R}{2} \cdot \frac{3R}{2}}{\frac{R\sqrt{3}}{4}} = R\sqrt{3}$.
+
+$S_{ABD} = \frac{1}{2} \cdot DC \cdot AB = \frac{1}{2} \cdot R\sqrt{3} \cdot 2R = R^2\sqrt{3}$.",
+5,1,Bài 1,"Cho hàm số $y=2x^{2}$ có đồ thị (P).
+
+a. Vẽ đồ thị (P) trên hệ trục tọa độ
+
+b. Tìm các điểm thuộc (P) có tung độ là 16","a) Bảng giá trị
+
+X: -2; -1; 0; 1; 2
+
+$y=2x^{2}$: 8; 2; 0; 2; 8
+
+Vẽ đồ thị (P) theo bảng giá trị.
+
+b) Vì điểm cần tìm có tung độ là 16 nên $y=16$.
+
+Ta có phương trình $2x^{2}=16$
+
+$\Leftrightarrow x^{2}=8$
+
+$\Leftrightarrow x_{1}=2\sqrt{2}; x_{2}=-2\sqrt{2}$
+
+Với $x_{1}=2\sqrt{2} \Rightarrow y_{1}=16$.
+
+Với $x_{2}=-2\sqrt{2} \Rightarrow y_{2}=16$.
+
+Vậy tọa độ các điểm cần tìm là $(2\sqrt{2};16)$ và $(-2\sqrt{2};16)$.",
+5,1,Bài 2,"Cho phương trình $-x^{2}+10x+8=0$
+
+a. Chứng minh phương trình trên luôn có hai nghiệm phân biệt.
+
+b. Gọi $x_{1}, x_{2}$ là hai nghiệm của phương trình đã cho. Không giải phương trình, hãy tính giá trị của biểu thức $A=(x_{1}-x_{2})(x_{1}^{2}-x_{2}^{2})$","(a) Ta có $-x^{2}+10x+8=0$, ($a=-1; b=10; c=8$)
+
+Ta có $\Delta=b^{2}-4ac=10^{2}-4\cdot(-1)\cdot8=132>0$
+
+Vì $\Delta>0$ nên phương trình có hai nghiệm phân biệt $x_{1}, x_{2}$
+
+(b) Theo định lý Viète, ta có: $\{x_{1}+x_{2}=10; x_{1}x_{2}=-8\}$
+
+Ta có $x_{1}^{2}+x_{2}^{2}=(x_{1}+x_{2})^{2}-2x_{1}x_{2}=10^{2}-2\cdot(-8)=116$
+
+Biến đổi biểu thức A:
+
+$A=(x_{1}-x_{2})(x_{1}-x_{2})(x_{1}+x_{2}) = (x_{1}-x_{2})^{2}(x_{1}+x_{2})$
+
+$A=(x_{1}^{2}-2x_{1}x_{2}+x_{2}^{2})(x_{1}+x_{2})$
+
+$A=(116-2\cdot(-8))\cdot10 = 1320$.",
+5,1,Bài 3,"Biểu đồ hình quạt tròn biểu diễn tỉ lệ học sinh khối 9 yêu thích môn thể thao (440 học sinh): Cầu lông (25%), Bóng đá (35%), Bóng bàn (15%), Bóng chuyền (25%).
+
+a. Tính số lượng học sinh cụ thể yêu thích mỗi môn thể thao?
+
+b. Tính xác suất để một bạn được chọn ngẫu nhiên không thích môn Cầu lông?","a) Số lượng học sinh yêu thích môn:
+
+Cầu lông: $440 \cdot 25\% = 110$ (học sinh).
+
+Bóng đá: $440 \cdot 35\% = 154$ (học sinh).
+
+Bóng bàn: $440 \cdot 15\% = 66$ (học sinh).
+
+Bóng chuyền: $440 \cdot 25\% = 110$ (học sinh).
+
+b) Không gian mẫu $n(\Omega)=440$.
+
+Số học sinh không thích môn Cầu lông là: $154+66+110=330$ (học sinh).
+
+Xác suất của biến cố là $P = \frac{330}{440} = \frac{3}{4}$.",
+5,1,Bài 4,"Một vườn hoa hình chữ nhật dài 20 m và chiều rộng 14 m. Người ta làm một lối đi ngang sát cạnh trên và một lối đi dọc ở giữa khu vườn với cùng bề rộng là $x(m)$.
+
+a. Viết biểu thức S biểu diễn theo x diện tích phần đất trồng hoa.
+
+b. Tìm bề rộng x của lối đi, biết rằng diện tích đất trồng hoa bằng $187 m^{2}$","a) Chiều dài phần đất trồng hoa còn lại: $20-x(m)$.
+
+Chiều rộng phần đất trồng hoa còn lại: $14-x(m)$.
+
+Biểu thức diện tích: $S=(20-x)(14-x) (m^{2})$.
+
+b) Ta có phương trình: $(20-x)(14-x)=187$
+
+$\Leftrightarrow x^{2}-34x+93=0$
+
+$\Leftrightarrow x=3$ hoặc $x=31$.
+
+So với điều kiện $0<x<14$, nhận $x=3$.
+
+Vậy bề rộng của lối đi là 3 m.",
+5,1,Bài 5,"Việt Nam trải dài trên cung kinh tuyến từ vĩ độ $23^{\circ}23'$ Bắc đến $8^{\circ}27'$ Bắc, dài khoảng 1655 km. Giả sử Trái Đất là hình cầu $S=4\pi R^{2}$.
+
+a. Tính độ dài đường kinh tuyến và bán kính Trái Đất?
+
+b. Biết rừng nhiệt đới chiếm 10% của 20% diện tích bề mặt trái đất. Tính diện tích rừng nhiệt đới?","a) Số đo cung kinh tuyến: $23^{\circ}23' - 8^{\circ}27' = 14^{\circ}56' = (\frac{224}{15})^{\circ}$.
+
+Độ dài đường kinh tuyến $L = \frac{1655 \cdot 180}{224/15} \approx 20000$ (km).
+
+Bán kính $R = \frac{L}{\pi} = \frac{20000}{3,14} \approx 6400$ (km).
+
+b) Diện tích rừng nhiệt đới: $S_{rnt} = 4 \cdot 3,14 \cdot 6400^{2} \cdot 20\% \cdot 10\% \approx 10281500 (km^{2})$.",
+5,1,Bài 6,"Cây nến 1 cháy hết trong 3 giờ, cây nến 2 cháy hết trong 4 giờ. Đốt cùng lúc, hỏi sau bao lâu phần còn lại cây 2 gấp đôi cây 1?","Gọi x là thời gian cháy ($0<x<3$), y là chiều dài nến.
+
+Tốc độ cháy nến 1: $y/3$, nến 2: $y/4$.
+
+Phần còn lại nến 1: $y - \frac{y}{3}x$, nến 2: $y - \frac{y}{4}x$.
+
+Phương trình: $y - \frac{y}{4}x = 2(y - \frac{y}{3}x)$
+
+$\Leftrightarrow 1 - \frac{x}{4} = 2 - \frac{2x}{3} \Leftrightarrow \frac{5}{12}x = 1 \Leftrightarrow x = 2,4$ (giờ).
+
+Đổi: 2 giờ 24 phút.",
+5,1,Bài 7,"Cho đường tròn (O,R) có hai đường kính AB, CD vuông góc. I là trung điểm OB, CI cắt (O) tại E, AE cắt CD tại H.
+
+a. Chứng minh O, I, E, D cùng thuộc một đường tròn và $CO \cdot CD = CI \cdot CE$.
+
+b. Chứng minh $AH \cdot AE = 2R^{2}$ và $OA = 3 \cdot OH$.
+
+c. K là hình chiếu O trên BD, Q là giao điểm AD và BE. Chứng minh Q, K, I thẳng hàng.","a) $\widehat{IOD}=\widehat{IED}=90^{\circ}$ nên O, I, E, D thuộc đường tròn đường kính ID.
+
+$\triangle COI \sim \triangle CED (g-g) \Rightarrow CO/CE = CI/CD \Rightarrow CO \cdot CD = CI \cdot CE$.
+
+b) $\triangle AOH \sim \triangle AEB (g-g) \Rightarrow AO/AE = AH/AB \Rightarrow AH \cdot AE = R \cdot 2R = 2R^{2}$.
+
+Dùng tính chất đường phân giác EI trong $\triangle AEB$ chứng minh được $OA=3OH$.
+
+c) Chứng minh H là trọng tâm $\triangle ADB$. K là trung điểm BD nên A, H, K thẳng hàng. K là trực tâm $\triangle QAB$ nên $QK \perp AB$. IK là đường trung bình $\triangle OBD$ nên $IK \perp AB \Rightarrow$ Q, K, I thẳng hàng.",
+5,2,Bài 1,"Cho hàm số $(P): y = x^2$,
+
+a. Vẽ đồ thị $(P)$ của hàm số trên.
+
+b. Tìm tọa độ những điểm M thuộc $(P)$ có tung độ bằng hai lần hoành độ bằng phép toán.","a) Bảng giá trị:
+
+$X$: -2; -1; 0; 1; 2
+
+$y=x^2$: 4; 1; 0; 1; 4
+
+Vẽ đồ thị $(P)$ đi qua các điểm trên.
+
+b) Theo đề bài ta có: $y=2x$
+
+Ta có phương trình: $x^2 = 2x$
+
+$\Leftrightarrow x^2 - 2x = 0$
+
+$\Leftrightarrow x(x - 2) = 0$
+
+$\Leftrightarrow x_1 = 0$ hoặc $x_2 = 2$.
+
+Với $x_1 = 0 \Rightarrow y_1 = 0$.
+
+Với $x_2 = 2 \Rightarrow y_2 = 4$.
+
+Vậy tọa độ các điểm cần tìm là $(0;0)$ và $(2;4)$.",
+5,2,Bài 2,"Cho phương trình $3x^2 - 11x - 7 = 0$.
+
+a. Chứng minh phương trình có hai nghiệm phân biệt $x_1, x_2$.
+
+b. Không giải phương trình, hãy tính giá trị của biểu thức: $A = (\frac{1}{x_2} - \frac{1}{x_1})(x_1 - x_2)$","a) Ta có $3x^2 - 11x - 7 = 0$ ($a = 3; b = -11; c = -7$).
+
+$\Delta = b^2 - 4ac = (-11)^2 - 4 \cdot 3 \cdot (-7) = 121 + 84 = 205 > 0$.
+
+Vì $\Delta > 0$ nên phương trình có hai nghiệm phân biệt $x_1, x_2$.
+
+b) Theo định lý Viète, ta có:
+
+$\begin{cases} x_1 + x_2 = \frac{11}{3} \\ x_1x_2 = -\frac{7}{3} \end{cases}$
+
+Ta có: $A = (\frac{1}{x_2} - \frac{1}{x_1})(x_1 - x_2) = \frac{x_1 - x_2}{x_1x_2}(x_1 - x_2) = \frac{(x_1 - x_2)^2}{x_1x_2}$
+
+$A = \frac{(x_1 + x_2)^2 - 4x_1x_2}{x_1x_2} = \frac{(\frac{11}{3})^2 - 4(-\frac{7}{3})}{-\frac{7}{3}}$
+
+$A = \frac{\frac{121}{9} + \frac{28}{3}}{-\frac{7}{3}} = \frac{\frac{205}{9}}{-\frac{7}{3}} = -\frac{205}{21}$.",
+5,2,Bài 3,"Biểu đồ cột kép biểu diễn số khách nội địa và khách quốc tế đến tham quan tại 5 địa điểm của Việt Nam trong năm 2022.
+
+a. Cho biết địa điểm nào có tỉ lệ khách quốc tế so với tổng số khách cao nhất và thấp nhất trong năm 2022.
+
+b. Chọn ngẫu nhiên một địa điểm, tính xác suất biến cố:
+
+A: ""Tổng số khách dưới 2000 nghìn người"".
+
+B: ""Tỉ lệ khách quốc tế từ 20% trở lên"".","a) Lập bảng tỷ lệ khách quốc tế so với tổng khách:
+
+Hạ Long: $300 / (1200+300) = 20\%$.
+
+Đà Lạt: $100 / (900+100) = 10\%$.
+
+Nha Trang: $500 / (1500+500) = 25\%$.
+
+Sapa: $80 / (720+80) = 10\%$.
+
+Phú Quốc: $500 / (1300+500) \approx 27,7\%$.
+
+Đà Nẵng: $1200 / (1800+1200) = 40\%$.
+
+Vậy tỉ lệ khách quốc tế cao nhất là Đà Nẵng, thấp nhất là Đà Lạt và Sapa.
+
+b) Không gian mẫu $n(\Omega) = 6$.
+
+Biến cố A: Hạ Long (1500), Đà Lạt (1000), Sapa (800), Phú Quốc (1800) $\Rightarrow n(A) = 4$.
+
+$P(A) = 4/6 = 2/3$.
+
+Biến cố B: Hạ Long (20%), Nha Trang (25%), Phú Quốc ($\approx 27,7\%$), Đà Nẵng (40%) $\Rightarrow n(B) = 4$.
+
+$P(B) = 4/6 = 2/3$.",
+5,2,Bài 4,"Một xưởng in có một tấm bìa carton hình chữ nhật rộng $x$ (mét) và dài $y$ (mét). Họ cắt bỏ một phần hai đầu tấm bìa (tạo thành hình tròn đường kính $x$).
+
+a. Hãy viết biểu thức $A(x)$ phần diện tích còn lại.
+
+b. Biết chiều rộng kém chiều dài 2 lần, diện tích mới bằng $19,44 m^2$. Tính kích thước ban đầu (lấy $\pi \approx 3,14$).","a) Diện tích tấm bìa ban đầu là $xy$ ($m^2$).
+
+Hai phần cắt bỏ tạo thành hình tròn bán kính $R = x/2$.
+
+Diện tích cắt bỏ: $\pi(x/2)^2 = \frac{\pi x^2}{4}$.
+
+Biểu thức diện tích còn lại: $A(x) = xy - \frac{\pi x^2}{4}$ ($m^2$).
+
+b) Vì $y = 2x$, ta có: $x(2x) - \frac{3,14x^2}{4} = 19,44$
+
+$\Leftrightarrow 2x^2 - 0,785x^2 = 19,44 \Leftrightarrow 1,215x^2 = 19,44 \Leftrightarrow x^2 = 16$.
+
+Suy ra $x = 4$ (vì $x > 0$).
+
+Với $x = 4 \Rightarrow y = 8$.
+
+Vậy kích thước ban đầu là chiều rộng 4 m và chiều dài 8 m.",
+5,2,Bài 5,"Kiểu ly phần đựng rượu cao 6 cm, đường kính miệng 6 cm. Thành ly hình trụ cao 3 cm, phần đáy ly là nửa khối cầu đường kính bằng miệng ly.
+
+a. Tính thể tích rượu chứa tối đa khi đổ vào ly.
+
+b. Mỗi chai rượu vang 0,85 lít. Tiệc 12 người, mỗi người uống 4 ly, lượng rượu rót bằng 60% thể tích ly. Cần chuẩn bị ít nhất bao nhiêu chai?","a) Bán kính $R = 6/2 = 3$ (cm).
+
+Thể tích phần hình trụ: $V_{tru} = \pi R^2 h = \pi \cdot 3^2 \cdot 3 = 27\pi$ ($cm^3$).
+
+Thể tích phần nửa khối cầu: $V_{cau} = \frac{1}{2} \cdot \frac{4}{3} \pi R^3 = 18\pi$ ($cm^3$).
+
+Thể tích rượu tối đa: $V = 27\pi + 18\pi = 45\pi$ ($cm^3$).
+
+b) Tổng số ly rượu: $12 \cdot 4 = 48$ (ly).
+
+Lượng rượu mỗi ly: $45\pi \cdot 60\% = 27\pi$ ($cm^3$).
+
+Tổng lượng rượu: $48 \cdot 27\pi = 1296\pi \approx 4071,5$ ($cm^3$).
+
+Đổi 0,85 lít = 850 $cm^3$.
+
+Số chai rượu: $n = 1296\pi / 850 \approx 4,79$ (chai).
+
+Vậy cần chuẩn bị ít nhất 5 chai.",
+5,2,Bài 6,"Quốc đi từ A gặp Khánh tại B. Vận tốc Khánh gấp 3,25 lần Quốc. Quốc tăng tốc thêm 1 km/h và đi đường tắt đến C dài bằng 1/3 đường Khánh đi. Hai người đến C cùng lúc. Nếu Khánh đi đường tắt thì đến trước Quốc 2 giờ. Tính vận tốc đầu của Quốc.","Gọi $x$ (km/h) là vận tốc đầu của Quốc, $y$ (km) là quãng đường Khánh đi từ B đến C.
+
+Quãng đường Quốc đi trong 2 giờ là $2x$, còn lại $0,5x$.
+
+Vận tốc Khánh $3,25x$. Vận tốc Quốc mới $x+1$. Đường tắt B đến C dài $y/3$.
+
+Phương trình thời gian đến C cùng lúc: $\frac{0,5x + y/3}{x+1} = \frac{y}{3,25x}$ (1).
+
+Phương trình Khánh đi đường tắt: $\frac{y}{3,25x} - \frac{y/3}{3,25x} = 2 \Rightarrow y = 9,75x$.
+
+Thế $y = 9,75x$ vào (1): $\frac{0,5x + 3,25x}{x+1} = \frac{9,75x}{3,25x} \Rightarrow \frac{3,75x}{x+1} = 3$.
+
+$\Leftrightarrow 3,75x = 3x + 3 \Leftrightarrow 0,75x = 3 \Rightarrow x = 4$.
+
+Vậy vận tốc lúc đầu của Quốc là 4 km/h.",
+5,2,Bài 7,"Cho đường tròn (O;R) đường kính AC. Từ M trên tiếp tuyến tại A vẽ tiếp tuyến MB.
+
+a. Chứng minh MAOB nội tiếp và $OM \perp AB$.
+
+b. MO cắt (O) tại D. AD cắt MB tại E. $OI \perp DB$. Chứng minh $\widehat{DAB} = \widehat{IOB}$ và $EB^2 = ED \cdot EA$.
+
+c. Tiếp tuyến tại C cắt AB tại K. Giả sử $AM = R\sqrt{3}$. Chứng minh $OK \perp MC$ và tính diện tích giới hạn bởi MB, cung BC, CK và KM.","a) $\widehat{MAO} = \widehat{MBO} = 90^\circ \Rightarrow$ MAOB nội tiếp.
+
+$MA = MB, OA = OB = R \Rightarrow OM$ là trung trực AB $\Rightarrow OM \perp AB$.
+
+b) $\triangle OBD$ cân tại O, đường cao OI đồng thời là phân giác $\Rightarrow \widehat{IOB} = \frac{1}{2} \widehat{BOD}$.
+
+Mà $\widehat{DAB} = \frac{1}{2} \widehat{BOD} \Rightarrow \widehat{DAB} = \widehat{IOB}$.
+
+$\triangle EBD \sim \triangle EAB$ (g-g) $\Rightarrow \frac{EB}{EA} = \frac{ED}{EB} \Rightarrow EB^2 = ED \cdot EA$.
+
+c) $\tan \widehat{AOM} = \frac{AM}{OA} = \sqrt{3} \Rightarrow \widehat{AOM} = 60^\circ, \widehat{OAB} = 30^\circ$.
+
+$\tan \widehat{KOC} \cdot \tan \widehat{ACM} = \frac{2\sqrt{3}}{3} \cdot \frac{\sqrt{3}}{2} = 1 \Rightarrow \widehat{KOC} + \widehat{ACM} = 90^\circ \Rightarrow OK \perp MC$.
+
+$S_{OMKC} = \frac{1}{2} OK \cdot MC = \frac{7R^2\sqrt{3}}{6}$.
+
+$S_{quat OBC} = \frac{\pi R^2}{6}$.
+
+Diện tích cần tìm $S = \frac{R^2(7\sqrt{3} - \pi)}{6}$.",
+5,3,Bài 1,"Trong mặt phẳng tọa độ Oxy cho Parabol (P): $y=-\frac{1}{4}x^{2}$
+
+a. Vẽ đồ thị (P) trên hệ trục tọa độ Oxy.
+
+b. Tìm tọa độ các điểm M thuộc (P) (khác gốc tọa độ) có hoành độ bằng 2 lần tung độ.","a. Bảng giá trị
+
+X: -4; -2; 0; 2; 4
+
+$y=-\frac{1}{4}x^{2}$: -4; -1; 0; -1; -4
+
+Vẽ đồ thị (P) đi qua các điểm trên.
+
+b. Gọi $M(x;y)$ là điểm cần tìm thuộc (P).
+
+Vì điểm M có hoành độ bằng 2 lần tung độ nên ta có $x=2y \Rightarrow y = \frac{1}{2}x$.
+
+Thay vào phương trình (P):
+
+$\frac{1}{2}x=-\frac{1}{4}x^{2}$
+
+$\Leftrightarrow \frac{1}{4}x^{2}+\frac{1}{2}x=0$
+
+$\Leftrightarrow x_{1}=0$ hoặc $x_{2}=-2$.
+
+Vì M khác gốc tọa độ nên loại $x_{1}=0$, nhận $x_{2}=-2$.
+
+Với $x=-2 \Rightarrow y=\frac{1}{2}(-2)=-1.$
+
+Vậy tọa độ điểm cần tìm là $M(-2;-1)$.",
+5,3,Bài 2,"Cho phương trình: $x^{2}+x-2026=0 (*)$ ($x$ là ẩn số).
+
+a. Chứng minh phương trình (*) có hai nghiệm trái dấu $x_1, x_2$.
+
+b. Không giải phương trình, hãy tính giá trị của biểu thức: $B=x_{1}(x_{1}+\frac{2025}{2026}x_{2})+x_{2}^{2}$","a. Ta có phương trình $x^{2}+x-2026=0$, ($a=1; b=1; c=-2026$).
+
+Ta có $a \cdot c = 1 \cdot (-2026) = -2026 < 0$.
+
+Vậy phương trình luôn có hai nghiệm trái dấu $x_{1}, x_{2}$.
+
+b. Theo định lý Viète, ta có:
+
+$\{x_{1}+x_{2}=-1; x_{1}x_{2}=-2026\}$.
+
+Ta có $x_{1}^{2}+x_{2}^{2}=(x_{1}+x_{2})^{2}-2x_{1}x_{2}=(-1)^{2}-2(-2026)=4053$.
+
+Biến đổi biểu thức B:
+
+$B=x_{1}^{2}+\frac{2025}{2026}x_{1}x_{2}+x_{2}^{2}$
+
+$B=(x_{1}^{2}+x_{2}^{2})+\frac{2025}{2026}x_{1}x_{2}$
+
+Thế giá trị vào biểu thức:
+
+$B=4053+\frac{2025}{2026} \cdot (-2026)$
+
+$B=4053-2025=2028$.",
+5,3,Bài 3,"Biểu đồ cột kép biểu diễn số lượng học sinh tham gia giải thi đấu thể thao cấp Phường của một trường THCS.
+
+a. Tính tổng số học sinh tham gia thi đấu thể thao tại trường.
+
+b. Tính xác suất của biến cố A: ""Học sinh được chọn là học sinh nam"".
+
+c. Tính xác suất của biến cố B: ""Học sinh được chọn đang học lớp 9"".","a. Dựa vào biểu đồ, số học sinh tham gia từng khối là:
+
+Khối 6: $6+8=14$; Khối 7: $9+7=16$; Khối 8: $8+9=17$; Khối 9: $8+7=15$.
+
+Không gian mẫu $n(\Omega)=14+16+17+15=62$.
+
+Vậy tổng số học sinh tham gia là 62 học sinh.
+
+b. Số học sinh nam là $6+9+8+8=31 \Rightarrow n(A)=31$.
+
+Xác suất $P(A)=\frac{31}{62}=\frac{1}{2}$.
+
+c. Số học sinh lớp 9 tham gia là 15 $\Rightarrow n(B)=15$.
+
+Xác suất $P(B)=\frac{15}{62}$.",
+5,3,Bài 4,"Khu vườn hình bán nguyệt SRT tâm O bán kính 12m. Khu vực cỏ PQR là hình quạt tròn tâm Q bán kính 16m, O là trung điểm PQ. Chiều dài cung PR là 14m. Phần còn lại trồng hoa.
+
+a. Tính chiều dài hàng rào rào khu vực trồng hoa.
+
+b. Tính diện tích khu vực trồng hoa.","a. $O$ là trung điểm $PQ \Rightarrow OP=OQ=8m$.
+
+Bán kính tâm O là $R=12m \Rightarrow OS=OT=12m$.
+
+$SP=OS-OP=12-8=4m$; $QT=OT-OQ=12-8=4m$.
+
+Chiều dài cung SRT là $12\pi$.
+
+Hàng rào $L = cung SRT + SP + QT + cung PR + QR$
+
+$L = 12\pi + 4 + 4 + 14 + 16 = 12\pi + 38$ (m).
+
+b. Diện tích bán nguyệt $S_{bn}=\frac{1}{2}\pi \cdot 12^{2}=72\pi \approx 226,2 (m^{2})$.
+
+Diện tích khu cỏ $S_{co}=\frac{1}{2}r \cdot l = \frac{1}{2} \cdot 16 \cdot 14 = 112 (m^{2})$.
+
+Diện tích trồng hoa $S_{hoa}=S_{bn}-S_{co} = 72\pi-112 \approx 114,2 (m^{2})$.",
+5,3,Bài 5,"Hộp kem hình hộp chữ nhật $15cm \times 20cm \times 12cm$ đầy kem. Chia vào các bánh ốc quế hình nón, phần kem nhô lên là nửa hình cầu đường kính miệng bánh 6cm. Chiều cao cả bánh và kem là 15cm.
+
+a. Tính thể tích kem chứa đầy trong một cây kem.
+
+b. Tính số que kem có thể chia được biết lượng kem thực tế ít hơn 5% thể tích đầy.","a. Bán kính $R=3cm$. Chiều cao nón $h=15-3=12cm$.
+
+$V_{non}=\frac{1}{3}\pi R^{2}h \approx \frac{1}{3} \cdot 3,14 \cdot 3^{2} \cdot 12 = 113,04 (cm^{3})$.
+
+$V_{cau}=\frac{2}{3}\pi R^{3} \approx \frac{2}{3} \cdot 3,14 \cdot 3^{3} = 56,52 (cm^{3})$.
+
+$V_{kem}=113,04+56,52=169,56 (cm^{3})$.
+
+b. Thể tích hộp kem $V_{hop}=15 \cdot 20 \cdot 12 = 3600 (cm^{3})$.
+
+Lượng kem thực tế mỗi cây: $169,56 \cdot 95\% = 161,082 (cm^{3})$.
+
+Số que kem $n = 3600 : 161,082 \approx 22,35$.
+
+Vậy chia được 22 que kem.",
+5,3,Bài 6,"Giải cờ vua có 5 VĐV đấu vòng tròn. Thắng 1đ, Hòa 0.5đ, Thua 0đ. Kết thúc điểm mỗi người khác nhau.
+
+Hạng 1 không hòa. Hạng 2 không thua. Hạng 4 không thắng.
+
+a. Có bao nhiêu trận đấu? Hạng nhất được mấy điểm?
+
+b. Xác định điểm số và kết quả từng trận của các VĐV.","a. Số trận: $4+3+2+1=10$ trận. Tổng điểm giải là 10.
+
+VDV1 không hòa, VDV2 không thua $\Rightarrow$ VDV2 thắng VDV1.
+
+VDV1 thua ít nhất 1 trận nên tối đa có 3đ (3 thắng, 1 thua).
+
+Giả sử $A_1=3 \Rightarrow$ VDV1 thắng VDV 3,4,5 và thua VDV2.
+
+b. Tổng điểm 4 người còn lại là 7đ.
+
+Thứ tự điểm thỏa mãn: $A_2=2,5; A_3=2,0; A_4=1,5; A_5=1,0$.
+
+Hạng nhì: 2,5đ (Thắng hạng nhất; Hòa ba, tư, năm).
+
+Hạng ba: 2,0đ (Thắng hạng năm; Hòa nhì, tư; Thua nhất).
+
+Hạng tư: 1,5đ (Hòa nhì, ba, năm; Thua nhất).
+
+Hạng năm: 1,0đ (Hòa nhì, tư; Thua nhất, ba).",
+5,3,Bài 7,"Từ A ngoài (O;R) vẽ tiếp tuyến AB, đường kính BC. AC cắt (O) tại D. $BH \perp AO$ tại H, M là trung điểm AB.
+
+a. Chứng minh $BD \perp AC$ và A,B,H,D cùng thuộc một đường tròn.
+
+b. Chứng minh $OB^{2}=OH \cdot OA$ và $\widehat{OHC}=\widehat{AHD}$.
+
+c. $AH=12cm, OH=9cm$. Tính diện tích hình viên phân giới hạn bởi cung nhỏ BD và dây BD.","a. $\widehat{BDC}=90^{\circ}$ (góc nội tiếp chắn nửa đường tròn) $\Rightarrow BD \perp AC$.
+
+$\triangle ABH$ và $\triangle ADB$ cùng vuông tại H và D nên cùng thuộc đường tròn đường kính AB.
+
+b. $\triangle OBH \sim \triangle OAB (g-g) \Rightarrow OB^{2}=OH \cdot OA$.
+
+$\triangle OHC \sim \triangle OCA (c-g-c) \Rightarrow \widehat{OHC}=\widehat{OCA}$.
+
+Mà $\widehat{OCA}=\widehat{ABD}$ (cùng phụ $\widehat{DBC}$) và $\widehat{ABD}=\widehat{AHD}$ (cùng chắn cung AD) $\Rightarrow \widehat{OHC}=\widehat{AHD}$.
+
+c. $OA=21cm, R=OB=\sqrt{9 \cdot 21}=3\sqrt{21}cm$.
+
+$AB=\sqrt{21^{2}-189}=6\sqrt{7}cm, AC=12\sqrt{7}cm$.
+
+$BD = \frac{AB \cdot BC}{AC} = 3\sqrt{21}cm$.
+
+$\triangle OBD$ đều ($BD=OB=OD=R$) $\Rightarrow \widehat{BOD}=60^{\circ}$.
+
+$S_{q} = \frac{\pi \cdot 189 \cdot 60}{360} = \frac{63\pi}{2} \approx 98,96 cm^{2}$.
+
+$S_{\triangle OBD} = \frac{189\sqrt{3}}{4} \approx 81,84 cm^{2}$.
+
+$S_{vp} = S_{q} - S_{\triangle OBD} \approx 17,12 cm^{2}$.",
+6,1,Bài 1,"Cho hàm số $(\mathcal{P}):y=\frac{x^{2}}{4}$
+
+a. Vẽ đồ thị (P).
+
+b. Tìm điểm K thuộc (P) có tung độ nhỏ hơn hoành độ 1 đơn vị.","a. Bảng giá trị:
+
+X: -4; -2; 0; 2; 4
+
+$y=\frac{x^{2}}{4}$: 4; 1; 0; 1; 4
+
+Vẽ đồ thị (P) đi qua các điểm trên.
+
+b. Vì điểm K có tung độ nhỏ hơn hoành độ 1 đơn vị nên $y=x-1$.
+
+Ta có phương trình: $x-1=\frac{x^{2}}{4}$
+
+$\Leftrightarrow \frac{x^{2}}{4}-x+1=0$
+
+$\Leftrightarrow x^{2}-4x+4=0$
+
+$\Leftrightarrow (x-2)^{2}=0 \Rightarrow x=2$.
+
+Với $x=2$ suy ra $y=1$.
+
+Vậy toạ độ điểm cần tìm là (2;1).",
+6,1,Bài 2,"Cho phương trình $3x^{2}+2x-5=0$.
+
+a. Chứng minh phương trình trên có hai nghiệm phân biệt $x_{1}, x_{2}$
+
+b. Không giải phương trình, tính giá trị của biểu thức: $T=(x_{1}-2x_{2})(x_{2}-x_{1})+x_{2}^{2}$","a. Ta có $3x^{2}+2x-5=0 (a=3; b=2; c=-5)$.
+
+Ta có $\Delta=b^{2}-4ac=2^{2}-4\cdot3\cdot(-5)=64>0$.
+
+Vì $\Delta>0$ nên phương trình có hai nghiệm phân biệt $x_{1},x_{2}$.
+
+b. Theo định lý Viète, ta có:
+
+$\{ x_{1}+x_{2}=\frac{-2}{3}; x_{1}x_{2}=\frac{-5}{3} \}$.
+
+Ta có $x_{1}^{2}+x_{2}^{2}=(x_{1}+x_{2})^{2}-2x_{1}x_{2}=(\frac{-2}{3})^{2}-2\cdot(\frac{-5}{3})=\frac{34}{9}$.
+
+Biến đổi biểu thức T:
+
+$T=x_{1}x_{2}-x_{1}^{2}-2x_{2}^{2}+2x_{1}x_{2}+x_{2}^{2}$
+
+$T=3x_{1}x_{2}-(x_{1}^{2}+x_{2}^{2})$
+
+$T=3\cdot(\frac{-5}{3})-\frac{34}{9} = -5 - \frac{34}{9} = -\frac{79}{9}$.",
+6,1,Bài 3,"Thời gian tự học tại nhà của bạn Tú trong một tuần được biểu diễn trong biểu đồ cột.
+
+a. Tính thời gian trung bình bạn Tú tự học tại nhà mỗi ngày trong một tuần.
+
+b. Chọn ngẫu nhiên một ngày trong tuần, tính xác suất của các biến cố sau:
+
+A: ""Ngày được chọn có thời gian tự học tại nhà của bạn Tú lớn hơn 170 phút"".
+
+B: ""Ngày được chọn có thời gian tự học tại nhà của bạn Tú không quá 160 phút"".","a. Tổng thời gian tự học của Tú trong tuần là:
+
+$162+135+170+150+180+175+190=1162$ (phút).
+
+Thời gian trung bình mỗi ngày là: $\frac{1162}{7}=166$ (phút).
+
+b. Không gian mẫu $n(\Omega)=7$.
+
+Biến cố A: Các ngày có thời gian > 170 phút là Thứ 6 (180), Thứ 7 (175), Chủ nhật (190). Suy ra $n(A)=3$.
+
+Xác suất $P(A)=\frac{3}{7}$.
+
+Biến cố B: Các ngày có thời gian $\leq$ 160 phút là Thứ 3 (135), Thứ 5 (150). Suy ra $n(B)=2$.
+
+Xác suất $P(B)=\frac{2}{7}$.",
+6,1,Bài 4,"Trên một miếng đất hình chữ nhật rộng $x(m)$, dài $2x+10(m)$, người ta làm lối đi hình bình hành bề rộng 2 m. Phần còn lại là hai miếng đất trồng hoa hồng và hoa cúc có diện tích bằng nhau.
+
+a. Viết biểu thức A biểu diễn diện tích trồng hoa hồng theo x.
+
+b. Tính chi phí lát sỏi lối đi với giá 120 nghìn đồng/$m^{2}$, biết diện tích trồng hoa hồng là $45 m^{2}$.","a. Diện tích lối đi hình bình hành là $2 \cdot x = 2x (m^{2})$.
+
+Diện tích cả miếng đất: $x(2x+10) = 2x^{2}+10x (m^{2})$.
+
+Diện tích phần trồng hoa: $(2x^{2}+10x) - 2x = 2x^{2}+8x (m^{2})$.
+
+Vì hai phần bằng nhau nên diện tích hoa hồng là: $A = (2x^{2}+8x):2 = x^{2}+4x$.
+
+b. Ta có: $x^{2}+4x=45 \Leftrightarrow x^{2}+4x-45=0 \Rightarrow x=5$ (nhận) hoặc $x=-9$ (loại).
+
+Với $x=5$, diện tích lối đi là: $S = 2 \cdot 5 = 10 (m^{2})$.
+
+Chi phí: $10 \cdot 120000 = 1200000$ (đồng).",
+6,1,Bài 5,"6 lon nước ngọt hình trụ (đường kính 7 cm, cao 11 cm) đặt sát nhau trong thùng hình hộp chữ nhật.
+
+a. Tính thể tích thùng carton.
+
+b. Tính thể tích phần còn trống trong thùng. (Làm tròn đến hàng đơn vị).","a. Thùng đựng vừa khít 6 lon nên:
+
+Chiều dài: $7 \cdot 3 = 21 (cm)$.
+
+Chiều rộng: $7 \cdot 2 = 14 (cm)$.
+
+Chiều cao: $11 (cm)$.
+
+Thể tích thùng: $V_{thung} = 21 \cdot 14 \cdot 11 = 3234 (cm^{3})$.
+
+b. Bán kính lon: $R = 3,5 (cm)$.
+
+Thể tích 6 lon: $V_{6 lon} = 6 \cdot (\pi \cdot 3,5^{2} \cdot 11) \approx 6 \cdot 423,1 = 2538,6 \approx 2540 (cm^{3})$.
+
+Thể tích trống: $V_{trong} = 3234 - 2540 \approx 694 (cm^{3})$.",
+6,1,Bài 6,"Một gia đình 4 người cần 900 đơn vị protein và 400 đơn vị Lipit. 1kg thịt bò chứa 800 protein, 200 Lipit. 1kg thịt heo chứa 600 protein, 400 Lipit. Giá bò 100.000đ/kg, heo 70.000đ/kg. Tính số tiền mua thịt để đảm bảo dinh dưỡng.","Gọi $x, y$ lần lượt là số kg thịt bò và thịt heo cần mua.
+
+Ta có hệ phương trình:
+
+$\begin{cases} 800x + 600y = 900 \\ 200x + 400y = 400 \end{cases} \Rightarrow \begin{cases} x = 0,6 \\ y = 0,7 \end{cases}$
+
+Tổng số tiền: $100000 \cdot 0,6 + 70000 \cdot 0,7 = 109000$ (đồng).",
+6,1,Bài 7,"Từ A ngoài (O) vẽ tiếp tuyến AB, AC. BD là đường kính. K là hình chiếu C trên BD, CK cắt AD tại I. H là giao điểm OA và BC.
+
+a. Chứng minh: Tứ giác ABOC nội tiếp và $AO \perp BC$.
+
+b. Chứng minh: I là trung điểm của CK.
+
+c. BD và AC cắt nhau tại S. SI cắt AB tại M. Tính diện tích tứ giác AMOC theo R khi $OA=2R$.","a. $\widehat{ABO} = \widehat{ACO} = 90^{\circ}$ nên tứ giác ABOC nội tiếp đường tròn đường kính AO.
+
+Ta có $AB=AC$ và $OB=OC=R$ nên OA là trung trực BC $\Rightarrow OA \perp BC$.
+
+b. Ta có $CK // AB$ (cùng $\perp BD$).
+
+Theo hệ quả Thales: $\frac{IK}{AB} = \frac{DK}{DB}$.
+
+Chứng minh được $\triangle DKC \sim \triangle OBA \Rightarrow \frac{CK}{AB} = \frac{DK}{OB}$.
+
+Vì $DB=2OB \Rightarrow \frac{IK}{AB} = \frac{1}{2} \cdot \frac{CK}{AB} \Rightarrow IK = \frac{1}{2}CK$.
+
+c. Chứng minh được M là trung điểm AB.
+
+Khi $OA=2R \Rightarrow AC = \sqrt{(2R)^{2}-R^{2}} = R\sqrt{3}$ và $AB = R\sqrt{3}$.
+
+$S_{ACO} = \frac{1}{2} R \cdot R\sqrt{3} = \frac{R^{2}\sqrt{3}}{2}$.
+
+$S_{AMO} = \frac{1}{2} S_{ABO} = \frac{1}{2} \cdot \frac{R^{2}\sqrt{3}}{2} = \frac{R^{2}\sqrt{3}}{4}$.
+
+$S_{AMOC} = S_{ACO} + S_{AMO} = \frac{3R^{2}\sqrt{3}}{4}$.",
+6,2,Bài 1,"Cho hàm số $y=2x^{2}$ có đồ thị (P).
+
+a. Vẽ đồ thị (P) trên mặt phẳng tọa độ Oxy.
+
+b. Tìm điểm thuộc (P) khác gốc tọa độ có tung độ và hoành độ là hai số đối nhau.","a. Bảng giá trị:
+
+x",
+6,2,Bài 2,"Cho phương trình $3x^{2}+5x-6=0$.
+
+a. Chứng minh phương trình trên có hai nghiệm phân biệt $x_{1}$, $x_{2}$
+
+b. Không giải phương trình, hãy tính giá trị của biểu thức $A=x_{1}^{2}+x_{2}^{2}-\frac{1}{x_{1}}-\frac{1}{x_{2}}$","a. Ta có phương trình $3x^{2}+5x-6=0$ ($a=3; b=5; c=-6$).
+
+Ta có $\Delta = b^{2}-4ac = 5^{2}-4 \cdot 3 \cdot (-6) = 97 > 0$.
+
+Vì $\Delta > 0$ nên phương trình luôn có hai nghiệm phân biệt $x_{1}, x_{2}$.
+
+b. Theo định lý Viète, ta có:
+
+$\begin{cases} x_{1}+x_{2} = \frac{-b}{a} = \frac{-5}{3} \\ x_{1}x_{2} = \frac{c}{a} = -2 \end{cases}$
+
+Biến đổi biểu thức A:
+
+$x_{1}^{2}+x_{2}^{2} = (x_{1}+x_{2})^{2}-2x_{1}x_{2} = (-\frac{5}{3})^{2}-2(-2) = \frac{61}{9}$.
+
+$A = (x_{1}^{2}+x_{2}^{2}) - \frac{x_{1}+x_{2}}{x_{1}x_{2}} = \frac{61}{9} - \frac{-\frac{5}{3}}{-2} = \frac{61}{9} - \frac{5}{6} = \frac{107}{18}$.
+
+Vậy $A = \frac{107}{18}$.",
+6,2,Bài 3,"Bảng số liệu cho biết giá cả và lượng tiêu thụ xăng dầu:
+
+A95: 25100 VNĐ/lít - 3500 lít
+
+A92: 23700 VNĐ/lít - 4000 lít
+
+Diesel: 22450 VNĐ/lít - 1200 lít
+
+E5: 24500 VNĐ/lít - 1000 lít
+
+E10: 24850 VNĐ/lít - 800 lít
+
+a. Hãy cho biết doanh thu của từng loại xăng và xác định loại xăng có doanh thu cao nhất.
+
+b. Tính xác suất các biến cố:
+
+A: ""Xăng được chọn là xăng A95"".
+
+B: ""Xăng được chọn là xăng sinh học"".
+
+C: ""Xăng được chọn có giá không thấp hơn 24500 VNĐ/lít"".","a. Doanh thu từng loại:
+
+A95: $25100 \cdot 3500 = 87.850.000$ (VNĐ).
+
+A92: $23700 \cdot 4000 = 94.800.000$ (VNĐ).
+
+Diesel: $22450 \cdot 1200 = 26.940.000$ (VNĐ).
+
+E5: $24500 \cdot 1000 = 24.500.000$ (VNĐ).
+
+E10: $24850 \cdot 800 = 19.880.000$ (VNĐ).
+
+Xăng A92 có doanh thu cao nhất.
+
+b. Tổng lượng tiêu thụ: $n(\Omega) = 3500+4000+1200+1000+800 = 10500$ (lít).
+
+Xác suất biến cố A: $P(A) = \frac{3500}{10500} = \frac{1}{3}$.
+
+Xác suất biến cố B (E5 và E10): $P(B) = \frac{1000+800}{10500} = \frac{1800}{10500} = \frac{6}{35}$.
+
+Xác suất biến cố C (A95, E5, E10): $P(C) = \frac{3500+1000+800}{10500} = \frac{5300}{10500} = \frac{53}{105}$.",
+6,2,Bài 4,"Thầy dạy Hóa có ống nghiệm hình trụ chứa 67 ml dung dịch. Đổ vào phễu hình nón có $R=3$ cm, $h=6$ cm. Bạn Quang bảo phễu đủ chứa, bạn Thái bảo sẽ tràn. Ai đúng? Biết $V = \frac{1}{3}\pi R^{2}h$.","Thể tích tối đa của phễu hình nón:
+
+$V_{nón} = \frac{1}{3}\pi R^{2}h = \frac{1}{3}\pi \cdot 3^{2} \cdot 6 = 18\pi$ ($cm^{3}$).
+
+Với $\pi \approx 3,14$, $V_{nón} \approx 18 \cdot 3,14 = 56,52$ ($cm^{3}$) = 56,52 ml.
+
+Thể tích chất lỏng là $V_{lỏng} = 67$ ml.
+
+Vì $56,52 < 67$ nên $V_{nón} < V_{lỏng}$.
+
+Phễu không đủ chứa và nước sẽ tràn ra ngoài. Vậy bạn Thái trả lời đúng.",
+6,2,Bài 5,"Một người dự định trồng 126 cây theo thời gian định trước. Nhưng do thời tiết xấu nên mỗi ngày trồng được ít hơn 5 cây, vì thế khi trồng xong chậm mất 5 ngày so với dự kiến. Hỏi thực tế mỗi ngày người đó trồng được bao nhiêu cây?","Gọi $x$ (cây) là số cây thực tế mỗi ngày ($x \in \mathbb{N}^{*}$).
+
+Số cây dự định mỗi ngày: $x+5$ (cây).
+
+Thời gian thực tế: $\frac{126}{x}$ (ngày).
+
+Thời gian dự định: $\frac{126}{x+5}$ (ngày).
+
+Ta có phương trình: $\frac{126}{x} - \frac{126}{x+5} = 5$
+
+$\Leftrightarrow 126(x+5) - 126x = 5x(x+5)$
+
+$\Leftrightarrow 5x^{2} + 25x - 630 = 0$
+
+$\Leftrightarrow x^{2} + 5x - 126 = 0$
+
+Giải phương trình được $x=9$ (nhận) hoặc $x=-14$ (loại).
+
+Vậy thực tế mỗi ngày người đó trồng được 9 cây.",
+6,2,Bài 6,"Kho nhập gạo 4 ngày liên tiếp, ngày sau bằng 120% ngày trước. Ngày thứ 3 nhập xong có 91 tấn.
+
+a. Tính lượng gạo ngày thứ nhất.
+
+b. Ngày thứ 5 xuất $a\%$ lượng gạo hiện có. Tìm $a$ (làm tròn đơn vị) để lượng gạo còn lại từ 74 đến 94 tấn.","a. Gọi $x$ là lượng gạo ngày thứ nhất ($x>0$).
+
+Ngày 2: $1,2x$. Ngày 3: $1,44x$.
+
+Ta có: $x + 1,2x + 1,44x = 91 \Leftrightarrow 3,64x = 91 \Leftrightarrow x = 25$.
+
+Vậy ngày thứ nhất nhập 25 tấn.
+
+b. Lượng gạo ngày 4: $1,2 \cdot 1,44x = 1,728 \cdot 25 = 43,2$ (tấn).
+
+Tổng gạo sau 4 ngày: $91 + 43,2 = 134,2$ (tấn).
+
+Lượng gạo còn lại: $134,2 - 1,342a$.
+
+Theo đề: $74 \le 134,2 - 1,342a \le 94$
+
+$\Leftrightarrow -60,2 \le -1,342a \le -40,2$
+
+$\Leftrightarrow 29,95 \le a \le 44,85$.
+
+Làm tròn: $30 \le a \le 45$.",
+6,2,Bài 7,"Cho đường tròn (O;R), $OA=2R$, vẽ tiếp tuyến AB, AC. Cát tuyến ADE (D giữa A, E). $OI \perp DE$.
+
+a. CM A, B, O, I, C cùng thuộc một đường tròn. Xác định tâm K và bán kính.
+
+b. CM $AB^{2} = AD \cdot AE$.
+
+c. Tính diện tích phần hình tròn giới hạn bởi cung nhỏ OC và dây OC của (K) biết $R=5,1cm, \pi \approx 3,14$.","a. Các tam giác $\triangle ABO, \triangle ACO, \triangle AIO$ đều vuông tại B, C, I nên cùng nội tiếp đường tròn đường kính AO.
+
+Tâm K là trung điểm AO, bán kính $R_{K} = \frac{AO}{2} = R$.
+
+b. Xét $\triangle ABD$ và $\triangle AEB$ có góc A chung và $\widehat{ABD} = \widehat{AEB}$ (cùng chắn cung BD).
+
+$\Rightarrow \triangle ABD \sim \triangle AEB$ (g-g) $\Rightarrow \frac{AB}{AE} = \frac{AD}{AB} \Rightarrow AB^{2} = AD \cdot AE$.
+
+c. Trong $\triangle ACO$ vuông tại C: $\sin \widehat{OAC} = \frac{OC}{OA} = \frac{1}{2} \Rightarrow \widehat{OAC} = 30^{\circ}$.
+
+Trong đường tròn (K), $\triangle KOC$ đều (vì $KO=KC=OC=R$) $\Rightarrow \widehat{OKC} = 60^{\circ}$.
+
+$S_{quạt} = \frac{\pi R^{2}}{6}$. $S_{\triangle KOC} = \frac{R^{2}\sqrt{3}}{4}$.
+
+$S = R^{2}(\frac{\pi}{6} - \frac{\sqrt{3}}{4}) \approx 5,1^{2} \cdot (0,523 - 0,433) \approx 2,35$ ($cm^{2}$).",
+6,3,Bài 1,"Cho hàm số (P): $y=\frac{2}{3}x^{2}$.
+
+a. Vẽ (P) trên mặt phẳng toạ độ.
+
+b. Tìm điểm thuộc (P) sao cho hoành độ khác 0 và gấp 2 lần tung độ.","a. Bảng giá trị:
+
+x: -3 | -1,5 | 0 | 1,5 | 3
+
+y: 6 | 1,5 | 0 | 1,5 | 6
+
+Đồ thị (P) là đường Parabol đi qua các điểm trên.
+
+b. Vì hoành độ gấp 2 lần tung độ nên $độ nên $x=2y \Rightarrow y=\fra$.
+
+Ta có phương trình:
+
+$nh:<br>$\frac{2}{3}x^{2} = \fra$
+
+$}x$<br>$\Leftrightarrow \frac{2}{3}x^{2} - \frac{1}$
+
+$ 0$<br>$\Leftrightarrow x(\frac{2}{3}x - \frac{1}$
+
+$ 0$<br>$\Leftrightarrow$ (Loại vì hoành độ khác 0) hoặc $) hoặc $x_{2}=\fr$ (Nhận).
+
+Với $br>Với $x=\frac{3}{4} \Rightarrow y = \frac{1}{2} \cdot \frac{3}{4} = \fr$.
+
+Vậy toạ độ điểm cần tìm là $tìm là $(\frac{3}{4};\fra$.",
+6,3,Bài 2,"Cho phương trình $3x^{2}-9x+4=0$.
+
+a. Chứng minh phương trình luôn có 2 nghiệm phân biệt.
+
+b. Gọi $x_{1}, x_{2}$ là hai nghiệm của phương trình, không giải phương trình hãy tính giá trị biểu thức $A=x_{1}(x_{1}-3x_{2})+x_{2}^{2}+2x_{1}x_{2}$ và $B=x_{1}^{3}+x_{2}^{3}$.","a. Ta có $3x^{2}-9x+4=0$ ($a=3; b=-9; c=4$).
+
+$\Delta = b^{2}-4ac = (-9)^{2}-4 \cdot 3 \cdot 4 = 81 - 48 = 33 > 0$.
+
+Vì $\Delta > 0$ nên phương trình luôn có hai nghiệm phân biệt $x_{1}, x_{2}$.
+
+b. Theo định lý Viète, ta có:
+
+$\begin{cases} x_{1}+x_{2}=\frac{-b}{a}=3 \\ x_{1}x_{2}=\frac{c}{a}=\frac{4}{3} \end{cases}$
+
+Tính A:
+
+$A = x_{1}^{2}-3x_{1}x_{2}+x_{2}^{2}+2x_{1}x_{2} = (x_{1}^{2}+x_{2}^{2})-x_{1}x_{2}$
+
+Ta có $x_{1}^{2}+x_{2}^{2} = (x_{1}+x_{2})^{2}-2x_{1}x_{2} = 3^{2}-2 \cdot \frac{4}{3} = \frac{19}{3}$.
+
+$\Rightarrow A = \frac{19}{3} - \frac{4}{3} = 5$.
+
+Tính B:
+
+$B = (x_{1}+x_{2})(x_{1}^{2}-x_{1}x_{2}+x_{2}^{2}) = 3 \cdot (\frac{19}{3} - \frac{4}{3}) = 3 \cdot 5 = 15$.",
+6,3,Bài 3,"Biểu đồ biểu diễn số học sinh ở mỗi tổ của lớp 9A trường THCS Hoàng Văn Thụ.
+
+a. Hãy lập bảng tần số thống kê số học sinh ở mỗi tổ của lớp 9A và cho biết lớp 9A có bao nhiêu học sinh.
+
+b. Chọn ngẫu nhiên một em học sinh của lớp 9A. Tính xác suất của các biến cố:
+
+A: ""Học sinh được chọn thuộc tổ 1"".
+
+B: ""Học sinh được chọn là học sinh nữ thuộc tổ 3 hoặc tổ 4"".","a. Bảng thống kê:
+
+Tổ 1: Nam 4, Nữ 5 $\Rightarrow$ Tổng 9.
+
+Tổ 2: Nam 6, Nữ 4 $\Rightarrow$ Tổng 10.
+
+Tổ 3: Nam 6, Nữ 5 $\Rightarrow$ Tổng 11.
+
+Tổ 4: Nam 5, Nữ 6 $\Rightarrow$ Tổng 11.
+
+Tổng số học sinh lớp 9A là: $9+10+11+11=41$ (học sinh).
+
+b. Không gian mẫu $n(\Omega)=41$.
+
+Biến cố A: $n(A)=9 \Rightarrow P(A)=\frac{9}{41}$.
+
+Biến cố B: Nữ tổ 3 (5) + Nữ tổ 4 (6) = 11 $\Rightarrow n(B)=11 \Rightarrow P(B)=\frac{11}{41}$.",
+6,3,Bài 4,"Một bể chứa nước sạch tạm thời hình hộp chữ nhật cao 2m. Đáy bể có chiều dài hơn chiều rộng 2m. Diện tích xung quanh bể không vượt quá $32 m^{2}$.
+
+a. Viết biểu thức dạng khai triển tính diện tích xung quanh S của bể theo chiều rộng x (mét) của đáy bể.
+
+b. Tính chiều rộng tối đa của bể và chi phí xây dựng bể với chiều rộng đó. Biết chi phí là 500.000 đồng/$m^{3}$.","a. Gọi $x(m)$ là chiều rộng $(x>0)$. Chiều dài là $x+2(m)$, chiều cao $h=2(m)$.
+
+Diện tích xung quanh: $S = 2h(dài + rộng) = 2 \cdot 2 \cdot (x+2+x) = 4(2x+2) = 8x+8 (m^{2})$.
+
+b. Ta có $S \le 32 \Rightarrow 8x+8 \le 32 \Rightarrow 8x \le 24 \Rightarrow x \le 3$.
+
+Chiều rộng tối đa là $3(m)$.
+
+Khi $x=3$, chiều dài là $3+2=5(m)$.
+
+Thể tích bể: $V = 5 \cdot 3 \cdot 2 = 30 (m^{3})$.
+
+Chi phí: $T = 30 \cdot 500.000 = 15.000.000$ (đồng).",
+6,3,Bài 5,"Một trái dừa xiêm có dạng hình cầu đường kính 18cm, vỏ dày 2cm.
+
+a. Tính thể tích phần nước dừa bên trong (dạng hình cầu đồng tâm).
+
+b. Chai thủy tinh hình trụ đường kính đáy 7cm, cao 12cm, chứa 90% thể tích. Hỏi cần ít nhất bao nhiêu chai để chứa hết nước dừa của 100 trái dừa trên?","a. Bán kính trái dừa: $R_{ngoài}=9(cm)$.
+
+Bán kính phần nước: $R = 9-2=7(cm)$.
+
+Thể tích nước mỗi trái: $V_{nước} = \frac{4}{3}\pi R^{3} = \frac{4}{3}\pi \cdot 7^{3} \approx 1436,76 (cm^{3})$.
+
+b. Bán kính chai: $r=3,5(cm)$.
+
+Thể tích 1 chai: $V_{chai} = \pi r^{2}h = \pi \cdot 3,5^{2} \cdot 12 = 147\pi (cm^{3})$.
+
+Thể tích thực chứa mỗi chai: $V_{chứa} = 147\pi \cdot 90\% = 132,3\pi (cm^{3})$.
+
+Tổng nước 100 trái: $V_{tổng} = 100 \cdot \frac{1372}{3}\pi (cm^{3})$.
+
+Số chai: $n = \frac{V_{tổng}}{V_{chứa}} \approx 345,68$.
+
+Cần ít nhất 346 chai.",
+6,3,Bài 6,"Lớp 9A có 37 học sinh (20 nam). Bạn Anh sinh nhật. Giáo viên tặng bạn Anh 1 quà, mỗi bạn nam còn lại nhận 3 bánh, mỗi bạn nữ còn lại nhận 2 kẹo xanh hoặc 4 kẹo đỏ. Biết số bánh bằng số kẹo. Hỏi bạn Anh là nam hay nữ?","Số nữ: $37-20=17$.
+
+TH1: Anh là nam.
+
+Số nam nhận bánh: 19 $\Rightarrow$ Số bánh: $19 \cdot 3 = 57$.
+
+Số nữ nhận kẹo: 17. Gọi a nữ nhận 2 kẹo, b nữ nhận 4 kẹo ($a+b=17$).
+
+Tổng kẹo: $2a+4b = 2(a+2b)$. Đây là số chẵn, 57 là số lẻ $\Rightarrow$ Vô lý.
+
+TH2: Anh là nữ.
+
+Số nam nhận bánh: 20 $\Rightarrow$ Số bánh: $20 \cdot 3 = 60$.
+
+Số nữ nhận kẹo: 16. Hệ PT: $\begin{cases}x+y=16\\ 2x+4y=60\end{cases} \Rightarrow \begin{cases}x=2\\ y=14\end{cases}$ (Hợp lý).
+
+Vậy bạn Anh là nữ.",
+6,3,Bài 7,"Cho nửa đường tròn tâm O đường kính AB. Tiếp tuyến tại B lấy M, tiếp tuyến tại C (C khác B). AM cắt (O) tại D. I là trung điểm AD, H là giao điểm OM và BC.
+
+a. CM tứ giác MCOB và MCIO nội tiếp.
+
+b. K là giao của OI và BC. CM $OH \cdot OM = OC^{2}$ và KD là tiếp tuyến của (O).
+
+c. Giả sử $BM=AB=2R$. Tính diện tích tam giác KAD không thuộc nửa đường tròn theo R.","a. $OI \perp AD \Rightarrow \widehat{MIO}=90^{\circ}$. $\widehat{MCO}=90^{\circ}, \widehat{MBO}=90^{\circ}$ nên M, C, O, B cùng thuộc đường tròn đường kính MO $\Rightarrow$ MCOB nội tiếp. Tương tự $\widehat{MCI}=\widehat{MIO}=90^{\circ}$ nên MCIO nội tiếp.
+
+b. $\triangle OCM$ vuông tại C, đường cao CH $\Rightarrow OH \cdot OM = OC^{2}$.
+
+$\triangle OHK \sim \triangle OIM$ (g-g) $\Rightarrow \frac{OH}{OI} = \frac{OK}{OM} \Rightarrow OH \cdot OM = OI \cdot OK$.
+
+$\Rightarrow OI \cdot OK = OD^{2} = R^{2}$.
+
+$\triangle OID \sim \triangle ODK$ (c-g-c) $\Rightarrow \widehat{ODK} = \widehat{OID} = 90^{\circ} \Rightarrow KD$ là tiếp tuyến.
+
+c. $BM=AB=2R \Rightarrow \triangle ABM$ vuông cân tại B $\Rightarrow \widehat{MAB}=45^{\circ}$.
+
+Tứ giác AKDO là hình vuông cạnh R.
+
+$S_{AKDO} = R^{2}$. $S_{quạt AOD} = \frac{\pi R^{2}}{4}$.
+
+$S = S_{AKDO} - S_{quạt AOD} = R^{2} - \frac{\pi R^{2}}{4} = R^{2}(1 - \frac{\pi}{4})$.",
