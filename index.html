@@ -26,27 +26,87 @@
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
         body { background: #f0f2f5 url('https://www.transparenttextures.com/patterns/mathematics.png'); height: 100vh; display: flex; flex-direction: column; }
 
-        header { background: var(--primary-gradient); padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); z-index: 100; }
-        header h1 { font-family: 'Playfair Display', serif; font-size: clamp(20px, 5vw, 32px); color: #78350f; text-transform: uppercase; letter-spacing: 1px; }
-        .subtitle { font-size: clamp(12px, 3vw, 16px); font-weight: 800; color: #b45309; background: rgba(255,255,255,0.3); display: inline-block; padding: 4px 15px; border-radius: 50px; margin-top: 8px; }
+        /* --- 1. HIỆU ỨNG 2 DÒNG CHỮ ĐẦU TIÊN --- */
+        header h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: clamp(20px, 5vw, 32px); 
+            color: #78350f; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            animation: slideDown 0.8s ease-out; /* Hiệu ứng trượt xuống */
+        }
+        .subtitle { 
+            font-size: clamp(12px, 3vw, 16px); 
+            font-weight: 800; 
+            color: #b45309; 
+            background: rgba(255,255,255,0.3); 
+            display: inline-block; 
+            padding: 6px 20px; 
+            border-radius: 50px; 
+            margin-top: 8px;
+            animation: fadeInScale 1s ease-out 0.5s both; /* Hiệu ứng hiện ra và phóng nhẹ sau 0.5s */
+        }
 
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        header { background: var(--primary-gradient); padding: 25px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); z-index: 100; }
         .main-container { display: flex; flex: 1; overflow: hidden; padding: 20px; gap: 20px; }
 
-        nav { width: 300px; background: var(--glass); backdrop-filter: blur(10px); border-radius: 20px; padding: 20px; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1); display: flex; flex-direction: column; gap: 15px; }
+        nav { width: 320px; background: var(--glass); backdrop-filter: blur(10px); border-radius: 20px; padding: 20px; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1); display: flex; flex-direction: column; gap: 15px; }
         .select-group label { font-weight: 700; color: #475569; font-size: 12px; text-transform: uppercase; margin-bottom: 5px; display: block; }
         select { width: 100%; padding: 10px; border-radius: 10px; border: 2px solid #e2e8f0; font-weight: 600; outline: none; }
-        .grid-questions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        .q-btn { padding: 12px; background: white; border-radius: 12px; border: 1px solid #e2e8f0; text-align: center; cursor: pointer; font-weight: 700; transition: 0.3s; }
-        .q-btn.active { background: var(--secondary); color: white; border-color: var(--secondary); transform: scale(1.05); }
+        
+        .grid-questions { display: grid; grid-template-columns: 1fr; gap: 12px; } /* Đổi sang 1 cột để hiện chữ "Bài x" đẹp hơn */
+        
+        /* --- 2. HIỆU ỨNG BÀI 1, BÀI 2 --- */
+        .q-btn { 
+            padding: 15px; 
+            background: white; 
+            border-radius: 12px; 
+            border: 2px solid #f1f5f9; 
+            text-align: left; 
+            cursor: pointer; 
+            font-weight: 700; 
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .q-btn:hover { border-color: var(--secondary); background: #eff6ff; padding-left: 20px; }
+        .q-btn.active { 
+            background: var(--secondary); 
+            color: white; 
+            border-color: var(--secondary); 
+            transform: translateX(10px); /* Nhích sang phải khi chọn */
+            box-shadow: -5px 5px 15px rgba(37, 99, 235, 0.3);
+        }
+        .q-btn.active::after { content: '\f105'; font-family: 'Font Awesome 6 Free'; font-weight: 900; }
 
         article { flex: 1; background: var(--glass); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px; overflow-y: auto; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1); }
         .problem-text { font-size: 1.15rem; font-weight: 700; line-height: 1.7; color: #1e293b; margin-bottom: 25px; }
         .solution-card { background: white; border-radius: 15px; padding: 25px; border-left: 8px solid #10b981; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
         .sol-header { color: #10b981; font-weight: 800; font-size: 1.2rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
 
+        /* --- CSS CHO HÌNH ẢNH GITHUB --- */
+        .math-image {
+            margin: 20px auto;
+            max-width: 100%;
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background: #fff;
+        }
+
         .contact-fixed { position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; z-index: 1000; }
         .btn-circle { width: 65px; height: 65px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; box-shadow: 0 8px 20px rgba(0,0,0,0.2); transition: 0.3s; text-decoration: none; overflow: hidden; }
-        .btn-zalo { background: #fff; } /* Zalo thường dùng nền trắng hoặc xanh */
+        .btn-zalo { background: #fff; }
         .btn-zalo img { width: 100%; height: 100%; object-fit: cover; }
         .btn-fb { background: #0084ff; font-size: 30px; }
         .btn-toggle { background: var(--accent); padding: 0 25px; border-radius: 50px; height: 65px; font-weight: 800; border: none; cursor: pointer; color: white; font-size: 16px; box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3); }
@@ -54,11 +114,9 @@
         @media (max-width: 768px) {
             .main-container { flex-direction: column; padding: 10px; overflow-y: auto; }
             nav { width: 100%; padding: 15px; gap: 10px; }
-            .grid-questions { grid-template-columns: repeat(4, 1fr); }
+            .grid-questions { grid-template-columns: repeat(2, 1fr); }
             article { padding: 20px; }
             .contact-fixed { bottom: 15px; right: 15px; }
-            .btn-circle { width: 55px; height: 55px; }
-            .btn-toggle { height: 55px; padding: 0 20px; }
         }
     </style>
 </head>
@@ -106,6 +164,12 @@
 
 <script>
     let rawData = [];
+    
+    // --- 3. CẤU HÌNH ĐƯỜNG DẪN GITHUB ---
+    // Bạn thay đổi username và repo của bạn vào đây
+    const GITHUB_USER = "nguyenphamduyanh"; // Ví dụ
+    const GITHUB_REPO = "ts10thayduyanh"; // Ví dụ
+    const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/`;
 
     Papa.parse("data.csv", {
         download: true, header: true, skipEmptyLines: true,
@@ -118,8 +182,10 @@
     function initDropdowns() {
         const cumSet = [...new Set(rawData.map(item => item.Cum))];
         const cumSelect = document.getElementById('cumSelect');
-        cumSelect.innerHTML = cumSet.map(c => `<option value="${c}">${c}</option>`).join('');
-        updateExams();
+        if(cumSelect) {
+            cumSelect.innerHTML = cumSet.map(c => `<option value="${c}">${c}</option>`).join('');
+            updateExams();
+        }
     }
 
     function updateExams() {
@@ -135,12 +201,12 @@
         qList.innerHTML = "";
         for(let i=1; i<=7; i++) {
             const btn = document.createElement('div');
-            btn.className = 'q-btn'; btn.innerText = `B.${i}`;
+            btn.className = 'q-btn'; 
+            btn.innerText = `Bài ${i}`; // Sửa từ B.1 thành Bài 1
             btn.onclick = function() {
                 document.querySelectorAll('.q-btn').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
                 showDetail(`Bài ${i}`);
-                // Tự động cuộn xuống phần bài giải trên điện thoại
                 if (window.innerWidth <= 768) {
                     document.getElementById('displayArea').scrollIntoView({ behavior: 'smooth' });
                 }
@@ -156,6 +222,14 @@
         const area = document.getElementById('displayArea');
 
         if(found) {
+            // Xử lý link ảnh từ Github
+            // Nếu Link_Anh trong CSV là "image/c1d1b1.png" thì nó sẽ ghép thành link raw
+            let finalImgTag = "";
+            if(found.Link_Anh) {
+                const imgPath = found.Link_Anh.startsWith('http') ? found.Link_Anh : IMAGE_BASE_URL + found.Link_Anh;
+                finalImgTag = `<img src="${imgPath}" class="math-image" onerror="this.style.display='none'">`;
+            }
+
             const applyAutoHat = (t) => {
                 t = t.replace(/\\hat\{([A-Z]{3})\}/g, '\\widehat{$1}');
                 t = t.replace(/(\\triangle\s*|\\Delta\s*)?\b([A-Z]{3})\b(\s*(=|\+|-|<|>))/g, (m, tr, l, s) => tr ? m : '\\widehat{' + l + '}' + s);
@@ -171,7 +245,7 @@
                 <div style="animation: fadeIn 0.4s ease">
                     <h2 style="font-family:'Playfair Display'; font-size: 28px; color:var(--secondary); margin-bottom:15px; border-bottom: 2px solid #eee; padding-bottom: 10px;">${bai}</h2>
                     <div class="problem-text">${pDe}</div>
-                    ${found.Link_Anh ? `<img src="${found.Link_Anh}" style="margin: 20px 0; max-width: 100%; border-radius: 12px;">` : ""}
+                    ${finalImgTag}
                     <div class="solution-card">
                         <div class="sol-header"><i class="fas fa-lightbulb"></i> HƯỚNG DẪN GIẢI</div>
                         <div style="line-height:2; color:#334155; font-size:1.05rem;">${pLg}</div>
